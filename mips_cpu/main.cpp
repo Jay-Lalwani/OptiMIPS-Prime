@@ -11,7 +11,7 @@
 #include <errno.h>
 #include <getopt.h>
 #include "processor.h"
-
+/* tanmai and jay */
 using namespace std;
 
 extern void single_cycle_main_loop(Registers &reg_file, Memory &memory, uint32_t end_pc);

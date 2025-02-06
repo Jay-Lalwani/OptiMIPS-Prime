@@ -118,4 +118,11 @@ void Processor::pipelined_processor_advance() {
     // pipelined processor logic goes here
     // does nothing currently -- if you call it from the cmd line, you'll run into an infinite loop
     // might be helpful to implement stages in a separate module
+    MEM_WB_Reg mem_wb_reg;
+    EX_MEM_Reg ex_mem_reg;
+    ID_EX_Reg id_ex_reg;
+    IF_ID_Reg if_id_reg;
+
+    
+
 }

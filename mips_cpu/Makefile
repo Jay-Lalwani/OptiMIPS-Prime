@@ -25,8 +25,8 @@ test: $(EXE_NAME)
 		if [ -f $$dir/test.s ]; then \
 			echo "Testing $$(basename $$dir)..."; \
 			mips-linux-gnu-gcc -mips32 -EL -static $$dir/test.s -nostartfiles -Ttext=0 -o test.bin; \
-			./$(EXE_NAME) --bmk=test.bin -O0 > log1_$$(basename $$dir).txt; \
-			./$(EXE_NAME) --bmk=test.bin -O1 > log2_$$(basename $$dir).txt; \
+			./$(EXE_NAME) --bmk=test.bin -O0 > logs/log1_$$(basename $$dir).txt; \
+			./$(EXE_NAME) --bmk=test.bin -O1 > logs/log2_$$(basename $$dir).txt; \
 		fi \
 	done
 	@rm -f test.bin

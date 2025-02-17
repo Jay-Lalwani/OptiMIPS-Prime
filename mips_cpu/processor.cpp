@@ -154,22 +154,22 @@ void Processor::pipeline_EX() {
         ex_mem.valid       = true;
         
         // Handle control hazards:
-        // If a branch is taken, update PC and flush IF/ID and ID/EX.
+        // For a branch or jump, update PC and flush only the ID/EX register.
+        // (This preserves the instruction in IF/ID as the branch delay slot.)
         if (id_ex.branch && ex_mem.zero) {
             regfile.pc = branch_target;
-            flush_IF_ID_ID_EX();
+            id_ex.valid = false; // flush the branch instruction from ID/EX
             DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
         }
         else if (id_ex.jump) {
-            // For jump instructions, compute target from the lower 26 bits.
             uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
             regfile.pc = jump_addr;
-            flush_IF_ID_ID_EX();
+            id_ex.valid = false;
             DEBUG(cout << "EX: Jump to 0x" << std::hex << jump_addr << std::dec << "\n");
         }
         else if (id_ex.jump_reg) {
             regfile.pc = id_ex.read_data_1;
-            flush_IF_ID_ID_EX();
+            id_ex.valid = false;
             DEBUG(cout << "EX: Jump register to 0x" << std::hex << id_ex.read_data_1 << std::dec << "\n");
         }
     }

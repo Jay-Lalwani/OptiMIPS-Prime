@@ -9,15 +9,6 @@ MEM[7]: 4820
 L2 Cache: replacing line at idx:0 way:0 due to conflicting address:0
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 0
 R[0]: 0
 R[1]: 0
@@ -62,15 +53,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 1
 R[0]: 0
@@ -117,15 +99,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 2
 R[0]: 0
 R[1]: 0
@@ -170,15 +143,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 3
 R[0]: 0
@@ -225,15 +189,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 4
 R[0]: 0
 R[1]: 0
@@ -278,15 +233,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 5
 R[0]: 0
@@ -333,15 +279,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 6
 R[0]: 0
 R[1]: 0
@@ -386,15 +323,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 7
 R[0]: 0
@@ -441,15 +369,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 8
 R[0]: 0
 R[1]: 0
@@ -494,15 +413,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 9
 R[0]: 0
@@ -549,15 +459,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 10
 R[0]: 0
 R[1]: 0
@@ -603,15 +504,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 11
 R[0]: 0
 R[1]: 0
@@ -655,15 +547,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 12
 R[0]: 0
@@ -710,15 +593,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 13
 R[0]: 0
 R[1]: 0
@@ -763,15 +637,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 14
 R[0]: 0
@@ -818,15 +683,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 15
 R[0]: 0
 R[1]: 0
@@ -871,15 +727,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 16
 R[0]: 0
@@ -926,15 +773,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 17
 R[0]: 0
 R[1]: 0
@@ -979,15 +817,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 18
 R[0]: 0
@@ -1034,15 +863,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 19
 R[0]: 0
 R[1]: 0
@@ -1087,15 +907,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 20
 R[0]: 0
@@ -1142,15 +953,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 21
 R[0]: 0
 R[1]: 0
@@ -1195,15 +997,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 22
 R[0]: 0
@@ -1250,15 +1043,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 23
 R[0]: 0
 R[1]: 0
@@ -1302,15 +1086,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 24
 R[0]: 0
@@ -1357,15 +1132,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 25
 R[0]: 0
 R[1]: 0
@@ -1410,15 +1176,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 26
 R[0]: 0
@@ -1465,15 +1222,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 27
 R[0]: 0
 R[1]: 0
@@ -1518,15 +1266,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 28
 R[0]: 0
@@ -1573,15 +1312,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 29
 R[0]: 0
 R[1]: 0
@@ -1626,15 +1356,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 30
 R[0]: 0
@@ -1681,15 +1402,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 31
 R[0]: 0
 R[1]: 0
@@ -1734,15 +1446,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 32
 R[0]: 0
@@ -1789,15 +1492,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 33
 R[0]: 0
 R[1]: 0
@@ -1842,15 +1536,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 34
 R[0]: 0
@@ -1897,15 +1582,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 35
 R[0]: 0
 R[1]: 0
@@ -1949,15 +1625,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 36
 R[0]: 0
@@ -2004,15 +1671,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 37
 R[0]: 0
 R[1]: 0
@@ -2057,15 +1715,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 38
 R[0]: 0
@@ -2112,15 +1761,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 39
 R[0]: 0
 R[1]: 0
@@ -2165,15 +1805,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 40
 R[0]: 0
@@ -2220,15 +1851,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 41
 R[0]: 0
 R[1]: 0
@@ -2273,15 +1895,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 42
 R[0]: 0
@@ -2328,15 +1941,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 43
 R[0]: 0
 R[1]: 0
@@ -2381,15 +1985,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 44
 R[0]: 0
@@ -2436,15 +2031,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 45
 R[0]: 0
 R[1]: 0
@@ -2489,15 +2075,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 46
 R[0]: 0
@@ -2544,15 +2121,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 47
 R[0]: 0
 R[1]: 0
@@ -2596,15 +2164,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 48
 R[0]: 0
@@ -2651,15 +2210,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 49
 R[0]: 0
 R[1]: 0
@@ -2704,15 +2254,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 50
 R[0]: 0
@@ -2759,15 +2300,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 51
 R[0]: 0
 R[1]: 0
@@ -2812,15 +2344,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 52
 R[0]: 0
@@ -2867,15 +2390,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 53
 R[0]: 0
 R[1]: 0
@@ -2920,15 +2434,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 54
 R[0]: 0
@@ -2975,15 +2480,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 55
 R[0]: 0
 R[1]: 0
@@ -3028,15 +2524,6 @@ MEM[5]: 1180000f
 MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
 
 CYCLE 56
 R[0]: 0
@@ -3083,15 +2570,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 57
 R[0]: 0
 R[1]: 0
@@ -3137,15 +2615,6 @@ MEM[6]: 0
 MEM[7]: 4820
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 58
 R[0]: 0
 R[1]: 0
@@ -3184,15 +2653,6 @@ L2 Cache (read hit): 537919493<-[0]
 L1 Cache: replacing line at idx:0 way:0 due to conflicting address:0
 IF: Memory stall during fetch at PC 0x0
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x0
-Current PC: 0x0
---------------------------------------------------
-
-
 CYCLE 59
 R[0]: 0
 R[1]: 0
@@ -3227,16 +2687,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 537919493<-[0]
-IF: Fetched instruction 0x20100005 from PC 0x4; next PC = 0x8
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=0 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x20100005 | PC+4=0x4
-Current PC: 0x4
---------------------------------------------------
-
+IF: Fetched instruction 0x20100005 from PC 0x0
 
 CYCLE 60
 R[0]: 0
@@ -3272,16 +2723,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 537985029<-[4]
-IF: Fetched instruction 0x20110005 from PC 0x8; next PC = 0xc
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x20110005 | PC+4=0x8
-Current PC: 0x8
---------------------------------------------------
-
+IF: Fetched instruction 0x20110005 from PC 0x4
 
 CYCLE 61
 R[0]: 0
@@ -3317,16 +2759,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 538050860<-[8]
-IF: Fetched instruction 0x2012012c from PC 0xc; next PC = 0x10
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x5
-ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x2012012C | PC+4=0xc
-Current PC: 0xc
---------------------------------------------------
-
+IF: Fetched instruction 0x2012012c from PC 0x8
 
 CYCLE 62
 R[0]: 0
@@ -3362,16 +2795,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 16416<-[c]
-IF: Fetched instruction 0x4020 from PC 0x10; next PC = 0x14
-
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x5 | write_reg=16
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x5
-ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x00004020 | PC+4=0x10
-Current PC: 0x10
---------------------------------------------------
-
+IF: Fetched instruction 0x4020 from PC 0xc
 
 CYCLE 63
 R[0]: 0
@@ -3408,16 +2832,7 @@ R[30]: 0
 R[31]: 0
 WB: Writing 5 to R[16]
 L1 Cache (read hit): 17850410<-[10]
-IF: Fetched instruction 0x110602a from PC 0x14; next PC = 0x18
-
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x5 | write_reg=17
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x12c
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x0110602A | PC+4=0x14
-Current PC: 0x14
---------------------------------------------------
-
+IF: Fetched instruction 0x110602a from PC 0x10
 
 CYCLE 64
 R[0]: 0
@@ -3454,16 +2869,7 @@ R[30]: 0
 R[31]: 0
 WB: Writing 5 to R[17]
 L1 Cache (read hit): 293601295<-[14]
-IF: Fetched instruction 0x1180000f from PC 0x18; next PC = 0x1c
-
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x12c | write_reg=18
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x1180000F | PC+4=0x18
-Current PC: 0x18
---------------------------------------------------
-
+IF: Fetched instruction 0x1180000f from PC 0x14
 
 CYCLE 65
 R[0]: 0
@@ -3500,16 +2906,7 @@ R[30]: 0
 R[31]: 0
 WB: Writing 300 to R[18]
 L1 Cache (read hit): 0<-[18]
-IF: Fetched instruction 0x0 from PC 0x1c; next PC = 0x20
-
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=8
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x1
-ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: VALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x1c
---------------------------------------------------
-
+IF: Fetched instruction 0x0 from PC 0x18
 
 CYCLE 66
 R[0]: 0
@@ -3545,7 +2942,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[8]
-EX: Evaluating branch (bne=0): condition is ZERO -> TAKEN; computed branch target = 0x54
+EX: Branch taken to 0x54
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3556,15 +2953,6 @@ MEM[46]: 0
 MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:54
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x1 | write_reg=12
-EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 67
 R[0]: 0
@@ -3612,15 +3000,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 68
 R[0]: 0
 R[1]: 0
@@ -3665,15 +3044,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 69
 R[0]: 0
@@ -3720,15 +3090,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 70
 R[0]: 0
 R[1]: 0
@@ -3773,15 +3134,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 71
 R[0]: 0
@@ -3828,15 +3180,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 72
 R[0]: 0
 R[1]: 0
@@ -3881,15 +3224,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 73
 R[0]: 0
@@ -3936,15 +3270,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 74
 R[0]: 0
 R[1]: 0
@@ -3989,15 +3314,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 75
 R[0]: 0
@@ -4044,15 +3360,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 76
 R[0]: 0
 R[1]: 0
@@ -4097,15 +3404,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 77
 R[0]: 0
@@ -4152,15 +3450,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 78
 R[0]: 0
 R[1]: 0
@@ -4204,15 +3493,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 79
 R[0]: 0
@@ -4259,15 +3539,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 80
 R[0]: 0
 R[1]: 0
@@ -4312,15 +3583,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 81
 R[0]: 0
@@ -4367,15 +3629,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 82
 R[0]: 0
 R[1]: 0
@@ -4420,15 +3673,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 83
 R[0]: 0
@@ -4475,15 +3719,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 84
 R[0]: 0
 R[1]: 0
@@ -4528,15 +3763,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 85
 R[0]: 0
@@ -4583,15 +3809,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 86
 R[0]: 0
 R[1]: 0
@@ -4636,15 +3853,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 87
 R[0]: 0
@@ -4691,15 +3899,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 88
 R[0]: 0
 R[1]: 0
@@ -4744,15 +3943,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 89
 R[0]: 0
@@ -4799,15 +3989,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 90
 R[0]: 0
 R[1]: 0
@@ -4851,15 +4032,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 91
 R[0]: 0
@@ -4906,15 +4078,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 92
 R[0]: 0
 R[1]: 0
@@ -4959,15 +4122,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 93
 R[0]: 0
@@ -5014,15 +4168,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 94
 R[0]: 0
 R[1]: 0
@@ -5067,15 +4212,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 95
 R[0]: 0
@@ -5122,15 +4258,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 96
 R[0]: 0
 R[1]: 0
@@ -5175,15 +4302,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 97
 R[0]: 0
@@ -5230,15 +4348,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 98
 R[0]: 0
 R[1]: 0
@@ -5283,15 +4392,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 99
 R[0]: 0
@@ -5338,15 +4438,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 100
 R[0]: 0
 R[1]: 0
@@ -5391,15 +4482,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 101
 R[0]: 0
@@ -5446,15 +4528,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 102
 R[0]: 0
 R[1]: 0
@@ -5498,15 +4571,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 103
 R[0]: 0
@@ -5553,15 +4617,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 104
 R[0]: 0
 R[1]: 0
@@ -5606,15 +4661,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 105
 R[0]: 0
@@ -5661,15 +4707,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 106
 R[0]: 0
 R[1]: 0
@@ -5714,15 +4751,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 107
 R[0]: 0
@@ -5769,15 +4797,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 108
 R[0]: 0
 R[1]: 0
@@ -5822,15 +4841,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 109
 R[0]: 0
@@ -5877,15 +4887,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 110
 R[0]: 0
 R[1]: 0
@@ -5930,15 +4931,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 111
 R[0]: 0
@@ -5985,15 +4977,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 112
 R[0]: 0
 R[1]: 0
@@ -6038,15 +5021,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 113
 R[0]: 0
@@ -6093,15 +5067,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 114
 R[0]: 0
 R[1]: 0
@@ -6145,15 +5110,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 115
 R[0]: 0
@@ -6200,15 +5156,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 116
 R[0]: 0
 R[1]: 0
@@ -6253,15 +5200,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 117
 R[0]: 0
@@ -6308,15 +5246,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 118
 R[0]: 0
 R[1]: 0
@@ -6361,15 +5290,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 119
 R[0]: 0
@@ -6416,15 +5336,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 120
 R[0]: 0
 R[1]: 0
@@ -6469,15 +5380,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 121
 R[0]: 0
@@ -6524,15 +5426,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 122
 R[0]: 0
 R[1]: 0
@@ -6577,15 +5470,6 @@ MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
 
 CYCLE 123
 R[0]: 0
@@ -6632,15 +5516,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 124
 R[0]: 0
 R[1]: 0
@@ -6686,15 +5561,6 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 125
 R[0]: 0
 R[1]: 0
@@ -6733,15 +5599,6 @@ L2 Cache (read hit): 0<-[54]
 L1 Cache: replacing line at idx:1 way:0 due to conflicting address:54
 IF: Memory stall during fetch at PC 0x54
 
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: INVALID | instruction=0x00000000 | PC+4=0x1c
-Current PC: 0x54
---------------------------------------------------
-
-
 CYCLE 126
 R[0]: 0
 R[1]: 0
@@ -6776,16 +5633,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[54]
-IF: Fetched instruction 0x0 from PC 0x58; next PC = 0x5c
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
-IF/ID: VALID | instruction=0x00000000 | PC+4=0x58
-Current PC: 0x58
---------------------------------------------------
-
+IF: Fetched instruction 0x0 from PC 0x54
 
 CYCLE 127
 R[0]: 0
@@ -6821,16 +5669,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[58]
-IF: Fetched instruction 0x0 from PC 0x5c; next PC = 0x60
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x00000000 | PC+4=0x5c
-Current PC: 0x5c
---------------------------------------------------
-
+IF: Fetched instruction 0x0 from PC 0x58
 
 CYCLE 128
 R[0]: 0
@@ -6866,16 +5705,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[5c]
-IF: Fetched instruction 0x0 from PC 0x60; next PC = 0x64
-
----------------- Pipeline Diagram ----------------
-MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x00000000 | PC+4=0x60
-Current PC: 0x60
---------------------------------------------------
-
+IF: Fetched instruction 0x0 from PC 0x5c
 
 CYCLE 129
 R[0]: 0
@@ -6911,16 +5741,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[60]
-IF: Fetched instruction 0x0 from PC 0x64; next PC = 0x68
-
----------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
-IF/ID: VALID | instruction=0x00000000 | PC+4=0x64
-Current PC: 0x64
---------------------------------------------------
-
+IF: Fetched instruction 0x0 from PC 0x60
 
 CYCLE 130
 R[0]: 0

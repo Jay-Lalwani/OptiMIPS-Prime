@@ -18,6 +18,7 @@ class Processor {
         struct IF_ID {
             uint32_t instruction;
             uint32_t pc_plus_4;
+            int instrID;
             bool valid;
         };
         
@@ -48,6 +49,7 @@ class Processor {
             uint32_t shamt;
             uint32_t funct; // For ALU control (e.g., R-type)
             int opcode;
+            int instrID;
             bool valid;
         };
         
@@ -67,6 +69,7 @@ class Processor {
             int write_reg;       // Destination register number
             uint32_t pc_branch;   // Holds PC+4 (for link instructions and branch target computation)
             bool zero;           // Zero flag from ALU
+            int instrID;
             bool valid;
         };
         
@@ -80,6 +83,7 @@ class Processor {
             uint32_t alu_result;
             int write_reg;
             uint32_t pc_plus_4;  // For link instructions
+            int instrID;
             bool valid;
         };
         

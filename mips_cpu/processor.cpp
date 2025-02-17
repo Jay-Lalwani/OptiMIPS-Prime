@@ -1,6 +1,39 @@
 #include <cstdint>
 #include <iostream>
 #include "processor.h"
+#ifdef ENABLE_DEBUG
+#include <vector>
+#include <string>
+
+// Global pipeline diagram data: each row corresponds to one instruction
+struct PipelineRow {
+    int instrID;
+    std::string label;  // e.g., "Inst 0 (PC=0x...)" 
+    std::vector<std::string> stages;
+};
+static std::vector<PipelineRow> pipelineDiagram;
+static int globalCycle = 0;
+static int nextInstrID = 0;
+
+// Helper function to print the pipeline diagram
+void printPipelineDiagram() {
+    std::cout << "\nPipeline Diagram (Cycle " << globalCycle << "):\n";
+    for (auto &row : pipelineDiagram) {
+        std::cout << row.label << ":\t";
+        for (auto &col : row.stages) {
+            std::cout << col << "\t";
+        }
+        std::cout << "\n";
+    }
+    std::cout << std::endl;
+}
+// Define a destructor for Processor to print the final pipeline diagram.
+Processor::~Processor() {
+    std::cout << "\nFinal Pipeline Diagram (After " << globalCycle << " cycles):\n";
+    printPipelineDiagram();
+}
+#endif
+
 using namespace std;
 
 #ifdef ENABLE_DEBUG
@@ -71,6 +104,10 @@ void Processor::pipelined_processor_advance() {
     
     // Process IF stage.
     pipeline_IF();
+
+#ifdef ENABLE_DEBUG
+    globalCycle++;
+#endif
 }
 
 // WB Stage: Write back the result from MEM/WB register to the register file.
@@ -93,6 +130,15 @@ void Processor::pipeline_WB() {
     }
     // Clear MEM/WB after write-back.
     mem_wb.valid = false;
+
+#ifdef ENABLE_DEBUG
+    for (auto &row : pipelineDiagram) {
+        if (row.instrID == mem_wb.instrID) {
+            row.stages.push_back("W");
+            break;
+        }
+    }
+#endif
 }
 
 // MEM Stage: Perform memory read or write using data from EX/MEM.
@@ -118,6 +164,16 @@ bool Processor::pipeline_MEM() {
         // Clear EX/MEM after transfer.
         ex_mem.valid = false;
     }
+
+#ifdef ENABLE_DEBUG
+    mem_wb.instrID = ex_mem.instrID;
+    for (auto &row : pipelineDiagram) {
+        if (row.instrID == mem_wb.instrID) {
+            row.stages.push_back("M");
+            break;
+        }
+    }
+#endif
     return true;
 }
 
@@ -175,6 +231,16 @@ void Processor::pipeline_EX() {
     }
     // Clear ID/EX after execution.
     id_ex.valid = false;
+
+#ifdef ENABLE_DEBUG
+    ex_mem.instrID = id_ex.instrID;
+    for (auto &row : pipelineDiagram) {
+        if (row.instrID == ex_mem.instrID) {
+            row.stages.push_back("E");
+            break;
+        }
+    }
+#endif
 }
 
 // ID Stage: Decode the instruction from IF/ID, generate control signals, and read registers.
@@ -233,6 +299,17 @@ void Processor::pipeline_ID() {
         // Clear IF/ID after use.
         if_id.valid = false;
     }
+
+#ifdef ENABLE_DEBUG
+    id_ex.instrID = if_id.instrID;
+    // Update diagram with decode stage
+    for (auto &row : pipelineDiagram) {
+        if (row.instrID == id_ex.instrID) {
+            row.stages.push_back("D");
+            break;
+        }
+    }
+#endif
 }
 
 // IF Stage: Fetch the instruction at the current PC.
@@ -246,7 +323,18 @@ void Processor::pipeline_IF() {
     if_id.instruction = instruction;
     if_id.pc_plus_4 = regfile.pc + 4;
     if_id.valid = true;
-    // Increment PC for the next fetch.
+
+#ifdef ENABLE_DEBUG
+    // Assign new instruction ID and add pipeline row
+    if_id.instrID = nextInstrID++;
+    {
+        PipelineRow row;
+        row.instrID = if_id.instrID;
+        row.label = "Inst " + std::to_string(if_id.instrID) + " (PC=0x" + std::to_string(regfile.pc) + ")";
+        row.stages.push_back("F");
+        pipelineDiagram.push_back(row);
+    }
+#endif
     regfile.pc += 4;
     DEBUG(cout << "IF: Fetched instruction 0x" << std::hex << instruction 
                << " from PC 0x" << (regfile.pc - 4) << std::dec << "\n");

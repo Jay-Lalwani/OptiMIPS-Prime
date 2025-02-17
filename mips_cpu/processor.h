@@ -131,7 +131,7 @@ class Processor {
         }
 
         // Get the current PC.
-        uint32_t getPC() { return regfile.pc; }
+        // uint32_t getPC() { return regfile.pc; }
 
         // Prints the register file.
         void printRegFile() { regfile.print(); }

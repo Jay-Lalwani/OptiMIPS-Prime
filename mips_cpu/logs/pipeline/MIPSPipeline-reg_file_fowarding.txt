@@ -2869,13 +2869,3 @@ R[30]: 0
 R[31]: 0
 
 Completed execution in 32.5 nanoseconds.
-
-Final Pipeline Diagram (After 65 cycles):
-
-Pipeline Diagram (Cycle 65):
-Inst 0 (PC=0x0):	F	W	M	E	D	W	M	E	W	M	W	
-Inst 1 (PC=0x4):	F	D	E	M	
-Inst 2 (PC=0x8):	F	D	E	
-Inst 3 (PC=0x12):	F	D	
-Inst 4 (PC=0x16):	F	
-

@@ -32,6 +32,6 @@ test: $(EXE_NAME)
 	@rm -f test.bin
 
 clean:
-	$(RM) $(EXE_NAME) $(OBJS) test.bin log1_*.txt log2_*.txt
+	$(RM) $(EXE_NAME) $(OBJS) test.bin
 
 

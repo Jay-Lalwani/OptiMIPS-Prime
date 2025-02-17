@@ -241,12 +241,18 @@ void Processor::pipeline_IF() {
     
     // Check if we are in drain mode.
     if(drain_mode) {
-         // Instead of fetching a new instruction, inject a NOP.
-         if_id.instruction = 0;
-         if_id.pc_plus_4 = regfile.pc;
-         if_id.valid = false;
-         drain_counter--;
-         DEBUG(cout << "IF: In drain mode. Drain counter: " << drain_counter << "\n");
+         if(drain_counter > 0) {
+             // While draining, inject a NOP without advancing PC.
+             if_id.instruction = 0;
+             if_id.pc_plus_4 = regfile.pc;
+             if_id.valid = false;
+             drain_counter--;
+             DEBUG(cout << "IF: In drain mode. Drain counter: " << drain_counter << "\n");
+         } else {
+             // Drain counter reached 0; exit drain mode and advance PC to move past the NOP.
+             drain_mode = false;
+             regfile.pc += 4;
+         }
          return;
     }
 

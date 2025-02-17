@@ -30,7 +30,6 @@ void Processor::initialize(int level) {
                .zero_extend = 0};
    
     opt_level = level;
-    stallIF = false;  // initialize stall flag
     // In pipelined mode, mark all pipeline registers as invalid.
     if_id.valid = false;
     id_ex.valid = false;
@@ -154,24 +153,24 @@ void Processor::pipeline_EX() {
         ex_mem.zero        = (alu_zero == 1);
         ex_mem.valid       = true;
         
-        // Handle control hazards for branches and jumps:
-        // For branch (beq) and jump instructions, allow the branch delay slot (in IF/ID) to complete.
-        if ((id_ex.branch && ex_mem.zero) || id_ex.jump || id_ex.jump_reg) {
-            if (id_ex.branch && ex_mem.zero) {
-                regfile.pc = branch_target;
-                DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
-            } else if (id_ex.jump) {
-                uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
-                regfile.pc = jump_addr;
-                DEBUG(cout << "EX: Jump to 0x" << std::hex << jump_addr << std::dec << "\n");
-            } else if (id_ex.jump_reg) {
-                regfile.pc = id_ex.read_data_1;
-                DEBUG(cout << "EX: Jump register to 0x" << std::hex << id_ex.read_data_1 << std::dec << "\n");
-            }
-            // Do not flush IF/ID so that the delay slot instruction remains.
-            // Flush the branch instruction in ID/EX (if needed) and stall IF stage for one cycle.
-            id_ex.valid = false;
-            stallIF = true;
+        // Handle control hazards:
+        // If a branch is taken, update PC and flush IF/ID and ID/EX.
+        if (id_ex.branch && ex_mem.zero) {
+            regfile.pc = branch_target;
+            flush_IF_ID_ID_EX();
+            DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
+        }
+        else if (id_ex.jump) {
+            // For jump instructions, compute target from the lower 26 bits.
+            uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
+            regfile.pc = jump_addr;
+            flush_IF_ID_ID_EX();
+            DEBUG(cout << "EX: Jump to 0x" << std::hex << jump_addr << std::dec << "\n");
+        }
+        else if (id_ex.jump_reg) {
+            regfile.pc = id_ex.read_data_1;
+            flush_IF_ID_ID_EX();
+            DEBUG(cout << "EX: Jump register to 0x" << std::hex << id_ex.read_data_1 << std::dec << "\n");
         }
     }
     // Clear ID/EX after execution.
@@ -238,12 +237,6 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
-    // If a branch or jump was taken in the EX stage, stall IF this cycle so that the delay slot instruction in IF/ID is preserved.
-    if (stallIF) {
-        DEBUG(cout << "IF: Stall due to branch delay slot\n");
-        stallIF = false;
-        return;
-    }
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {

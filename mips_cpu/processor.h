@@ -13,12 +13,12 @@ class Processor {
         control_t control;
         Memory *memory;
         Registers regfile;
-        
+        uint32_t end_pc;
+        bool draining;
         // Pipeline register structures
         struct IF_ID {
             uint32_t instruction;
             uint32_t pc_plus_4;
-            int instrID;
             bool valid;
         };
         
@@ -49,7 +49,6 @@ class Processor {
             uint32_t shamt;
             uint32_t funct; // For ALU control (e.g., R-type)
             int opcode;
-            int instrID;
             bool valid;
         };
         
@@ -69,7 +68,6 @@ class Processor {
             int write_reg;       // Destination register number
             uint32_t pc_branch;   // Holds PC+4 (for link instructions and branch target computation)
             bool zero;           // Zero flag from ALU
-            int instrID;
             bool valid;
         };
         
@@ -83,7 +81,6 @@ class Processor {
             uint32_t alu_result;
             int write_reg;
             uint32_t pc_plus_4;  // For link instructions
-            int instrID;
             bool valid;
         };
         
@@ -113,6 +110,8 @@ class Processor {
         Processor(Memory *mem) { 
             regfile.pc = 0; 
             memory = mem; 
+            end_pc = 0;
+            draining = false;
             // Initialize pipeline registers as invalid.
             if_id.valid = false;
             id_ex.valid = false;
@@ -121,7 +120,15 @@ class Processor {
         }
 
         // Get the current PC.
-        uint32_t getPC() { return regfile.pc; }
+        uint32_t getPC() { 
+            return regfile.pc; 
+        }
+
+        // Check if the processor is drained.
+        bool isDrained() const {
+            return (regfile.pc >= end_pc) &&
+                   (!if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid);
+        }
 
         // Prints the register file.
         void printRegFile() { regfile.print(); }
@@ -132,10 +139,8 @@ class Processor {
         // Advances the processor one cycle.
         void advance(); 
 
-        // Destructor to print the final pipeline diagram.
-        #ifdef ENABLE_DEBUG
-        ~Processor();
-        #endif
+        // Set the end PC.
+        void setEndPC(uint32_t pc) { end_pc = pc; }
 };
 
 #endif

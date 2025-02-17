@@ -24,7 +24,7 @@ test: $(EXE_NAME)
 	@for dir in $(TEST_DIRS); do \
 		if [ -f $$dir/test.s ]; then \
 			echo "Testing $$(basename $$dir)..."; \
-			mipsel-linux-gnu-gcc -mips32 $$dir/test.s -nostartfiles -Ttext=0 -o test.bin; \
+			mips-linux-gnu-gcc -mips32 -EL -static $$dir/test.s -nostartfiles -Ttext=0 -o test.bin; \
 			./$(EXE_NAME) --bmk=test.bin -O0 > log1_$$(basename $$dir).txt; \
 			./$(EXE_NAME) --bmk=test.bin -O1 > log2_$$(basename $$dir).txt; \
 		fi \

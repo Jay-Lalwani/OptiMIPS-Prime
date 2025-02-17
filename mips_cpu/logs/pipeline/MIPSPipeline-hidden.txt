@@ -5778,3 +5778,19 @@ R[30]: 0
 R[31]: 0
 
 Completed execution in 65.5 nanoseconds.
+
+Final Pipeline Diagram (After 131 cycles):
+
+Pipeline Diagram (Cycle 131):
+Inst 0 (PC=0x0):	F	W	M	E	D	W	M	E	W	M	W	
+Inst 1 (PC=0x4):	F	D	E	M	W	
+Inst 2 (PC=0x8):	F	D	E	M	W	
+Inst 3 (PC=0x12):	F	D	E	M	W	
+Inst 4 (PC=0x16):	F	D	E	M	W	
+Inst 5 (PC=0x20):	F	D	E	M	W	
+Inst 6 (PC=0x24):	F	D	E	D	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	W	M	W	
+Inst 7 (PC=0x84):	F	D	E	M	
+Inst 8 (PC=0x88):	F	D	E	
+Inst 9 (PC=0x92):	F	D	
+Inst 10 (PC=0x96):	F	
+

@@ -9161,3 +9161,38 @@ R[30]: 0
 R[31]: 0
 
 Completed execution in 105 nanoseconds.
+
+Final Pipeline Diagram (After 210 cycles):
+
+Pipeline Diagram (Cycle 210):
+Inst 0 (PC=0x0):	F	W	M	E	D	W	M	E	W	M	W	
+Inst 1 (PC=0x4):	F	D	E	M	W	
+Inst 2 (PC=0x8):	F	D	E	M	W	
+Inst 3 (PC=0x12):	F	D	E	M	W	
+Inst 4 (PC=0x16):	F	D	E	M	W	
+Inst 5 (PC=0x20):	F	D	E	M	W	
+Inst 6 (PC=0x28):	F	D	E	M	W	
+Inst 7 (PC=0x32):	F	D	E	M	W	
+Inst 8 (PC=0x40):	F	D	E	M	W	
+Inst 9 (PC=0x44):	F	D	E	M	W	
+Inst 10 (PC=0x52):	F	D	E	M	W	
+Inst 11 (PC=0x56):	F	D	E	D	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	W	M	W	
+Inst 12 (PC=0x64):	F	D	E	M	W	
+Inst 13 (PC=0x68):	F	D	E	M	W	
+Inst 14 (PC=0x76):	F	D	E	M	W	
+Inst 15 (PC=0x80):	F	D	E	M	W	
+Inst 16 (PC=0x88):	F	D	E	M	W	
+Inst 17 (PC=0x92):	F	D	E	M	W	
+Inst 18 (PC=0x100):	F	D	E	M	W	
+Inst 19 (PC=0x104):	F	D	E	M	W	
+Inst 20 (PC=0x108):	F	D	E	M	W	
+Inst 21 (PC=0x112):	F	D	E	M	W	
+Inst 22 (PC=0x116):	F	D	E	M	W	
+Inst 23 (PC=0x120):	F	D	E	M	W	
+Inst 24 (PC=0x124):	F	D	E	D	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	D	W	M	E	W	M	W	
+Inst 25 (PC=0x128):	F	D	E	M	W	
+Inst 26 (PC=0x132):	F	D	E	M	
+Inst 27 (PC=0x136):	F	D	E	
+Inst 28 (PC=0x140):	F	D	
+Inst 29 (PC=0x144):	F	
+

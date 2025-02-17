@@ -7,8 +7,6 @@ using namespace std;
 #define DEBUG(x) x
 #else
 #define DEBUG(x)
-
-
 #endif
 
 // Initializes the processor.
@@ -73,8 +71,6 @@ void Processor::pipelined_processor_advance() {
     
     // Process IF stage.
     pipeline_IF();
-
-    print_pipeline_diagram();
 }
 
 // WB Stage: Write back the result from MEM/WB register to the register file.
@@ -157,27 +153,24 @@ void Processor::pipeline_EX() {
         ex_mem.zero        = (alu_zero == 1);
         ex_mem.valid       = true;
         
-        if (id_ex.branch) {
-            bool branch_taken = (id_ex.bne ? !ex_mem.zero : ex_mem.zero);
-            DEBUG(cout << "EX: Evaluating branch (bne=" << id_ex.bne << "): condition is " 
-                       << (ex_mem.zero ? "ZERO" : "NON-ZERO")
-                       << " -> " << (branch_taken ? "TAKEN" : "NOT TAKEN")
-                       << "; computed branch target = 0x" << hex << branch_target << dec << "\n");
-            if (branch_taken) {
-                regfile.pc = branch_target;
-                flush_IF_ID_ID_EX();
-            }
-        } else if (id_ex.jump) {
+        // Handle control hazards:
+        // If a branch is taken, update PC and flush IF/ID and ID/EX.
+        if (id_ex.branch && ex_mem.zero) {
+            regfile.pc = branch_target;
+            flush_IF_ID_ID_EX();
+            DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
+        }
+        else if (id_ex.jump) {
+            // For jump instructions, compute target from the lower 26 bits.
             uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
-            DEBUG(cout << "EX: Jump instruction: PC from 0x" << hex << regfile.pc 
-                       << " -> jump_addr = 0x" << jump_addr << dec << "\n");
             regfile.pc = jump_addr;
             flush_IF_ID_ID_EX();
-        } else if (id_ex.jump_reg) {
-            DEBUG(cout << "EX: Jump register instruction: setting PC to 0x" << hex 
-                       << id_ex.read_data_1 << dec << "\n");
+            DEBUG(cout << "EX: Jump to 0x" << std::hex << jump_addr << std::dec << "\n");
+        }
+        else if (id_ex.jump_reg) {
             regfile.pc = id_ex.read_data_1;
             flush_IF_ID_ID_EX();
+            DEBUG(cout << "EX: Jump register to 0x" << std::hex << id_ex.read_data_1 << std::dec << "\n");
         }
     }
     // Clear ID/EX after execution.
@@ -255,8 +248,7 @@ void Processor::pipeline_IF() {
     // Increment PC for the next fetch.
     regfile.pc += 4;
     DEBUG(cout << "IF: Fetched instruction 0x" << std::hex << instruction 
-                << " from PC 0x" << regfile.pc << "; next PC = 0x" 
-                << regfile.pc + 4 << dec << "\n");
+               << " from PC 0x" << (regfile.pc - 4) << std::dec << "\n");
 }
 
 // Flush the IF/ID and ID/EX pipeline registers (e.g., on branch or jump).
@@ -265,40 +257,7 @@ void Processor::flush_IF_ID_ID_EX() {
     id_ex.valid = false;
 }
 
-std::string disassemble(uint32_t instr) {
-    char buf[64];
-    // In a real system, you would decode opcode, funct, etc.
-    // For now, just print the hex value.
-    sprintf(buf, "0x%08X", instr);
-    return std::string(buf);
-}
-
-void Processor::print_pipeline_diagram() {
-    cout << "\n---------------- Pipeline Diagram ----------------\n";
-    cout << "MEM/WB: " << (mem_wb.valid ? "VALID" : "INVALID")
-         << " | reg_write=" << mem_wb.reg_write
-         << " | mem_to_reg=" << mem_wb.mem_to_reg
-         << " | link=" << mem_wb.link
-         << " | alu_result=0x" << hex << mem_wb.alu_result << dec
-         << " | write_reg=" << mem_wb.write_reg << "\n";
-    cout << "EX/MEM: " << (ex_mem.valid ? "VALID" : "INVALID")
-         << " | reg_write=" << ex_mem.reg_write
-         << " | mem_read=" << ex_mem.mem_read
-         << " | mem_write=" << ex_mem.mem_write
-         << " | alu_result=0x" << hex << ex_mem.alu_result << dec << "\n";
-    cout << "ID/EX: " << (id_ex.valid ? "VALID" : "INVALID")
-         << " | reg_dest=" << id_ex.reg_dest
-         << " | ALU_src=" << id_ex.ALU_src
-         << " | ALU_op=" << id_ex.ALU_op
-         << " | branch=" << id_ex.branch
-         << " | bne=" << id_ex.bne << "\n";
-    cout << "IF/ID: " << (if_id.valid ? "VALID" : "INVALID")
-         << " | instruction=" << disassemble(if_id.instruction)
-         << " | PC+4=0x" << hex << if_id.pc_plus_4 << dec << "\n";
-    cout << "Current PC: 0x" << hex << regfile.pc << dec << "\n";
-    cout << "--------------------------------------------------\n\n";
-}
-
+// Single-cycle processor advance
 void Processor::single_cycle_processor_advance() {
     // fetch
     uint32_t instruction;

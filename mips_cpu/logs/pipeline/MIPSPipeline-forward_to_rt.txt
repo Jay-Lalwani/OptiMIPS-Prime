@@ -3055,9 +3055,9 @@ R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[5]
 L1 Cache (read hit): 0<-[28]
-IF: Fetched instruction 0x0 from PC 0x28
+IF: Detected NOP at PC 0x28, entering draining mode.
 
-CYCLE 70
+CYCLE 46
 R[0]: 0
 R[1]: 0
 R[2]: 10
@@ -3092,7 +3092,6 @@ R[30]: 0
 R[31]: 0
 WB: Writing 4294967294 to R[6]
 EX: Branch taken to 0x2c
-IF: Stall due to branch delay slot
 
 CYCLE 71
 R[0]: 0
@@ -3128,8 +3127,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[7]
-L1 Cache (read hit): 0<-[2c]
-IF: Fetched instruction 0x0 from PC 0x2c
 
 CYCLE 72
 R[0]: 0
@@ -3164,8 +3161,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[30]
-IF: Fetched instruction 0x0 from PC 0x30
 
 CYCLE 73
 R[0]: 0

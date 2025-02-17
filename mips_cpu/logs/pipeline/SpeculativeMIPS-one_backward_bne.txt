@@ -2869,9 +2869,9 @@ R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[2]
 L1 Cache (read hit): 0<-[14]
-IF: Fetched instruction 0x0 from PC 0x14
+IF: Detected NOP at PC 0x14, entering draining mode.
 
-CYCLE 65
+CYCLE 41
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -2905,8 +2905,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[2]
-L1 Cache (read hit): 2885812224<-[18]
-IF: Fetched instruction 0xac020000 from PC 0x18
 
 CYCLE 66
 R[0]: 0
@@ -2942,8 +2940,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 499 to R[1]
-L1 Cache (read hit): 0<-[1c]
-IF: Fetched instruction 0x0 from PC 0x1c
 
 CYCLE 67
 R[0]: 0
@@ -2978,8 +2974,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[20]
-IF: Fetched instruction 0x0 from PC 0x20
 
 CYCLE 68
 R[0]: 0

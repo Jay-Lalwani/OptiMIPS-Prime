@@ -13,6 +13,7 @@ class Processor {
         control_t control;
         Memory *memory;
         Registers regfile;
+        bool stallIF;
         
         // Pipeline register structures
         struct IF_ID {

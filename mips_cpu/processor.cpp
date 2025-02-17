@@ -71,6 +71,16 @@ void Processor::pipelined_processor_advance() {
     
     // Process IF stage.
     pipeline_IF();
+
+    // If we are draining, then update drainCounter and check if all pipeline registers are empty.
+    if (draining) {
+         drainCounter++;
+         if (!if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid) {
+              // All instructions have been drained.
+              // Force getPC() to return a value > the original program end.
+              regfile.pc = maxFetchedPC + 4;
+         }
+    }
 }
 
 // WB Stage: Write back the result from MEM/WB register to the register file.
@@ -237,15 +247,36 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
+    // Do not fetch a new instruction if we are already draining.
+    if (draining) {
+         if_id.valid = false;
+         return;
+    }
+
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {
         DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << std::hex << regfile.pc << std::dec << "\n");
         return;
     }
+
+    // If the fetched instruction is 0, we treat it as a NOP and begin draining.
+    if (instruction == 0) {
+         draining = true;
+         if_id.valid = false;
+         DEBUG(cout << "IF: Detected NOP at PC 0x" << std::hex << regfile.pc 
+                    << ", entering draining mode.\n");
+         return;
+    }
+
     if_id.instruction = instruction;
     if_id.pc_plus_4 = regfile.pc + 4;
     if_id.valid = true;
+
+    // Update maxFetchedPC if this instruction's address is higher.
+    if (regfile.pc > maxFetchedPC)
+         maxFetchedPC = regfile.pc;
+
     // Increment PC for the next fetch.
     regfile.pc += 4;
     DEBUG(cout << "IF: Fetched instruction 0x" << std::hex << instruction 
@@ -328,4 +359,16 @@ void Processor::single_cycle_processor_advance() {
     // Update PC
     regfile.pc += (control.branch && !control.bne && alu_zero) || (control.bne && !alu_zero) ? imm << 2 : 0; 
     regfile.pc = control.jump_reg ? read_data_1 : control.jump ? (regfile.pc & 0xf0000000) & (addr << 2): regfile.pc;
+}
+
+uint32_t Processor::getPC() {
+    // If we are draining the pipeline...
+    if (draining) {
+         // If all pipeline registers are empty then we are done:
+         if (!if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid)
+             return maxFetchedPC + 4; // This value is > end_pc, so main loop will terminate.
+         else
+             return 0; // Force while loop to continue.
+    }
+    return regfile.pc;
 }

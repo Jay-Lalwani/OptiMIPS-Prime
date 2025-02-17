@@ -143,4 +143,8 @@ int main(int argc, char *argv[]) {
     }
 
     cout << "\nCompleted execution in " << (double)num_cycles*(optLevel ? 1 : 125)*0.5 << " nanoseconds.\n";
+
+    #ifdef ENABLE_DEBUG
+        processor.printFinalPipelineDiagram();
+    #endif
 }

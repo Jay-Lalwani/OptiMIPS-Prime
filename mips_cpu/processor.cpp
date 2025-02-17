@@ -102,7 +102,6 @@ void Processor::pipelined_processor_advance() {
 
 #ifdef ENABLE_DEBUG
     globalCycle++;
-    printPipelineDiagram();
 #endif
 }
 
@@ -413,3 +412,17 @@ void Processor::single_cycle_processor_advance() {
     regfile.pc += (control.branch && !control.bne && alu_zero) || (control.bne && !alu_zero) ? imm << 2 : 0; 
     regfile.pc = control.jump_reg ? read_data_1 : control.jump ? (regfile.pc & 0xf0000000) & (addr << 2): regfile.pc;
 }
+
+#ifdef ENABLE_DEBUG
+void Processor::printFinalPipelineDiagram() {
+    std::cout << "\nFinal Pipeline Diagram:\n";
+    for (auto &row : pipelineDiagram) {
+        std::cout << row.label << ":\t";
+        for (auto &col : row.stages) {
+            std::cout << col << "\t";
+        }
+        std::cout << "\n";
+    }
+    std::cout << std::endl;
+}
+#endif

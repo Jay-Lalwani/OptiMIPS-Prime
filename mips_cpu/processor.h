@@ -14,11 +14,6 @@ class Processor {
         Memory *memory;
         Registers regfile;
         
-        // For draining the pipeline (since we don't have direct access to end_pc)
-        bool draining;
-        int drainCounter;
-        uint32_t maxFetchedPC;
-        
         // Pipeline register structures
         struct IF_ID {
             uint32_t instruction;
@@ -52,7 +47,7 @@ class Processor {
             int rd;
             uint32_t shamt;
             uint32_t funct; // For ALU control (e.g., R-type)
-            int opcode;     // Store the opcode so that I-type instructions (like andi,lui) can be handled properly.
+            int opcode;
             bool valid;
         };
         
@@ -109,12 +104,6 @@ class Processor {
         
         // Pipelined processor advance (for –O1)
         void pipelined_processor_advance();
-        
-        // getPC() is used by the main loop to decide when to finish.
-        // We override it so that if we are draining the pipeline (i.e. no more valid instructions are fetched)
-        // but some pipeline registers are still full, we return 0 (forcing the loop to continue)
-        // and once the pipeline is empty we return a value greater than the original end_pc.
-        uint32_t getPC();
  
     public:
         Processor(Memory *mem) { 
@@ -125,13 +114,10 @@ class Processor {
             id_ex.valid = false;
             ex_mem.valid = false;
             mem_wb.valid = false;
-            draining = false;
-            drainCounter = 0;
-            maxFetchedPC = 0;
         }
 
         // Get the current PC.
-        // uint32_t getPC() { return regfile.pc; }
+        uint32_t getPC() { return regfile.pc; }
 
         // Prints the register file.
         void printRegFile() { regfile.print(); }

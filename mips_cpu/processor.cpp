@@ -238,18 +238,41 @@ void Processor::pipeline_ID() {
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
     uint32_t instruction = 0;
+    
+    // Check if we are in drain mode.
+    if(drain_mode) {
+         // Instead of fetching a new instruction, inject a NOP.
+         if_id.instruction = 0;
+         if_id.pc_plus_4 = regfile.pc;
+         if_id.valid = false;
+         drain_counter--;
+         DEBUG(cout << "IF: In drain mode. Drain counter: " << drain_counter << "\n");
+         return;
+    }
+
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {
-        DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << std::hex << regfile.pc << std::dec << "\n");
-        return;
+         DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << std::hex << regfile.pc << std::dec << "\n");
+         return;
     }
-    if_id.instruction = instruction;
-    if_id.pc_plus_4 = regfile.pc + 4;
-    if_id.valid = true;
-    // Increment PC for the next fetch.
-    regfile.pc += 4;
-    DEBUG(cout << "IF: Fetched instruction 0x" << std::hex << instruction 
-               << " from PC 0x" << (regfile.pc - 4) << std::dec << "\n");
+
+    // If a NOP (instruction 0) is fetched, start draining the pipeline.
+    if(instruction == 0) {
+         drain_mode = true;
+         drain_counter = 5;  // number of cycles to drain the pipeline
+         if_id.instruction = 0;
+         if_id.pc_plus_4 = regfile.pc;
+         if_id.valid = false;
+         DEBUG(cout << "IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).\n");
+         return;
+    } else {
+         if_id.instruction = instruction;
+         if_id.pc_plus_4 = regfile.pc + 4;
+         if_id.valid = true;
+         regfile.pc += 4;
+         DEBUG(cout << "IF: Fetched instruction 0x" << std::hex << instruction 
+                    << " from PC 0x" << (regfile.pc - 4) << std::dec << "\n");
+    }
 }
 
 // Flush the IF/ID and ID/EX pipeline registers (e.g., on branch or jump).

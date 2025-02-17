@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS= -g -Wall -std=c++11 #-DENABLE_DEBUG
+CXXFLAGS= -g -Wall -std=c++11 -DENABLE_DEBUG
 OPTFLAGS= -O3
 
 EXE_NAME=processor

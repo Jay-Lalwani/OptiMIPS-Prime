@@ -103,7 +103,9 @@ class Processor {
         
         // Pipelined processor advance (for –O1)
         void pipelined_processor_advance();
- 
+
+        // Print the pipeline diagram
+        void print_pipeline_diagram();
     public:
         Processor(Memory *mem) { 
             regfile.pc = 0; 

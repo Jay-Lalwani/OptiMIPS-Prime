@@ -7,6 +7,8 @@ using namespace std;
 #define DEBUG(x) x
 #else
 #define DEBUG(x)
+
+
 #endif
 
 // Initializes the processor.
@@ -71,6 +73,8 @@ void Processor::pipelined_processor_advance() {
     
     // Process IF stage.
     pipeline_IF();
+
+    print_pipeline_diagram();
 }
 
 // WB Stage: Write back the result from MEM/WB register to the register file.
@@ -256,6 +260,32 @@ void Processor::pipeline_IF() {
 void Processor::flush_IF_ID_ID_EX() {
     if_id.valid = false;
     id_ex.valid = false;
+}
+
+void Processor::print_pipeline_diagram() {
+    cout << "\n---------------- Pipeline Diagram ----------------\n";
+    cout << "MEM/WB: " << (mem_wb.valid ? "VALID" : "INVALID")
+         << " | reg_write=" << mem_wb.reg_write
+         << " | mem_to_reg=" << mem_wb.mem_to_reg
+         << " | link=" << mem_wb.link
+         << " | alu_result=0x" << hex << mem_wb.alu_result << dec
+         << " | write_reg=" << mem_wb.write_reg << "\n";
+    cout << "EX/MEM: " << (ex_mem.valid ? "VALID" : "INVALID")
+         << " | reg_write=" << ex_mem.reg_write
+         << " | mem_read=" << ex_mem.mem_read
+         << " | mem_write=" << ex_mem.mem_write
+         << " | alu_result=0x" << hex << ex_mem.alu_result << dec << "\n";
+    cout << "ID/EX: " << (id_ex.valid ? "VALID" : "INVALID")
+         << " | reg_dest=" << id_ex.reg_dest
+         << " | ALU_src=" << id_ex.ALU_src
+         << " | ALU_op=" << id_ex.ALU_op
+         << " | branch=" << id_ex.branch
+         << " | bne=" << id_ex.bne << "\n";
+    cout << "IF/ID: " << (if_id.valid ? "VALID" : "INVALID")
+         << " | instruction=0x" << hex << if_id.instruction << dec
+         << " | PC+4=0x" << hex << if_id.pc_plus_4 << dec << "\n";
+    cout << "Current PC: 0x" << hex << regfile.pc << dec << "\n";
+    cout << "--------------------------------------------------\n\n";
 }
 
 void Processor::single_cycle_processor_advance() {

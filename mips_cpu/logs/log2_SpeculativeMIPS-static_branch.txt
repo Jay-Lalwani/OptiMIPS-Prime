@@ -3644,7 +3644,7 @@ IF: Fetched instruction 0x10842 from PC 0x2c; next PC = 0x30
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0xfff01 | write_reg=3
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00010842 | PC+4=0x2c
 Current PC: 0x2c
 --------------------------------------------------
@@ -3689,7 +3689,7 @@ IF: Fetched instruction 0x1420fffa from PC 0x30; next PC = 0x34
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x0
 ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x1420FFFA | PC+4=0x30
 Current PC: 0x30
@@ -3733,7 +3733,7 @@ L1 Cache (read hit): 0<-[30]
 IF: Fetched instruction 0x0 from PC 0x34; next PC = 0x38
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x7f
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x34
@@ -3774,7 +3774,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=1): condition is NON-ZERO -> TAKEN; computed branch target = 0x18
 L1 Cache (read hit): 807600129<-[18]
 IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
@@ -3782,7 +3781,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x7f | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0xff
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -3827,7 +3826,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0xff | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0xff
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -3871,7 +3870,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0xff | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x80
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -3912,7 +3911,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -4104,7 +4102,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x3f | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x7f
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -4149,7 +4147,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x7f | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x7f
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -4193,7 +4191,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x7f | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x40
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -4234,7 +4232,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -4426,7 +4423,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x1f | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x3f
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -4471,7 +4468,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x3f | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x3f
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -4515,7 +4512,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x3f | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x20
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -4556,7 +4553,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -4748,7 +4744,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0xf | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x1f
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -4793,7 +4789,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x1f | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x1f
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -4837,7 +4833,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x1f | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x10
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -4878,7 +4874,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -5070,7 +5065,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x7 | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0xf
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -5115,7 +5110,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0xf | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0xf
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -5159,7 +5154,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0xf | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x8
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -5200,7 +5195,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -5392,7 +5386,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x3 | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x7
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -5437,7 +5431,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x7 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x7
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -5481,7 +5475,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x7 | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x4
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -5522,7 +5516,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -5714,7 +5707,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x1 | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x3
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -5759,7 +5752,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x3 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x3
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -5803,7 +5796,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x3 | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x2
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -5844,7 +5837,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c
@@ -6036,7 +6028,7 @@ IF: Fetched instruction 0x30230001 from PC 0x1c; next PC = 0x20
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=1
 EX/MEM: VALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x1
-ID/EX: VALID | reg_dest=1 | ALU_src=0 | ALU_op=2 | branch=0 | bne=0
+ID/EX: INVALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=1
 IF/ID: VALID | instruction=0x30230001 | PC+4=0x1c
 Current PC: 0x1c
 --------------------------------------------------
@@ -6081,7 +6073,7 @@ IF: Fetched instruction 0x10600002 from PC 0x20; next PC = 0x24
 
 ---------------- Pipeline Diagram ----------------
 MEM/WB: VALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x1 | write_reg=0
-EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x0
+EX/MEM: INVALID | reg_write=0 | mem_read=0 | mem_write=0 | alu_result=0x1
 ID/EX: VALID | reg_dest=0 | ALU_src=1 | ALU_op=3 | branch=0 | bne=0
 IF/ID: VALID | instruction=0x10600002 | PC+4=0x20
 Current PC: 0x20
@@ -6125,7 +6117,7 @@ L1 Cache (read hit): 0<-[20]
 IF: Fetched instruction 0x0 from PC 0x24; next PC = 0x28
 
 ---------------- Pipeline Diagram ----------------
-MEM/WB: VALID | reg_write=1 | mem_to_reg=0 | link=0 | alu_result=0x0 | write_reg=0
+MEM/WB: INVALID | reg_write=0 | mem_to_reg=0 | link=0 | alu_result=0x1 | write_reg=0
 EX/MEM: VALID | reg_write=1 | mem_read=0 | mem_write=0 | alu_result=0x1
 ID/EX: VALID | reg_dest=0 | ALU_src=0 | ALU_op=1 | branch=1 | bne=0
 IF/ID: VALID | instruction=0x00000000 | PC+4=0x24
@@ -6166,7 +6158,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 EX: Evaluating branch (bne=0): condition is NON-ZERO -> NOT TAKEN; computed branch target = 0x28
 L1 Cache (read hit): 541196289<-[24]
 IF: Fetched instruction 0x20420001 from PC 0x28; next PC = 0x2c

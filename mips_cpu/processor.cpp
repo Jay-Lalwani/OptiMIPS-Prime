@@ -159,23 +159,26 @@ void Processor::pipeline_EX() {
         
         if (id_ex.branch) {
             bool branch_taken = (id_ex.bne ? !ex_mem.zero : ex_mem.zero);
+            DEBUG(cout << "EX: Evaluating branch (bne=" << id_ex.bne << "): condition is " 
+                       << (ex_mem.zero ? "ZERO" : "NON-ZERO")
+                       << " -> " << (branch_taken ? "TAKEN" : "NOT TAKEN")
+                       << "; computed branch target = 0x" << hex << branch_target << dec << "\n");
             if (branch_taken) {
                 regfile.pc = branch_target;
-                // Flush only the ID/EX register; do not flush IF/ID so that the delay–slot is preserved.
+                // Flush only the ID/EX register; keep IF/ID for the delay slot.
                 id_ex.valid = false;
-                DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
             }
-        }
-        else if (id_ex.jump) {
+        } else if (id_ex.jump) {
             uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
+            DEBUG(cout << "EX: Jump instruction: PC from 0x" << hex << regfile.pc 
+                       << " -> jump_addr = 0x" << jump_addr << dec << "\n");
             regfile.pc = jump_addr;
             id_ex.valid = false;
-            DEBUG(cout << "EX: Jump to 0x" << std::hex << jump_addr << std::dec << "\n");
-        }
-        else if (id_ex.jump_reg) {
+        } else if (id_ex.jump_reg) {
+            DEBUG(cout << "EX: Jump register instruction: setting PC to 0x" << hex 
+                       << id_ex.read_data_1 << dec << "\n");
             regfile.pc = id_ex.read_data_1;
             id_ex.valid = false;
-            DEBUG(cout << "EX: Jump register to 0x" << std::hex << id_ex.read_data_1 << std::dec << "\n");
         }
     }
     // Clear ID/EX after execution.
@@ -253,13 +256,22 @@ void Processor::pipeline_IF() {
     // Increment PC for the next fetch.
     regfile.pc += 4;
     DEBUG(cout << "IF: Fetched instruction 0x" << std::hex << instruction 
-               << " from PC 0x" << (regfile.pc - 4) << std::dec << "\n");
+                << " from PC 0x" << regfile.pc << "; next PC = 0x" 
+                << regfile.pc + 4 << dec << "\n");
 }
 
 // Flush the IF/ID and ID/EX pipeline registers (e.g., on branch or jump).
 void Processor::flush_IF_ID_ID_EX() {
     if_id.valid = false;
     id_ex.valid = false;
+}
+
+std::string disassemble(uint32_t instr) {
+    char buf[64];
+    // In a real system, you would decode opcode, funct, etc.
+    // For now, just print the hex value.
+    sprintf(buf, "0x%08X", instr);
+    return std::string(buf);
 }
 
 void Processor::print_pipeline_diagram() {
@@ -282,7 +294,7 @@ void Processor::print_pipeline_diagram() {
          << " | branch=" << id_ex.branch
          << " | bne=" << id_ex.bne << "\n";
     cout << "IF/ID: " << (if_id.valid ? "VALID" : "INVALID")
-         << " | instruction=0x" << hex << if_id.instruction << dec
+         << " | instruction=" << disassemble(if_id.instruction)
          << " | PC+4=0x" << hex << if_id.pc_plus_4 << dec << "\n";
     cout << "Current PC: 0x" << hex << regfile.pc << dec << "\n";
     cout << "--------------------------------------------------\n\n";

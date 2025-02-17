@@ -47,7 +47,7 @@ class Processor {
             int rd;
             uint32_t shamt;
             uint32_t funct; // For ALU control (e.g., R-type)
-            int opcode;     // Added to propagate opcode for I-type instructions.
+            int opcode;
             bool valid;
         };
         
@@ -89,10 +89,6 @@ class Processor {
         EX_MEM ex_mem;
         MEM_WB mem_wb;
         
-        // For draining the pipeline (since we don't have end_pc in processor)
-        bool draining;
-        int drainCounter;
-        
         // Pipeline stage functions (called in reverse order)
         void pipeline_WB();
         bool pipeline_MEM(); // Returns false if a memory stall occurs
@@ -118,8 +114,6 @@ class Processor {
             id_ex.valid = false;
             ex_mem.valid = false;
             mem_wb.valid = false;
-            draining = false;
-            drainCounter = 0;
         }
 
         // Get the current PC.

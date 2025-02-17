@@ -71,16 +71,6 @@ void Processor::pipelined_processor_advance() {
     
     // Process IF stage.
     pipeline_IF();
-
-    // If we are in draining mode, increment drainCounter.
-    if(draining) {
-         drainCounter++;
-         // If all pipeline registers are empty, drain is complete.
-         if(!if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid) {
-             // Set PC to a very high value so that main loop exits.
-             regfile.pc = 0xFFFFFFFF;
-         }
-    }
 }
 
 // WB Stage: Write back the result from MEM/WB register to the register file.
@@ -247,26 +237,12 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
-    // If we are already draining, do not fetch new instructions.
-    if(draining) {
-         if_id.valid = false;
-         return;
-    }
-
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {
         DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << std::hex << regfile.pc << std::dec << "\n");
         return;
     }
-    // If the fetched instruction is 0 (treated as NOP), begin draining.
-    if (instruction == 0) {
-         draining = true;
-         if_id.valid = false;
-         DEBUG(cout << "IF: Detected NOP at PC 0x" << std::hex << regfile.pc << ", entering draining mode.\n");
-         return;
-    }
-
     if_id.instruction = instruction;
     if_id.pc_plus_4 = regfile.pc + 4;
     if_id.valid = true;

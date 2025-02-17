@@ -13,7 +13,6 @@ class Processor {
         control_t control;
         Memory *memory;
         Registers regfile;
-        uint32_t end_pc;  // Added to store end PC for pipeline draining
         
         // Pipeline register structures
         struct IF_ID {
@@ -120,8 +119,8 @@ class Processor {
         // Get the current PC.
         uint32_t getPC() { 
             if (opt_level == 1 && (if_id.valid || id_ex.valid || ex_mem.valid || mem_wb.valid))
-                return end_pc;
-            return regfile.pc;
+                return 0;
+            return regfile.pc; 
         }
 
         // Prints the register file.
@@ -132,9 +131,6 @@ class Processor {
 
         // Advances the processor one cycle.
         void advance(); 
-
-        // Sets the end address (for draining the pipeline)
-        void setEndPC(uint32_t epc);
 };
 
 #endif

@@ -237,12 +237,6 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
-    // If PC has passed the end_pc, do not fetch a new instruction.
-    if (regfile.pc > end_pc) {
-       if_id.valid = false;
-       return;
-    }
-
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {
@@ -334,9 +328,4 @@ void Processor::single_cycle_processor_advance() {
     // Update PC
     regfile.pc += (control.branch && !control.bne && alu_zero) || (control.bne && !alu_zero) ? imm << 2 : 0; 
     regfile.pc = control.jump_reg ? read_data_1 : control.jump ? (regfile.pc & 0xf0000000) & (addr << 2): regfile.pc;
-}
-
-// New setter to store the end_pc value (set by main)
-void Processor::setEndPC(uint32_t epc) {
-    end_pc = epc;
 }

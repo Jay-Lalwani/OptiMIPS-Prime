@@ -2832,8 +2832,7 @@ R[30]: 0
 R[31]: 0
 WB: Writing 500 to R[1]
 EX: Branch taken to 0x20
-L1 Cache (read hit): 2887909376<-[20]
-IF: Fetched instruction 0xac220000 from PC 0x20
+IF: Stall due to branch delay slot
 
 CYCLE 64
 R[0]: 0
@@ -2869,8 +2868,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[2]
-L1 Cache (read hit): 0<-[24]
-IF: Fetched instruction 0x0 from PC 0x24
+L1 Cache (read hit): 2887909376<-[20]
+IF: Fetched instruction 0xac220000 from PC 0x20
 
 CYCLE 65
 R[0]: 0
@@ -2905,10 +2904,47 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 0<-[24]
+IF: Fetched instruction 0x0 from PC 0x24
+
+CYCLE 66
+R[0]: 0
+R[1]: 500
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+WB: Writing 0 to R[0]
 L1 Cache (read hit): 0<-[28]
 IF: Fetched instruction 0x0 from PC 0x28
 
-CYCLE 66
+CYCLE 67
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -2952,7 +2988,7 @@ MEM[1c7]: 0
 L2 Cache: replacing line at idx:7 way:0 due to conflicting address:1f4
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 67
+CYCLE 68
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -2997,7 +3033,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 68
+CYCLE 69
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3042,7 +3078,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 69
+CYCLE 70
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3087,7 +3123,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 70
+CYCLE 71
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3132,7 +3168,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 71
+CYCLE 72
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3177,7 +3213,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 72
+CYCLE 73
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3222,7 +3258,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 73
+CYCLE 74
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3267,7 +3303,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 74
+CYCLE 75
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3312,7 +3348,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 75
+CYCLE 76
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3357,7 +3393,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 76
+CYCLE 77
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3402,7 +3438,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 77
+CYCLE 78
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3447,7 +3483,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 78
+CYCLE 79
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3491,7 +3527,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 79
+CYCLE 80
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3536,7 +3572,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 80
+CYCLE 81
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3581,7 +3617,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 81
+CYCLE 82
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3626,7 +3662,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 82
+CYCLE 83
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3671,7 +3707,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 83
+CYCLE 84
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3716,7 +3752,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 84
+CYCLE 85
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3761,7 +3797,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 85
+CYCLE 86
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3806,7 +3842,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 86
+CYCLE 87
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3851,7 +3887,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 87
+CYCLE 88
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3896,7 +3932,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 88
+CYCLE 89
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3941,7 +3977,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 89
+CYCLE 90
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -3986,7 +4022,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 90
+CYCLE 91
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4030,7 +4066,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 91
+CYCLE 92
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4075,7 +4111,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 92
+CYCLE 93
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4120,7 +4156,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 93
+CYCLE 94
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4165,7 +4201,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 94
+CYCLE 95
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4210,7 +4246,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 95
+CYCLE 96
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4255,7 +4291,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 96
+CYCLE 97
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4300,7 +4336,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 97
+CYCLE 98
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4345,7 +4381,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 98
+CYCLE 99
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4390,7 +4426,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 99
+CYCLE 100
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4435,7 +4471,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 100
+CYCLE 101
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4480,7 +4516,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 101
+CYCLE 102
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4525,7 +4561,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 102
+CYCLE 103
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4569,7 +4605,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 103
+CYCLE 104
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4614,7 +4650,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 104
+CYCLE 105
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4659,7 +4695,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 105
+CYCLE 106
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4704,7 +4740,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 106
+CYCLE 107
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4749,7 +4785,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 107
+CYCLE 108
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4794,7 +4830,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 108
+CYCLE 109
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4839,7 +4875,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 109
+CYCLE 110
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4884,7 +4920,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 110
+CYCLE 111
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4929,7 +4965,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 111
+CYCLE 112
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -4974,7 +5010,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 112
+CYCLE 113
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5019,7 +5055,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 113
+CYCLE 114
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5064,7 +5100,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 114
+CYCLE 115
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5108,7 +5144,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 115
+CYCLE 116
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5153,7 +5189,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 116
+CYCLE 117
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5198,7 +5234,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 117
+CYCLE 118
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5243,7 +5279,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 118
+CYCLE 119
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5288,7 +5324,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 119
+CYCLE 120
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5333,7 +5369,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 120
+CYCLE 121
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5378,7 +5414,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 121
+CYCLE 122
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5423,7 +5459,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 122
+CYCLE 123
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5468,7 +5504,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 123
+CYCLE 124
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5513,7 +5549,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 124
+CYCLE 125
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5558,7 +5594,7 @@ MEM[1c6]: 0
 MEM[1c7]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 125
+CYCLE 126
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5596,7 +5632,7 @@ L2 Cache (write hit): [1f4]<-0
 L1 Cache: replacing line at idx:7 way:0 due to conflicting address:1f4
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 126
+CYCLE 127
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5633,7 +5669,7 @@ L1 Cache (write hit): [1f4]<-0
 L1 Cache (read hit): 0<-[2c]
 IF: Fetched instruction 0x0 from PC 0x2c
 
-CYCLE 127
+CYCLE 128
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5669,7 +5705,7 @@ R[31]: 0
 L1 Cache (read hit): 0<-[30]
 IF: Fetched instruction 0x0 from PC 0x30
 
-CYCLE 128
+CYCLE 129
 R[0]: 0
 R[1]: 500
 R[2]: 0
@@ -5703,4 +5739,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 64.5 nanoseconds.
+Completed execution in 65 nanoseconds.

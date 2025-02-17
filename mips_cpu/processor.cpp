@@ -130,7 +130,7 @@ void Processor::pipeline_EX() {
         uint32_t alu_zero = 0;
         
         // Set ALU control signals and perform the operation.
-        alu.generate_control_inputs(id_ex.ALU_op, id_ex.funct, 0);
+        alu.generate_control_inputs(id_ex.ALU_op, id_ex.funct, id_ex.opcode);
         uint32_t alu_result = alu.execute(operand1, operand2, alu_zero);
         
         // Compute branch target: PC+4 + (imm << 2)
@@ -227,6 +227,7 @@ void Processor::pipeline_ID() {
         id_ex.rd          = rd;
         id_ex.shamt       = shamt;
         id_ex.funct       = funct;
+        id_ex.opcode      = opcode;
         id_ex.valid       = true;
         
         // Clear IF/ID after use.

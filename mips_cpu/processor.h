@@ -47,6 +47,7 @@ class Processor {
             int rd;
             uint32_t shamt;
             uint32_t funct; // For ALU control (e.g., R-type)
+            int opcode;
             bool valid;
         };
         

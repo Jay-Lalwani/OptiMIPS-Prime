@@ -165,20 +165,19 @@ void Processor::pipeline_EX() {
                        << "; computed branch target = 0x" << hex << branch_target << dec << "\n");
             if (branch_taken) {
                 regfile.pc = branch_target;
-                // Flush only the ID/EX register; keep IF/ID for the delay slot.
-                id_ex.valid = false;
+                flush_IF_ID_ID_EX();
             }
         } else if (id_ex.jump) {
             uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
             DEBUG(cout << "EX: Jump instruction: PC from 0x" << hex << regfile.pc 
                        << " -> jump_addr = 0x" << jump_addr << dec << "\n");
             regfile.pc = jump_addr;
-            id_ex.valid = false;
+            flush_IF_ID_ID_EX();
         } else if (id_ex.jump_reg) {
             DEBUG(cout << "EX: Jump register instruction: setting PC to 0x" << hex 
                        << id_ex.read_data_1 << dec << "\n");
             regfile.pc = id_ex.read_data_1;
-            id_ex.valid = false;
+            flush_IF_ID_ID_EX();
         }
     }
     // Clear ID/EX after execution.

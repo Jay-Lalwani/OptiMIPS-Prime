@@ -13,7 +13,6 @@ class Processor {
         control_t control;
         Memory *memory;
         Registers regfile;
-        uint32_t finalPC; // final (end) PC value for draining
         
         // Pipeline register structures
         struct IF_ID {
@@ -105,10 +104,7 @@ class Processor {
         
         // Pipelined processor advance (for –O1)
         void pipelined_processor_advance();
-
-        // Returns true if all pipeline registers are empty.
-        bool pipelineEmpty() const;
-
+ 
     public:
         Processor(Memory *mem) { 
             regfile.pc = 0; 
@@ -121,11 +117,7 @@ class Processor {
         }
 
         // Get the current PC.
-        // If pipeline is not empty, return finalPC to force further advance cycles.
-        uint32_t getPC() { return pipelineEmpty() ? regfile.pc : finalPC; }
-
-        // Set the final PC (end address) so that draining can be implemented.
-        void setFinalPC(uint32_t pc);
+        uint32_t getPC() { return regfile.pc; }
 
         // Prints the register file.
         void printRegFile() { regfile.print(); }

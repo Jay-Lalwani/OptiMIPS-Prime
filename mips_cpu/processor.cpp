@@ -237,12 +237,6 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
-    // If PC is past the final instruction address, do not fetch new instructions.
-    if (regfile.pc > finalPC) {
-         if_id.valid = false;
-         return;
-    }
-
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {
@@ -334,13 +328,4 @@ void Processor::single_cycle_processor_advance() {
     // Update PC
     regfile.pc += (control.branch && !control.bne && alu_zero) || (control.bne && !alu_zero) ? imm << 2 : 0; 
     regfile.pc = control.jump_reg ? read_data_1 : control.jump ? (regfile.pc & 0xf0000000) & (addr << 2): regfile.pc;
-}
-
-// Add helper function to check if pipeline is empty.
-bool Processor::pipelineEmpty() const {
-    return !if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid;
-}
-
-void Processor::setFinalPC(uint32_t pc) {
-    finalPC = pc;
 }

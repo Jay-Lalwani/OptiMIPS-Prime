@@ -153,12 +153,21 @@ void Processor::pipeline_EX() {
         ex_mem.zero        = (alu_zero == 1);
         ex_mem.valid       = true;
         
-        // Handle control hazards:
-        // If a branch is taken, update PC and flush IF/ID and ID/EX.
-        if (id_ex.branch && ex_mem.zero) {
-            regfile.pc = branch_target;
-            flush_IF_ID_ID_EX();
-            DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
+        // Handle control hazards for branches.
+        // For beq, branch is taken when alu_zero is true.
+        // For bne, branch is taken when alu_zero is false.
+        if (id_ex.branch) {
+            bool branch_taken = false;
+            if (id_ex.bne) {
+                branch_taken = !ex_mem.zero;
+            } else {
+                branch_taken = ex_mem.zero;
+            }
+            if (branch_taken) {
+                regfile.pc = branch_target;
+                flush_IF_ID_ID_EX();
+                DEBUG(cout << "EX: Branch taken to 0x" << std::hex << branch_target << std::dec << "\n");
+            }
         }
         else if (id_ex.jump) {
             uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);

@@ -13,8 +13,7 @@ class Processor {
         control_t control;
         Memory *memory;
         Registers regfile;
-        uint32_t end_pc;
-        bool draining;
+        
         // Pipeline register structures
         struct IF_ID {
             uint32_t instruction;
@@ -110,8 +109,6 @@ class Processor {
         Processor(Memory *mem) { 
             regfile.pc = 0; 
             memory = mem; 
-            end_pc = 0;
-            draining = false;
             // Initialize pipeline registers as invalid.
             if_id.valid = false;
             id_ex.valid = false;
@@ -120,15 +117,7 @@ class Processor {
         }
 
         // Get the current PC.
-        uint32_t getPC() { 
-            return regfile.pc; 
-        }
-
-        // Check if the processor is drained.
-        bool isDrained() const {
-            return (regfile.pc >= end_pc) &&
-                   (!if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid);
-        }
+        uint32_t getPC() { return regfile.pc; }
 
         // Prints the register file.
         void printRegFile() { regfile.print(); }
@@ -138,9 +127,6 @@ class Processor {
 
         // Advances the processor one cycle.
         void advance(); 
-
-        // Set the end PC.
-        void setEndPC(uint32_t pc) { end_pc = pc; }
 };
 
 #endif

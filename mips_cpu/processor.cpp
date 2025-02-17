@@ -44,8 +44,6 @@ void Processor::advance() {
             single_cycle_processor_advance();
             break;
         case 1:
-            if (regfile.pc >= end_pc)
-                draining = true;
             pipelined_processor_advance();
             break;
         // Other optimization levels could be added here.
@@ -239,11 +237,6 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
-    // If we are in draining mode, do not fetch new instructions.
-    if (draining) {
-        return;
-    }
-    
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {

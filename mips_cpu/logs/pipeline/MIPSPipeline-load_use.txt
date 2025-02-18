@@ -3244,7 +3244,7 @@ R[31]: 0
 WB: Writing 0 to R[7]
 L1 Cache (write hit): [0]<-2
 L1 Cache (read hit): 0<-[3c]
-IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).
+IF: Fetched instruction 0x0 from PC 0x3c
 
 CYCLE 75
 R[0]: 0
@@ -3281,7 +3281,16 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2<-[0]
 EX: Branch taken to 0x44
-IF: In drain mode. Drain counter: 4
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+L2 Cache: replacing line at idx:1 way:0 due to conflicting address:44
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 76
 R[0]: 0
@@ -3317,7 +3326,17 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[8]
-IF: In drain mode. Drain counter: 3
+L1 Cache (read miss) at address 44: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 58 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 77
 R[0]: 0
@@ -3352,7 +3371,17 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-IF: In drain mode. Drain counter: 2
+L1 Cache (read miss) at address 44: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 57 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 78
 R[0]: 0
@@ -3387,7 +3416,17 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-IF: In drain mode. Drain counter: 1
+L1 Cache (read miss) at address 44: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 56 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 79
 R[0]: 0
@@ -3422,7 +3461,17 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-IF: In drain mode. Drain counter: 0
+L1 Cache (read miss) at address 44: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 55 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 80
 R[0]: 0
@@ -3457,6 +3506,17 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read miss) at address 44: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 54 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 81
 R[0]: 0
@@ -3491,6 +3551,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read miss) at address 44: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 53 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3499,8 +3561,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-L2 Cache: replacing line at idx:1 way:0 due to conflicting address:48
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 82
 R[0]: 0
@@ -3535,8 +3596,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 58 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 52 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3545,7 +3606,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 83
 R[0]: 0
@@ -3580,8 +3641,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 57 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 51 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3590,7 +3651,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 84
 R[0]: 0
@@ -3625,8 +3686,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 56 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 50 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3635,7 +3696,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 85
 R[0]: 0
@@ -3670,8 +3731,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 55 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 49 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3680,7 +3741,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 86
 R[0]: 0
@@ -3715,8 +3776,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 54 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 48 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3725,7 +3786,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 87
 R[0]: 0
@@ -3760,8 +3821,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 53 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 47 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3770,7 +3830,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 88
 R[0]: 0
@@ -3805,8 +3865,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 52 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 46 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3815,7 +3875,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 89
 R[0]: 0
@@ -3850,8 +3910,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 51 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 45 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3860,7 +3920,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 90
 R[0]: 0
@@ -3895,8 +3955,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 50 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 44 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3905,7 +3965,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 91
 R[0]: 0
@@ -3940,8 +4000,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 49 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 43 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3950,7 +4010,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 92
 R[0]: 0
@@ -3985,8 +4045,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 48 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 42 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3995,7 +4055,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 93
 R[0]: 0
@@ -4030,7 +4090,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 48: 47 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 41 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4039,7 +4100,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 94
 R[0]: 0
@@ -4074,8 +4135,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 46 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 40 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4084,7 +4145,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 95
 R[0]: 0
@@ -4119,8 +4180,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 45 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 39 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4129,7 +4190,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 96
 R[0]: 0
@@ -4164,8 +4225,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 44 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 38 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4174,7 +4235,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 97
 R[0]: 0
@@ -4209,8 +4270,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 43 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 37 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4219,7 +4280,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 98
 R[0]: 0
@@ -4254,8 +4315,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 42 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 36 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4264,7 +4325,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 99
 R[0]: 0
@@ -4299,8 +4360,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 41 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 35 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4309,7 +4369,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 100
 R[0]: 0
@@ -4344,8 +4404,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 40 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 34 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4354,7 +4414,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 101
 R[0]: 0
@@ -4389,8 +4449,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 39 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 33 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4399,7 +4459,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 102
 R[0]: 0
@@ -4434,8 +4494,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 38 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 32 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4444,7 +4504,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 103
 R[0]: 0
@@ -4479,8 +4539,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 37 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 31 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4489,7 +4549,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 104
 R[0]: 0
@@ -4524,8 +4584,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 36 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 30 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4534,7 +4594,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 105
 R[0]: 0
@@ -4569,7 +4629,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 48: 35 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 29 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4578,7 +4639,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 106
 R[0]: 0
@@ -4613,8 +4674,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 34 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 28 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4623,7 +4684,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 107
 R[0]: 0
@@ -4658,8 +4719,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 33 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 27 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4668,7 +4729,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 108
 R[0]: 0
@@ -4703,8 +4764,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 32 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 26 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4713,7 +4774,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 109
 R[0]: 0
@@ -4748,8 +4809,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 31 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 25 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4758,7 +4819,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 110
 R[0]: 0
@@ -4793,8 +4854,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 30 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 24 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4803,7 +4864,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 111
 R[0]: 0
@@ -4838,8 +4899,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 29 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 23 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4848,7 +4908,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 112
 R[0]: 0
@@ -4883,8 +4943,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 28 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 22 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4893,7 +4953,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 113
 R[0]: 0
@@ -4928,8 +4988,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 27 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 21 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4938,7 +4998,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 114
 R[0]: 0
@@ -4973,8 +5033,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 26 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 20 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4983,7 +5043,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 115
 R[0]: 0
@@ -5018,8 +5078,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 25 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 19 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5028,7 +5088,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 116
 R[0]: 0
@@ -5063,8 +5123,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 24 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 18 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5073,7 +5133,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 117
 R[0]: 0
@@ -5108,7 +5168,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 48: 23 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 17 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5117,7 +5178,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 118
 R[0]: 0
@@ -5152,8 +5213,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 22 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 16 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5162,7 +5223,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 119
 R[0]: 0
@@ -5197,8 +5258,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 21 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 15 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5207,7 +5268,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 120
 R[0]: 0
@@ -5242,8 +5303,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 20 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 14 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5252,7 +5313,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 121
 R[0]: 0
@@ -5287,8 +5348,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 19 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 13 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5297,7 +5358,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 122
 R[0]: 0
@@ -5332,8 +5393,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 18 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 12 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5342,7 +5403,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 123
 R[0]: 0
@@ -5377,8 +5438,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 17 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 11 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5387,7 +5447,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 124
 R[0]: 0
@@ -5422,8 +5482,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 16 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 10 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5432,7 +5492,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 125
 R[0]: 0
@@ -5467,8 +5527,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 15 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 9 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5477,7 +5537,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 126
 R[0]: 0
@@ -5512,8 +5572,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 14 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 8 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5522,7 +5582,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 127
 R[0]: 0
@@ -5557,8 +5617,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 13 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 7 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5567,7 +5627,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 128
 R[0]: 0
@@ -5602,8 +5662,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 12 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 6 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5612,7 +5672,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 129
 R[0]: 0
@@ -5647,7 +5707,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 48: 11 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 5 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5656,7 +5717,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 130
 R[0]: 0
@@ -5691,8 +5752,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 10 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 4 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5701,7 +5762,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 131
 R[0]: 0
@@ -5736,8 +5797,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 9 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 3 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5746,7 +5807,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 132
 R[0]: 0
@@ -5781,8 +5842,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 8 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 2 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5791,7 +5852,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 133
 R[0]: 0
@@ -5826,8 +5887,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 7 cycles remaining to be serviced
+L1 Cache (read miss) at address 44: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 44: 1 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -5836,7 +5897,7 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 134
 R[0]: 0
@@ -5871,17 +5932,10 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 6 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+L1 Cache (read miss) at address 44: 1 cycles remaining to be serviced
+L2 Cache (read hit): 0<-[44]
+L1 Cache: replacing line at idx:1 way:0 due to conflicting address:44
+IF: Memory stall during fetch at PC 0x44
 
 CYCLE 135
 R[0]: 0
@@ -5916,17 +5970,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 5 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+L1 Cache (read hit): 0<-[44]
+IF: Fetched instruction 0x0 from PC 0x44
 
 CYCLE 136
 R[0]: 0
@@ -5961,17 +6006,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 4 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+L1 Cache (read hit): 0<-[48]
+IF: Fetched instruction 0x0 from PC 0x48
 
 CYCLE 137
 R[0]: 0
@@ -6006,17 +6042,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 3 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+L1 Cache (read hit): 0<-[4c]
+IF: Fetched instruction 0x0 from PC 0x4c
 
 CYCLE 138
 R[0]: 0
@@ -6051,17 +6078,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 2 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
+L1 Cache (read hit): 0<-[50]
+IF: Fetched instruction 0x0 from PC 0x50
 
 CYCLE 139
 R[0]: 0
@@ -6096,823 +6114,5 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 48: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 48: 1 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x48
 
-CYCLE 140
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 48: 1 cycles remaining to be serviced
-L2 Cache (read hit): 0<-[48]
-L1 Cache: replacing line at idx:1 way:0 due to conflicting address:48
-IF: Memory stall during fetch at PC 0x48
-
-CYCLE 141
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 0<-[48]
-IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).
-
-CYCLE 142
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 4
-
-CYCLE 143
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 3
-
-CYCLE 144
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 2
-
-CYCLE 145
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 1
-
-CYCLE 146
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 0
-
-CYCLE 147
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-CYCLE 148
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 0<-[4c]
-IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).
-
-CYCLE 149
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 4
-
-CYCLE 150
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 3
-
-CYCLE 151
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 2
-
-CYCLE 152
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 1
-
-CYCLE 153
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 0
-
-CYCLE 154
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-CYCLE 155
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 0<-[50]
-IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).
-
-CYCLE 156
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 4
-
-CYCLE 157
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 3
-
-CYCLE 158
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 2
-
-CYCLE 159
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 1
-
-CYCLE 160
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 0
-
-CYCLE 161
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-CYCLE 162
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 1
-R[6]: 2
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-Completed execution in 81.5 nanoseconds.
+Completed execution in 70 nanoseconds.

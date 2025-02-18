@@ -2795,7 +2795,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[c]
-IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).
+IF: Fetched instruction 0x0 from PC 0xc
 
 CYCLE 63
 R[0]: 0
@@ -2832,7 +2832,8 @@ R[30]: 0
 R[31]: 0
 WB: Writing 1 to R[1]
 L1 Cache (write hit): [0]<-0
-IF: In drain mode. Drain counter: 4
+L1 Cache (read hit): 2886336516<-[10]
+IF: Fetched instruction 0xac0a0004 from PC 0x10
 
 CYCLE 64
 R[0]: 0
@@ -2868,7 +2869,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[0]
-IF: In drain mode. Drain counter: 3
+L1 Cache (read hit): 2348941316<-[14]
+IF: Fetched instruction 0x8c020004 from PC 0x14
 
 CYCLE 65
 R[0]: 0
@@ -2904,7 +2906,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[10]
-IF: In drain mode. Drain counter: 2
+L1 Cache (read hit): 2164768<-[18]
+IF: Fetched instruction 0x210820 from PC 0x18
 
 CYCLE 66
 R[0]: 0
@@ -2939,223 +2942,12 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-IF: In drain mode. Drain counter: 1
-
-CYCLE 67
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 0
-
-CYCLE 68
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-CYCLE 69
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 2886336516<-[10]
-IF: Fetched instruction 0xac0a0004 from PC 0x10
-
-CYCLE 70
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 2348941316<-[14]
-IF: Fetched instruction 0x8c020004 from PC 0x14
-
-CYCLE 71
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 2164768<-[18]
-IF: Fetched instruction 0x210820 from PC 0x18
-
-CYCLE 72
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
+WB: Writing 0 to R[0]
 L1 Cache (write hit): [4]<-0
 L1 Cache (read hit): 2885812232<-[1c]
 IF: Fetched instruction 0xac020008 from PC 0x1c
 
-CYCLE 73
+CYCLE 67
 R[0]: 0
 R[1]: 1
 R[2]: 0
@@ -3192,7 +2984,7 @@ L1 Cache (read hit): 0<-[4]
 L1 Cache (read hit): 2349006856<-[20]
 IF: Fetched instruction 0x8c030008 from PC 0x20
 
-CYCLE 74
+CYCLE 68
 R[0]: 0
 R[1]: 1
 R[2]: 0
@@ -3229,7 +3021,7 @@ WB: Writing 0 to R[2]
 L1 Cache (read hit): 2164768<-[24]
 IF: Fetched instruction 0x210820 from PC 0x24
 
-CYCLE 75
+CYCLE 69
 R[0]: 0
 R[1]: 1
 R[2]: 0
@@ -3267,7 +3059,7 @@ L1 Cache (write hit): [8]<-0
 L1 Cache (read hit): 2885746688<-[28]
 IF: Fetched instruction 0xac010000 from PC 0x28
 
-CYCLE 76
+CYCLE 70
 R[0]: 0
 R[1]: 2
 R[2]: 0
@@ -3304,7 +3096,7 @@ L1 Cache (read hit): 0<-[8]
 L1 Cache (read hit): 2349072384<-[2c]
 IF: Fetched instruction 0x8c040000 from PC 0x2c
 
-CYCLE 77
+CYCLE 71
 R[0]: 0
 R[1]: 2
 R[2]: 0
@@ -3341,7 +3133,7 @@ WB: Writing 0 to R[3]
 L1 Cache (read hit): 2164768<-[30]
 IF: Fetched instruction 0x210820 from PC 0x30
 
-CYCLE 78
+CYCLE 72
 R[0]: 0
 R[1]: 2
 R[2]: 0
@@ -3379,7 +3171,7 @@ L1 Cache (write hit): [0]<-2
 L1 Cache (read hit): 4329504<-[34]
 IF: Fetched instruction 0x421020 from PC 0x34
 
-CYCLE 79
+CYCLE 73
 R[0]: 0
 R[1]: 4
 R[2]: 0
@@ -3416,7 +3208,7 @@ L1 Cache (read hit): 2<-[0]
 L1 Cache (read hit): 2885746692<-[38]
 IF: Fetched instruction 0xac010004 from PC 0x38
 
-CYCLE 80
+CYCLE 74
 R[0]: 0
 R[1]: 4
 R[2]: 0
@@ -3453,7 +3245,7 @@ WB: Writing 2 to R[4]
 L1 Cache (read hit): 2349137924<-[3c]
 IF: Fetched instruction 0x8c050004 from PC 0x3c
 
-CYCLE 81
+CYCLE 75
 R[0]: 0
 R[1]: 4
 R[2]: 0
@@ -3498,7 +3290,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 82
+CYCLE 76
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3544,7 +3336,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 83
+CYCLE 77
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3589,7 +3381,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 84
+CYCLE 78
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3634,7 +3426,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 85
+CYCLE 79
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3679,7 +3471,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 86
+CYCLE 80
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3724,7 +3516,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 87
+CYCLE 81
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3769,7 +3561,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 88
+CYCLE 82
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3814,7 +3606,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 89
+CYCLE 83
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3859,7 +3651,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 90
+CYCLE 84
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3904,7 +3696,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 91
+CYCLE 85
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3949,7 +3741,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 92
+CYCLE 86
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -3994,7 +3786,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 93
+CYCLE 87
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4039,7 +3831,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 94
+CYCLE 88
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4084,7 +3876,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 95
+CYCLE 89
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4129,7 +3921,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 96
+CYCLE 90
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4174,7 +3966,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 97
+CYCLE 91
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4219,7 +4011,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 98
+CYCLE 92
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4264,7 +4056,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 99
+CYCLE 93
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4309,7 +4101,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 100
+CYCLE 94
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4354,7 +4146,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 101
+CYCLE 95
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4399,7 +4191,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 102
+CYCLE 96
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4444,7 +4236,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 103
+CYCLE 97
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4489,7 +4281,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 104
+CYCLE 98
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4534,7 +4326,7 @@ MEM[6]: 210820
 MEM[7]: ac020008
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 105
+CYCLE 99
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4579,7 +4371,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 106
+CYCLE 100
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4625,7 +4417,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 107
+CYCLE 101
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4670,7 +4462,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 108
+CYCLE 102
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4715,7 +4507,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 109
+CYCLE 103
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4760,7 +4552,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 110
+CYCLE 104
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4805,7 +4597,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 111
+CYCLE 105
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4850,7 +4642,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 112
+CYCLE 106
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4895,7 +4687,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 113
+CYCLE 107
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4940,7 +4732,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 114
+CYCLE 108
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -4985,7 +4777,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 115
+CYCLE 109
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5030,7 +4822,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 116
+CYCLE 110
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5075,7 +4867,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 117
+CYCLE 111
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5119,7 +4911,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 118
+CYCLE 112
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5164,7 +4956,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 119
+CYCLE 113
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5209,7 +5001,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 120
+CYCLE 114
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5254,7 +5046,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 121
+CYCLE 115
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5299,7 +5091,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 122
+CYCLE 116
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5344,7 +5136,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 123
+CYCLE 117
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5389,7 +5181,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 124
+CYCLE 118
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5434,7 +5226,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 125
+CYCLE 119
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5479,7 +5271,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 126
+CYCLE 120
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5524,7 +5316,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 127
+CYCLE 121
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5569,7 +5361,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 128
+CYCLE 122
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5614,7 +5406,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 129
+CYCLE 123
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5658,7 +5450,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 130
+CYCLE 124
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5703,7 +5495,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 131
+CYCLE 125
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5748,7 +5540,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 132
+CYCLE 126
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5793,7 +5585,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 133
+CYCLE 127
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5838,7 +5630,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 134
+CYCLE 128
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5883,7 +5675,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 135
+CYCLE 129
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5928,7 +5720,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 136
+CYCLE 130
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -5973,7 +5765,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 137
+CYCLE 131
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -6018,7 +5810,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 138
+CYCLE 132
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -6063,7 +5855,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 139
+CYCLE 133
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -6108,7 +5900,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 140
+CYCLE 134
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -6146,7 +5938,7 @@ L2 Cache (read hit): 0<-[40]
 L1 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 141
+CYCLE 135
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -6180,184 +5972,9 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[40]
-IF: Fetched NOP. Starting pipeline drain (drain_counter set to 5).
+IF: Fetched instruction 0x0 from PC 0x40
 
-CYCLE 142
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 4
-
-CYCLE 143
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 3
-
-CYCLE 144
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 2
-
-CYCLE 145
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 1
-
-CYCLE 146
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-IF: In drain mode. Drain counter: 0
-
-CYCLE 147
+CYCLE 136
 R[0]: 0
 R[1]: 8
 R[2]: 0
@@ -6391,38 +6008,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-CYCLE 148
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-Completed execution in 74.5 nanoseconds.
+Completed execution in 68.5 nanoseconds.

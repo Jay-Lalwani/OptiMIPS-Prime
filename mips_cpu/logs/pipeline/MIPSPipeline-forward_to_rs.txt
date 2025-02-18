@@ -2722,6 +2722,15 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 L1 Cache (read hit): 539099137<-[4]
 IF: Fetched instruction 0x20220001 from PC 0x4
 
@@ -2758,6 +2767,15 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 L1 Cache (read hit): 539164676<-[8]
 IF: Fetched instruction 0x20230004 from PC 0x8
 
@@ -2794,6 +2812,15 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 L1 Cache (read hit): 541196290<-[c]
 IF: Fetched instruction 0x20420002 from PC 0xc
 
@@ -2831,6 +2858,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[4]
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 L1 Cache (read hit): 4266016<-[10]
 IF: Fetched instruction 0x411820 from PC 0x10
 
@@ -2868,6 +2904,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 1 to R[2]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 L1 Cache (read hit): 2892234752<-[14]
 IF: Fetched instruction 0xac640000 from PC 0x14
 
@@ -2905,6 +2950,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 4 to R[3]
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 0
+MEM_WRITE: 1
+ALU_SRC: 1
+REG_WRITE: 0
 L1 Cache (read hit): 2355429376<-[18]
 IF: Fetched instruction 0x8c650000 from PC 0x18
 
@@ -2942,6 +2996,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[2]
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 1
+MEM_TO_REG: 1
+ALU_OP: 0
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 L1 Cache (read hit): 545521679<-[1c]
 IF: Fetched instruction 0x2084000f from PC 0x1c
 
@@ -2980,6 +3043,15 @@ R[30]: 0
 R[31]: 0
 WB: Writing 1 to R[3]
 L1 Cache (write hit): [4]<-2
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 L1 Cache (read hit): 10825760<-[20]
 IF: Fetched instruction 0xa53020 from PC 0x20
 
@@ -3017,6 +3089,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2<-[4]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 L1 Cache (read hit): 0<-[24]
 IF: Fetched instruction 0x0 from PC 0x24
 
@@ -3054,6 +3135,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[5]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 L1 Cache (read hit): 0<-[28]
 IF: Fetched instruction 0x0 from PC 0x28
 
@@ -3091,6 +3181,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 17 to R[4]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 L1 Cache (read hit): 0<-[2c]
 IF: Fetched instruction 0x0 from PC 0x2c
 
@@ -3128,6 +3227,15 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[6]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 L1 Cache (read hit): 0<-[30]
 IF: Fetched instruction 0x0 from PC 0x30
 

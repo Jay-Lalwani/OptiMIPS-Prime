@@ -104,11 +104,7 @@ class Processor {
         
         // Pipelined processor advance (for –O1)
         void pipelined_processor_advance();
-
-        // NEW: Pipeline drainage support.
-        bool drain_mode;
-        int drain_counter;
-
+ 
     public:
         Processor(Memory *mem) { 
             regfile.pc = 0; 
@@ -118,8 +114,6 @@ class Processor {
             id_ex.valid = false;
             ex_mem.valid = false;
             mem_wb.valid = false;
-            drain_mode = false;
-            drain_counter = 0;
         }
 
         // Get the current PC.

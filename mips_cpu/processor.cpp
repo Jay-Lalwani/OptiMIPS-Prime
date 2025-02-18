@@ -53,7 +53,6 @@ void Processor::advance() {
 
 // -------------------- Pipelined Advance --------------------
 void Processor::pipelined_processor_advance() {
-    // The order here mirrors the single-cycle order, but split into stages.
     pipeline_WB();
     if (!pipeline_MEM()) {
         DEBUG(cout << "Memory stall encountered. Pipeline is stalled.\n");
@@ -67,7 +66,7 @@ void Processor::pipelined_processor_advance() {
 // -------------------- IF Stage --------------------
 void Processor::pipeline_IF() {
     uint32_t instruction = 0;
-    // Fetch instruction from memory using fetch_pc (like single-cycle fetch).
+    // Fetch instruction from memory using fetch_pc
     bool fetchSuccess = memory->access(fetch_pc, instruction, 0, 1, 0);
     if (!fetchSuccess) {
         DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << hex << fetch_pc << dec << "\n");
@@ -85,7 +84,7 @@ void Processor::pipeline_ID() {
     if (!if_id.valid) return;
     uint32_t instruction = if_id.instruction;
     
-    // Decode fields exactly as in the single-cycle processor.
+    // Decode fields
     int opcode = (instruction >> 26) & 0x3F;
     int rs     = (instruction >> 21) & 0x1F;
     int rt     = (instruction >> 16) & 0x1F;
@@ -94,8 +93,7 @@ void Processor::pipeline_ID() {
     uint32_t funct = instruction & 0x3F;
     uint32_t imm   = instruction & 0xFFFF;
     
-    // Sign-extend the immediate exactly as in the single-cycle version.
-    // (Using arithmetic right shift to replicate the sign bit.)
+    // Sign-extend the immediate
     imm = control.zero_extend ? imm : ((imm >> 15) ? (0xFFFF0000 | imm) : imm);
     
     // Decode control signals.
@@ -106,7 +104,7 @@ void Processor::pipeline_ID() {
     uint32_t read_data_1 = 0, read_data_2 = 0;
     regfile.access(rs, rt, read_data_1, read_data_2, 0, false, 0);
     
-    // Populate ID/EX pipeline register (order matches the single-cycle code).
+    // Populate ID/EX pipeline register
     id_ex.reg_dest    = control.reg_dest;
     id_ex.ALU_src     = control.ALU_src;
     id_ex.reg_write   = control.reg_write;
@@ -143,7 +141,7 @@ void Processor::pipeline_ID() {
 void Processor::pipeline_EX() {
     if (!id_ex.valid) return;
     
-    // Set up operands (exactly as in single-cycle).
+    // Set up operands
     uint32_t operand_1 = id_ex.shift ? id_ex.shamt : id_ex.read_data_1;
     uint32_t operand_2 = id_ex.ALU_src ? id_ex.imm : id_ex.read_data_2;
     uint32_t alu_zero = 0;
@@ -170,7 +168,7 @@ void Processor::pipeline_EX() {
     ex_mem.zero        = (alu_zero == 1);
     ex_mem.valid       = true;
     
-    // Handle branch/jump hazards exactly as in the single-cycle code.
+    // Handle branch/jump hazards
     if (id_ex.branch && ex_mem.zero) {
         fetch_pc = branch_target;
         ex_mem.pc_branch = branch_target;
@@ -204,7 +202,6 @@ bool Processor::pipeline_MEM() {
     bool success = memory->access(ex_mem.alu_result, mem_data, 0, ex_mem.mem_read || ex_mem.mem_write, 0);
     if (!success) return false; // Stall if memory busy.
     
-    // For store instructions, compute write data using masking (as in single-cycle).
     if (ex_mem.mem_write) {
         uint32_t write_data_mem = ex_mem.write_data;
         if (ex_mem.halfword) {
@@ -274,7 +271,6 @@ void Processor::flush_IF_ID_ID_EX() {
 
 // -------------------- Single-Cycle Processor --------------------
 void Processor::single_cycle_processor_advance() {
-    // This code is provided for reference and is unchanged.
     uint32_t instruction;
     memory->access(regfile.pc, instruction, 0, 1, 0);
     DEBUG(cout << "\nPC: 0x" << hex << regfile.pc << dec << "\n");

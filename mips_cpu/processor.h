@@ -108,7 +108,7 @@ class Processor {
         // Flush IF/ID and ID/EX (used on branch/jump mispredictions).
         void flush_IF_ID_ID_EX();
         
-        // Single-cycle processor (unchanged).
+        // Single-cycle processor.
         void single_cycle_processor_advance();
         
         // Pipelined processor advance.

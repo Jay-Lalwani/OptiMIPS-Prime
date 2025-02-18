@@ -198,6 +198,7 @@ void Processor::pipeline_ID() {
         
         // Decode control signals.
         control.decode(instruction);
+        DEBUG(control.print());
         
         // Read registers.
         uint32_t read_data_1 = 0, read_data_2 = 0;

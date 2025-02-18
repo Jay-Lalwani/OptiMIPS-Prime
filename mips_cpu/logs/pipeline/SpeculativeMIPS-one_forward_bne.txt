@@ -2868,7 +2868,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
 L1 Cache (read hit): 0<-[10]
-IF: Fetched instruction 0x0 from PC 0x10
+IF: Fetched first NOP at PC 0x10, triggering 5 extra NOP cycles (PC frozen).
 
 CYCLE 64
 R[0]: 0
@@ -2905,8 +2905,7 @@ R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[2]
 EX: Branch taken to 0x24
-L1 Cache (read hit): 2885812224<-[24]
-IF: Fetched instruction 0xac020000 from PC 0x24
+IF: Inserting extra NOP (4 remaining). PC remains at 0x24
 
 CYCLE 65
 R[0]: 0
@@ -2942,17 +2941,16 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[3]
-REG_DEST: 0
+REG_DEST: 1
 JUMP: 0
 BRANCH: 0
 MEM_READ: 0
 MEM_TO_REG: 0
-ALU_OP: 0
-MEM_WRITE: 1
-ALU_SRC: 1
-REG_WRITE: 0
-L1 Cache (read hit): 0<-[28]
-IF: Fetched instruction 0x0 from PC 0x28
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+IF: Inserting extra NOP (3 remaining). PC remains at 0x24
 
 CYCLE 66
 R[0]: 0
@@ -2996,8 +2994,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 0<-[2c]
-IF: Fetched instruction 0x0 from PC 0x2c
+IF: Inserting extra NOP (2 remaining). PC remains at 0x24
 
 CYCLE 67
 R[0]: 0
@@ -3032,7 +3029,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write hit): [0]<-0
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -3042,8 +3038,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 0<-[30]
-IF: Fetched instruction 0x0 from PC 0x30
+IF: Inserting extra NOP (1 remaining). PC remains at 0x24
 
 CYCLE 68
 R[0]: 0
@@ -3078,5 +3073,235 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+WB: Writing 0 to R[0]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+IF: Inserting extra NOP (0 remaining). PC remains at 0x24
 
-Completed execution in 34.5 nanoseconds.
+CYCLE 69
+R[0]: 0
+R[1]: 500
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+WB: Writing 0 to R[0]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+L1 Cache (read hit): 2885812224<-[24]
+IF: Fetched instruction 0xac020000 from PC 0x24
+
+CYCLE 70
+R[0]: 0
+R[1]: 500
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+WB: Writing 0 to R[0]
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 0
+MEM_WRITE: 1
+ALU_SRC: 1
+REG_WRITE: 0
+L1 Cache (read hit): 0<-[28]
+IF: Fetched instruction 0x0 from PC 0x28
+
+CYCLE 71
+R[0]: 0
+R[1]: 500
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+WB: Writing 0 to R[0]
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+L1 Cache (read hit): 0<-[2c]
+IF: Fetched instruction 0x0 from PC 0x2c
+
+CYCLE 72
+R[0]: 0
+R[1]: 500
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+WB: Writing 0 to R[0]
+L1 Cache (write hit): [0]<-0
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+L1 Cache (read hit): 0<-[30]
+IF: Fetched instruction 0x0 from PC 0x30
+
+CYCLE 73
+R[0]: 0
+R[1]: 500
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+
+Completed execution in 37 nanoseconds.

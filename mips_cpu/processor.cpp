@@ -238,12 +238,36 @@ void Processor::pipeline_ID() {
 
 // IF Stage: Fetch the instruction at the current PC.
 void Processor::pipeline_IF() {
+    if (extra_nop_triggered && extra_nop_count > 0) {
+        if_id.instruction = 0x0;  // Force a NOP.
+        if_id.pc_plus_4 = regfile.pc + 4; // PC remains unchanged.
+        if_id.valid = true;
+        extra_nop_count--;
+        DEBUG(cout << "IF: Inserting extra NOP (" << extra_nop_count 
+                   << " remaining). PC remains at 0x" << std::hex << regfile.pc << std::dec << "\n");
+        return; // Do not advance PC.
+    }
+
     uint32_t instruction = 0;
     bool fetchSuccess = memory->access(regfile.pc, instruction, 0, true, false);
     if (!fetchSuccess) {
         DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << std::hex << regfile.pc << std::dec << "\n");
         return;
     }
+
+    // If we see a 0x0 for the first time, trigger extra NOP mode.
+    if (instruction == 0x0 && !extra_nop_triggered) {
+        extra_nop_triggered = true;
+        extra_nop_count = 5;
+        DEBUG(cout << "IF: Fetched first NOP at PC 0x" << std::hex << regfile.pc 
+                   << std::dec << ", triggering 5 extra NOP cycles (PC frozen).\n");
+        // Insert this fetched NOP into the IF/ID latch without advancing PC.
+        if_id.instruction = 0x0;
+        if_id.pc_plus_4 = regfile.pc + 4;
+        if_id.valid = true;
+        return; // Do not update PC.
+    }
+    
     if_id.instruction = instruction;
     if_id.pc_plus_4 = regfile.pc + 4;
     if_id.valid = true;

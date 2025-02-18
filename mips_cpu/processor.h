@@ -88,6 +88,9 @@ class Processor {
         ID_EX id_ex;
         EX_MEM ex_mem;
         MEM_WB mem_wb;
+
+        int extra_nop_count;
+        bool extra_nop_triggered;
         
         // Pipeline stage functions (called in reverse order)
         void pipeline_WB();
@@ -114,6 +117,9 @@ class Processor {
             id_ex.valid = false;
             ex_mem.valid = false;
             mem_wb.valid = false;
+
+            extra_nop_count = 0;
+            extra_nop_triggered = false;
         }
 
         // Get the current PC.

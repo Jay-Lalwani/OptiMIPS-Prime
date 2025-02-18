@@ -2858,6 +2858,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 1 to R[1]
+L1 Cache (read hit): 536936449<-[0]
 L1 Cache (write hit): [0]<-0
 REG_DEST: 1
 JUMP: 0
@@ -2997,6 +2998,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[0]
+L1 Cache (read hit): 2885746688<-[4]
 L1 Cache (write hit): [4]<-0
 REG_DEST: 1
 JUMP: 0
@@ -3136,6 +3138,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[1]
+L1 Cache (read hit): 2349465600<-[8]
 L1 Cache (write hit): [8]<-0
 REG_DEST: 1
 JUMP: 0
@@ -3275,6 +3278,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 4 to R[1]
+L1 Cache (read hit): 0<-[0]
 L1 Cache (write hit): [0]<-2
 REG_DEST: 1
 JUMP: 0
@@ -3468,8 +3472,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 0 to R[2]
-L1 Cache (write miss) at address 4: 11 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 58 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 58 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3513,8 +3517,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 10 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 57 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 57 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3558,8 +3562,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 9 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 56 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 56 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3603,8 +3607,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 8 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 55 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 55 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3648,8 +3652,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 7 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 54 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 54 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3693,8 +3697,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 6 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 53 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 53 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3738,8 +3742,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 5 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 52 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 52 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3783,8 +3787,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 4 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 51 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 51 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3828,8 +3832,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 3 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 50 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 50 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3873,8 +3877,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 2 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 49 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 49 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3918,8 +3922,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (write miss) at address 4: 1 cycles remaining to be serviced
-L2 Cache (write miss) at address 4: 48 cycles remaining to be serviced
+L1 Cache (read miss) at address 4: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 4: 48 cycles remaining to be serviced
 MEM[0]: 20010001
 MEM[1]: ac010000
 MEM[2]: 8c0a0000
@@ -3963,6 +3967,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 0<-[4]
 L1 Cache (write hit): [4]<-4
 L2 Cache (read miss) at address 40: 47 cycles remaining to be serviced
 MEM[40]: 0
@@ -6332,51 +6337,5 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-L1 Cache (read hit): 0<-[54]
-IF: Fetched instruction 0x0 from PC 0x54
 
-CYCLE 141
-R[0]: 0
-R[1]: 8
-R[2]: 0
-R[3]: 0
-R[4]: 2
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-Completed execution in 71 nanoseconds.
+Completed execution in 70.5 nanoseconds.

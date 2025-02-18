@@ -135,7 +135,7 @@ int main(int argc, char *argv[]) {
 
     memory.setOptLevel(optLevel);
     uint64_t num_cycles = 0;
-    while (processor.getPC() <= end_pc + 20) { // REMOVE LATER (20 for 5 extra cycles)
+    while (processor.getPC() <= end_pc) {
         processor.advance();
         cout << "\nCYCLE " << num_cycles << "\n";
         processor.printRegFile();

@@ -268,7 +268,7 @@ void Processor::pipeline_EX() {
     
     // Forward from MEM stage
     if (ex_mem.valid && ex_mem.reg_write && ex_mem.write_reg != 0) {
-        uint32_t forward_data = ex_mem.mem_read_data;
+        uint32_t forward_data = ex_mem.mem_to_reg ? ex_mem.mem_read_data : ex_mem.alu_result;
         if (ex_mem.write_reg == id_ex.rs && !id_ex.shift) {
             operand_1 = forward_data;
             DEBUG(cout << "EX: Forwarding " << forward_data << " from MEM to rs\n");
@@ -458,23 +458,23 @@ void Processor::pipeline_WB() {
     
     uint32_t write_data = 0;
     if (mem_wb.link) {
-        // For link instructions, R[31] gets PC+8.
-        write_data = mem_wb.pc_plus_4 + 4;
+        write_data = mem_wb.pc_plus_4 + 4;  // For link instructions, R[31] gets PC+8
     } else if (mem_wb.mem_to_reg) {
         write_data = mem_wb.mem_read_data;
     } else {
         write_data = mem_wb.alu_result;
     }
     
-    if (mem_wb.reg_write) {
+    if (mem_wb.reg_write && mem_wb.write_reg != 0) {  // Added check for non-zero register
         uint32_t dummy1, dummy2;
         regfile.access(0, 0, dummy1, dummy2, mem_wb.write_reg, true, write_data);
         DEBUG(cout << "WB: Writing " << write_data << " to R[" << mem_wb.write_reg << "]\n");
     }
-    // Update the committed PC here.
+    
+    // Update the committed PC here
     regfile.pc = mem_wb.pc_plus_4;
     
-    // Clear MEM/WB register.
+    // Clear MEM/WB register
     mem_wb.valid = false;
 }
 

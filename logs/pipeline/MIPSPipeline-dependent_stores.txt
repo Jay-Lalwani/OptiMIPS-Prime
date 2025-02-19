@@ -3206,7 +3206,6 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
-WB: Writing 0 to R[0]
 
 CYCLE 73
 R[0]: 0
@@ -7233,7 +7232,6 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 166
 R[0]: 0

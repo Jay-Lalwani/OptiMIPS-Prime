@@ -3254,7 +3254,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 73
 R[0]: 0
@@ -3903,7 +3902,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 87
 R[0]: 0
@@ -4552,7 +4550,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 101
 R[0]: 0
@@ -5201,7 +5198,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 115
 R[0]: 0
@@ -5850,7 +5846,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 129
 R[0]: 0
@@ -6499,7 +6494,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 143
 R[0]: 0
@@ -7148,7 +7142,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 157
 R[0]: 0
@@ -7797,7 +7790,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 171
 R[0]: 0
@@ -8446,7 +8438,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 185
 R[0]: 0
@@ -9095,7 +9086,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 199
 R[0]: 0
@@ -9744,7 +9734,6 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 213
 R[0]: 0
@@ -9928,7 +9917,6 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
-WB: Writing 0 to R[0]
 
 CYCLE 217
 R[0]: 0
@@ -10094,7 +10082,6 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 221
 R[0]: 0
@@ -10139,7 +10126,6 @@ MEM[46]: 0
 MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
-WB: Writing 0 to R[0]
 
 CYCLE 222
 R[0]: 0
@@ -12874,7 +12860,6 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-WB: Writing 0 to R[0]
 
 CYCLE 283
 R[0]: 0

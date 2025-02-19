@@ -222,6 +222,7 @@ void Processor::pipeline_EX() {
     // Data forwarding logic
     uint32_t operand_1 = id_ex.read_data_1;
     uint32_t operand_2 = id_ex.read_data_2;
+    uint32_t store_data = id_ex.read_data_2;  // Original value for store data
     
     // Forward from MEM stage
     if (ex_mem.valid && ex_mem.reg_write && ex_mem.write_reg != 0) {
@@ -233,6 +234,11 @@ void Processor::pipeline_EX() {
         if (ex_mem.write_reg == id_ex.rt && !id_ex.ALU_src) {
             operand_2 = forward_data;
             DEBUG(cout << "EX: Forwarding " << forward_data << " from MEM to rt\n");
+        }
+        // Forward store data
+        if (id_ex.mem_write && ex_mem.write_reg == id_ex.rt) {
+            store_data = forward_data;
+            DEBUG(cout << "EX: Forwarding " << forward_data << " from MEM for store data\n");
         }
     }
     
@@ -249,20 +255,11 @@ void Processor::pipeline_EX() {
             operand_2 = wb_data;
             DEBUG(cout << "EX: Forwarding " << wb_data << " from WB to rt\n");
         }
-    }
-    
-    // Special forwarding for store data
-    if (id_ex.mem_write) {
-        // Forward store data from MEM stage
-        if (ex_mem.valid && ex_mem.reg_write && ex_mem.write_reg == id_ex.rt) {
-            operand_2 = ex_mem.mem_read_data;
-            DEBUG(cout << "EX: Forwarding " << operand_2 << " from MEM for store data\n");
-        }
-        // Forward store data from WB stage
-        else if (mem_wb.valid && mem_wb.reg_write && mem_wb.write_reg == id_ex.rt &&
-                 !(ex_mem.valid && ex_mem.reg_write && ex_mem.write_reg == id_ex.rt)) {
-            operand_2 = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
-            DEBUG(cout << "EX: Forwarding " << operand_2 << " from WB for store data\n");
+        // Forward store data
+        if (id_ex.mem_write && mem_wb.write_reg == id_ex.rt &&
+            !(ex_mem.valid && ex_mem.reg_write && ex_mem.write_reg == id_ex.rt)) {
+            store_data = wb_data;
+            DEBUG(cout << "EX: Forwarding " << wb_data << " from WB for store data\n");
         }
     }
     
@@ -284,7 +281,7 @@ void Processor::pipeline_EX() {
     ex_mem.halfword = id_ex.halfword;
     ex_mem.byte = id_ex.byte;
     ex_mem.alu_result = alu_result;
-    ex_mem.write_data = id_ex.read_data_2;  // Use original value for store data
+    ex_mem.write_data = store_data;  // Use forwarded store data
     ex_mem.write_reg = id_ex.write_reg;
     ex_mem.pc_branch = id_ex.pc_plus_4;
     ex_mem.zero = (alu_zero == 1);

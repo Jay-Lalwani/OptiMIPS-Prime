@@ -169,23 +169,20 @@ void Processor::pipeline_EX() {
     ex_mem.valid       = true;
     
     // Handle branch/jump hazards
-    if (id_ex.branch) {
-        // For beq, take branch if ALU result is zero.
-        // For bne, take branch if ALU result is nonzero.
-        bool take_branch = (id_ex.bne ? !ex_mem.zero : ex_mem.zero);
-        if (take_branch) {
-            fetch_pc = branch_target;
-            ex_mem.pc_branch = branch_target;
-            flush_IF_ID_ID_EX();
-            DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_target << dec << "\n");
-        }
-    } else if (id_ex.jump) {
+    if (id_ex.branch && ex_mem.zero) {
+        fetch_pc = branch_target;
+        ex_mem.pc_branch = branch_target;
+        flush_IF_ID_ID_EX();
+        DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_target << dec << "\n");
+    }
+    else if (id_ex.jump) {
         uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
         fetch_pc = jump_addr;
         ex_mem.pc_branch = jump_addr;
         flush_IF_ID_ID_EX();
         DEBUG(cout << "EX: Jump to 0x" << hex << jump_addr << dec << "\n");
-    } else if (id_ex.jump_reg) {
+    }
+    else if (id_ex.jump_reg) {
         fetch_pc = id_ex.read_data_1;
         ex_mem.pc_branch = id_ex.read_data_1;
         flush_IF_ID_ID_EX();

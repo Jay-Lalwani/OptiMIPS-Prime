@@ -61,26 +61,18 @@ void Processor::advance() {
 
 // -------------------- Pipelined Advance --------------------
 void Processor::pipelined_processor_advance() {
-  
-   
     pipeline_WB();
-
     if (!pipeline_MEM()) {
         DEBUG(cout << "Memory stall encountered. Pipeline is stalled.\n");
         return;
     }
-    
     pipeline_IF();
     pipeline_ID();
     pipeline_EX();
-     
-  
 }
 
-// -------------------- IF Stage --------------------
 void Processor::pipeline_IF() {
     uint32_t instruction = 0;
-    // Fetch instruction from memory using fetch_pc
     bool fetchSuccess = memory->access(fetch_pc, instruction, 0, 1, 0);
     if (!fetchSuccess) {
         DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << hex << fetch_pc << dec << "\n");
@@ -93,12 +85,10 @@ void Processor::pipeline_IF() {
     fetch_pc += 4;
 }
 
-// -------------------- ID Stage --------------------
 void Processor::pipeline_ID() {
     if (!if_id.valid) return;
     uint32_t instruction = if_id.instruction;
     
-    // Decode fields
     int opcode = (instruction >> 26) & 0x3F;
     int rs     = (instruction >> 21) & 0x1F;
     int rt     = (instruction >> 16) & 0x1F;
@@ -107,13 +97,11 @@ void Processor::pipeline_ID() {
     uint32_t funct = instruction & 0x3F;
     uint32_t imm   = instruction & 0xFFFF;
     
-    // Decode control signals early for hazard detection
+   
     control.decode(instruction);
     
-    // Compute write_reg early for hazard detection
     int write_reg = control.link ? 31 : (control.reg_dest ? rd : rt);
     
-    // Load-use hazard detection
     bool stall = false;
     
     // Check for load-use hazard with previous instruction

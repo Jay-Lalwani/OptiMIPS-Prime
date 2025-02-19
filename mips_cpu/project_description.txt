@@ -1,0 +1,167 @@
+CS 4330: Advanced Computer Architecture Spring 2025
+
+Project: Processor Design and Optimization  
+Project Out: Tue, Jan. 28  
+Project Due: Fri, Feb. 21/Fri, Mar. 21/Fri, Apr. 18/Fri, May. 9
+
+Goal
+
+The goal of this project is to design and implement microarchitectural optimizations using a cycle-accurate microarchitectural simulator (written in C++) that provides performance estimates for a given processor-workload combination. The simulator already includes a baseline design that implements the MIPS single-cycle processor and a multi-level cache hierarchy. The single-cycle processor executes every instruction in one cycle, although its cycle time is very high (62.5 ns). To improve its performance, you will implement four optimizations. You will also need to ensure that the optimizations are safe in that they preserve functional correctness.
+
+The first optimization (common across all groups) is to pipeline the single-cycle processor design by exploiting functionality-level parallelism. By breaking down the single-cycle processor into five separate stages and by stalling (for as many as 60 cycles) upon a cache miss, the cycle time dramatically reduces to just 0.5 ns.
+
+The remaining three will be custom optimizations that provide an incremental improvement in performance. You may choose from the suggested list of optimizations below (most of which will be covered in lectures) or suggest novel optimizations. If you choose the latter route, you are expected to consult with the course staff and get your optimization approved ahead of time.
+
+List of Suggested Design Optimizations.
+
+• Branch Prediction  
+• Superscalar Execution  
+• Out-Of-Order Execution  
+• Data Prefetching  
+• Value Prediction  
+• Fetch-Directed Instruction Prefetching  
+• Multithreading
+
+Milestones and Due Dates
+
+Friday, February 21: Pipelined processor is due. Automated tests on Gradescope need to pass by this deadline for full credit (10% of your overall grade).  
+Friday, February 21: Benchmarks used for evaluating custom optimizations released on Gradescope.  
+Tuesday, March 4 and Thursday, March 6: First milestone review in class, where each group is expected to present their first custom optimization and rationale for performance improvement to the TA. You don’t have to be implementation-complete by this date, but we would expect to see decent progress by this date. This will account for 4% of your overall grade.  
+Friday, March 21: Fully complete design for your first custom optimization due, with automated tests passing on Gradescope (16% of your overall grade).  
+Tuesday, April 1 and Thursday, April 3: Second milestone review in class. Again, you don’t have to be implementation-complete by this date, but we would expect to see decent progress by this date. This will account for 4% of your overall grade.  
+Friday, April 18: Fully complete design for your second custom optimization due, with automated tests passing on Gradescope (16% of your overall grade).  
+Thursday, April 24 and Tuesday, April 29: Final milestone review in class. Again, you don’t have to be implementation-complete by this date, but we would expect to see decent progress by this date. This will account for 4% of your overall grade.  
+Friday, May 9: Fully complete design for your second custom optimization due, with automated tests passing on Gradescope (16% of your overall grade).
+
+Group Policy
+
+The maximum group size allowed is two students. We suggest that you maintain the same group throughout the semester, but you’re allowed to switch groups if need be.
+
+Prerequisites
+
+This project will involve extensive programming effort in C++. We also expect you to be able to debug potential segmentation faults using debuggers such as gdb. If you are rusty in C++ and/or gdb, we suggest repeating the respective assignments/labs from prerequisite courses such as CSO1 and CSO2. Please note that the programming/debugging assistance by the course staff will be extremely limited. They will, however, provide high-level advice on how to tackle bugs and improve performance without getting involved in low-level implementation details.
+
+If you need advice from a TA, please make sure to reach out to them well in advance, and when you meet with them, be sure to be able to succinctly explain your design without having to delve into the implementation details, as you would to your project manager in an industry setting. There is no guarantee that they will be able to help if: (1) you reach out to them too late, and/or (2) you are unable to explain your design sufficiently well.
+
+Honor Policy
+
+In accordance with the course honor policy, please note that you are not allowed to plagiarize code directly related to the project from outside of your group. This includes looking up code related to the project on the internet. You may, however, use AI resources to implement your optimizations, as long as you’re able to clearly explain your implementation during milestone reviews.
+
+Final Report (due Friday, May 9)
+
+You will also turn in a final report describing the three custom optimizations you implemented along with an analysis of the performance gains from your optimizations on the benchmarks provided. The report should have three sections – one for each optimization. Each section should include the following items.
+
+• Brief (1-2 paragraph) description of the optimization.  
+• Rationale for performance improvement. Make sure to tie this back to Amdahl’s law.  
+• Bar graph showing the performance improvement over the previous optimization.  
+• Discussion of the main insights from the graph, along with a commentary on the outliers.
+
+The final report will account for 6% of your overall grade.
+
+Final Presentation (From Apr 15-22)
+
+You will provide a 15-minute presentation in class describing your custom optimizations, including results as appropriate. This will account for 4% of your overall grade.
+
+Submission Guidelines
+
+You will turn in all source files, including the Makefile, as a zip file on Gradescope. Please don’t submit a zip of the folder containing your code. Instead, select all the files you want to submit and zip them. Finer grained instructions will be posted on Piazza as appropriate.
+
+Testing
+
+For the pipelined implementation, we will provide 20 automated test cases – 10 short-running test cases that test for various dependency scenarios and 10 long-running test cases that test for complex control flow behavior. For the custom optimizations, we will provide benchmarks that stress various parts of the system.
+
+We also encourage you to write unit test cases in a MIPS assembly file with the extension '.s'. We use GNU naming convention, where registers are written as $reg num, (e.g., $8) and immediates are written as unqualified numbers (e.g., 45). A toy example assembly file is provided to you. While writing test cases, please keep in mind that the memory is unified (contains both data and instructions) – so you might want to use different addresses for data and instructions to avoid conflicts.
+
+Instructions on the Development Environment
+
+Please follow these instructions for setting up and being able to assemble your MIPS assembly code, so that you can test your design.
+
+• Please make sure that you have access to a Linux system. If you are using Windows or Mac, please use a virtual machine.
+
+• Install the GCC MIPS cross-compiler by running the following command in an (Ubuntu) Linux terminal:
+
+  https://www.cs.virginia.edu/venkat/classes/cs4330/sp25/#honor
+
+  sudo apt-get install gcc-mips*
+
+• Once you have MIPS gcc installed, you may use the following command to assemble you MIPS code:
+
+  mipsel-linux-gnu-gcc -mips32 <filename>.s -nostartfiles -Ttext=0 -o <binary-name>
+
+• The starter code has a README with instructions on compiling and running the simulator.
+
+• Note-1: You may add new source and header files, and update the Makefile accordingly.
+
+• Note-2: You’re NOT allowed to modify main.cpp.
+
+• Note-3: For the baseline optimization, you’re NOT allowed to modify reg file.h, memory.h, memory.cpp, ALU.h, and control.h. For the custom optimizations, you may modify them with the caveat that your optimization pertains to those modules (e.g., register renaming, cache prefetching, etc.).
+
+Overview of the Simulator
+
+The Register File
+
+The register file is defined as a C++ class that contains thirty-two 32-bit integer registers and a Program Counter (PC). It is instantiated as reg file as part of processor initialization.
+
+Memory
+
+A memory hierarchy with a 32 KB L1 cache, 256 KB L2 cache, and 2 MB main memory has been implemented as part of the baseline processor. Each level has a different access latency and thus, when there is a miss, there is a different miss penalty at each level. Do NOT change the miss penalty without consulting the course staff.
+
+All caches start cold and the memory implementation currently follows the stall-on-miss model, which means the processor will stall until the miss is serviced. If you decide to implement an out-of-order processor, you might want to move to a stall-on-use model we will discuss in class.
+
+Control
+
+The control struct has the following fields which will be used by the ALU and other stages. This is very similar to what we discussed in class.
+
+  bool reg_dest; // 0 if rt, 1 if rd  
+  bool jump; // 1 if jump  
+  bool branch; // 1 if branch  
+  bool mem_read; // 1 if memory needs to be read  
+  bool mem_to_reg; // 1 if memory needs to written to reg  
+  unsigned ALU_op : 2; // 10 for R-type, 00 for LW/SW, 01 for BEQ/BNE, 11 for others  
+  bool mem_write; // 1 if needs to be written to memory  
+  bool ALU_src; // 0 if second operand is from reg_file, 1 if imm  
+  bool reg_write; // 1 if need to write back to reg file
+
+It also has the following two functions:
+
+  // Used for debugging and autograding  
+  // Prints the values of the control signals  
+  void print();
+
+  // TODO:  
+  // Given the instruction, populate the fields of control struct  
+  void decode(uint32_t instruction);
+
+ALU
+
+This class contains a 4-bit ALU control inputs signal which need to be populated based on the funct, opcode, and ALU op. This ALU control inputs signals will then decide what operations to perform. Refer to the ALU control table in lecture slides and the textbook for more details.
+
+  //TODO:  
+  // Based on the ALU_op, funct and opcode decide the 4 bit ALU control signal  
+  void generate_control_inputs(int ALU_op, int funct, int opcode);
+
+  //TODO:  
+  // Based on the ALU_control_inputs signal perform the operations and on operand_1 and operand_2  
+  // Return the 32-bit result and set the ALU_zero which is passed by reference  
+  uint32_t execute(uint32_t operand_1, uint32_t operand_2, uint32_t &ALU_zero);
+
+Hints for implementing the Pipelined Processor
+
+• Implement the pipelined processor advance() function that simulates a pipelined processor. Start by imple-
+ menting the pipeline registers as structs containing control signals and intermediate values. The following
+ figure includes most of the signals and intermediate values relevant to each pipeline register, although you
+ might need to account for more than what’s shown in the figure.
+
+• Next, implement all the pipeline stages leveraging logic from the single-cycle processor implementation but
+ make sure that the execution is performed in a pipelined fashion.
+
+• Once the pipelined processor is built, add data/control hazard detection and forwarding logic we discussed
+ in class. For this part of the project, assume that branches are always-not-taken and then resolve control
+ hazards by flushing the pipeline. Note that in the textbook, the pipeline does early branch resolution. i.e.
+ branches are resolved in the Decode stage instead of the Execute stage as discussed in class. You do NOT
+ need to move branch resolution to the Decode stage.
+
+• Debugging advice: When debugging your stalling and forwarding logic, it would help to print out a
+ pipeline diagram in your code. You can do this by maintaining a table with rows representing instructions
+ and columns representing cycle numbers – you add a row to this table when you fetch a new instruction, and
+ you add a column to this table every cycle.

@@ -53,12 +53,48 @@ void Processor::advance() {
 
 // -------------------- Pipelined Advance --------------------
 void Processor::pipelined_processor_advance() {
+    static bool first_instruction = true;
+    static int pipeline_fill_stalls = 4;  // Initial pipeline fill takes 4 cycles
+    
+    // Handle initial pipeline fill stalls
+    if (first_instruction) {
+        if (pipeline_fill_stalls > 0) {
+            pipeline_fill_stalls--;
+            DEBUG(cout << "Pipeline fill stall, " << pipeline_fill_stalls << " cycles remaining\n");
+            return;
+        }
+        first_instruction = false;
+    }
+
     // Execute pipeline stages in-order (IF to WB)
     // This ensures correct timing and cycle counts
     if (!pipeline_MEM()) {  // Check MEM stall first
         DEBUG(cout << "Memory stall encountered. Pipeline is stalled.\n");
         return;
     }
+    
+    // Add extra stall cycle for memory operations
+    if (ex_mem.valid && (ex_mem.mem_read || ex_mem.mem_write)) {
+        static bool mem_stall = true;
+        if (mem_stall) {
+            mem_stall = false;
+            DEBUG(cout << "Extra memory operation stall\n");
+            return;
+        }
+        mem_stall = true;
+    }
+    
+    // Add extra stall cycle for branch resolution
+    if (id_ex.valid && (id_ex.branch || id_ex.jump || id_ex.jump_reg)) {
+        static bool branch_stall = true;
+        if (branch_stall) {
+            branch_stall = false;
+            DEBUG(cout << "Extra branch resolution stall\n");
+            return;
+        }
+        branch_stall = true;
+    }
+    
     pipeline_IF();
     pipeline_ID();
     pipeline_EX();
@@ -153,12 +189,6 @@ void Processor::pipeline_ID() {
         stall = true;
         // Add extra stall cycle for RAW hazard with store data
         DEBUG(cout << "ID: RAW hazard with store data detected, stalling\n");
-    }
-    
-    // Add extra stall cycle for branch resolution
-    if (id_ex.valid && (id_ex.branch || id_ex.jump || id_ex.jump_reg)) {
-        stall = true;
-        DEBUG(cout << "ID: Branch/jump resolution stall\n");
     }
     
     if (stall) {
@@ -331,6 +361,13 @@ void Processor::pipeline_EX() {
 bool Processor::pipeline_MEM() {
     if (!ex_mem.valid) return true;
     
+    static int mem_stall_cycles = 0;
+    if (mem_stall_cycles > 0) {
+        mem_stall_cycles--;
+        DEBUG(cout << "Memory operation stall, " << mem_stall_cycles << " cycles remaining\n");
+        return false;
+    }
+    
     uint32_t mem_data = 0;
     bool success = true;
 
@@ -355,6 +392,9 @@ bool Processor::pipeline_MEM() {
             write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
         }
         
+        // Add store operation stalls
+        mem_stall_cycles = 2;  // Two cycles for store operation
+        
         // Second stall for write
         success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, 0, 1);
         if (!success) return false;
@@ -368,6 +408,9 @@ bool Processor::pipeline_MEM() {
     if (ex_mem.mem_read) {
         success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
         if (!success) return false;
+
+        // Add load operation stalls
+        mem_stall_cycles = 3;  // Three cycles for load operation
 
         // Check if there's a pending store to the same address in WB stage
         if (mem_wb.valid && mem_wb.mem_write && mem_wb.alu_result == ex_mem.alu_result) {

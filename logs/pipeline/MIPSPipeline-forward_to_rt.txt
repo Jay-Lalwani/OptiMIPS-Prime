@@ -2964,6 +2964,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 15 to R[3]
+L1 Cache (read hit): 21237792<-[f]
 L1 Cache (write hit): [f]<-15
 MEM: Stored value 15 at address 0xf
 L1 Cache (read hit): 2355429376<-[18]
@@ -3011,19 +3012,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 15<-[f]
-MEM: Loaded value 15 from address 0xf
-L1 Cache (read hit): 21180450<-[1c]
-IF: Fetched instruction 0x1433022 from PC 0x1c
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
 
 CYCLE 67
 R[0]: 0
@@ -3058,7 +3048,127 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 15<-[f]
+L1 Cache (read hit): 15<-[f]
+MEM: Loaded value 15 from address 0xf
+L1 Cache (read hit): 21180450<-[1c]
+IF: Fetched instruction 0x1433022 from PC 0x1c
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+
+CYCLE 68
+R[0]: 0
+R[1]: 0
+R[2]: 15
+R[3]: 15
+R[4]: 5
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 10
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
 WB: Writing 15 to R[5]
+Memory operation stall, 1 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 69
+R[0]: 0
+R[1]: 0
+R[2]: 15
+R[3]: 15
+R[4]: 5
+R[5]: 15
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 10
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 70
+R[0]: 0
+R[1]: 0
+R[2]: 15
+R[3]: 15
+R[4]: 5
+R[5]: 15
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 10
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
 L1 Cache (read hit): 10827808<-[20]
 IF: Fetched instruction 0xa53820 from PC 0x20
 REG_DEST: 1
@@ -3071,7 +3181,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 68
+CYCLE 71
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3120,7 +3230,7 @@ EX: Forwarding 30 from WB to rs
 EX: Forwarding 30 from WB to rt
 EX: Branch taken to 0x2c
 
-CYCLE 69
+CYCLE 72
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3166,7 +3276,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 70
+CYCLE 73
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3211,7 +3321,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 71
+CYCLE 74
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3256,7 +3366,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 72
+CYCLE 75
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3301,7 +3411,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 73
+CYCLE 76
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3346,7 +3456,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 74
+CYCLE 77
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3390,7 +3500,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 75
+CYCLE 78
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3435,7 +3545,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 76
+CYCLE 79
 R[0]: 0
 R[1]: 0
 R[2]: 15
@@ -3469,4 +3579,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 38.5 nanoseconds.
+Completed execution in 40 nanoseconds.

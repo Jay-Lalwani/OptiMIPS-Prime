@@ -96054,6 +96054,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 536936948<-[0]
 L1 Cache (write hit): [0]<-1002
 MEM: Stored value 1002 at address 0x0
 L1 Cache (read hit): 0<-[20]
@@ -96101,6 +96102,42 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 2069
+R[0]: 0
+R[1]: -1
+R[2]: 1002
+R[3]: 1
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
 L1 Cache (read hit): 0<-[24]
 IF: Fetched instruction 0x0 from PC 0x24
 REG_DEST: 1
@@ -96113,7 +96150,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2069
+CYCLE 2070
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96158,7 +96195,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2070
+CYCLE 2071
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96203,7 +96240,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2071
+CYCLE 2072
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96248,7 +96285,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2072
+CYCLE 2073
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96293,7 +96330,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2073
+CYCLE 2074
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96338,7 +96375,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2074
+CYCLE 2075
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96383,7 +96420,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 2075
+CYCLE 2076
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96427,7 +96464,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 2076
+CYCLE 2077
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96472,7 +96509,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 2077
+CYCLE 2078
 R[0]: 0
 R[1]: -1
 R[2]: 1002
@@ -96506,4 +96543,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 1039 nanoseconds.
+Completed execution in 1039.5 nanoseconds.

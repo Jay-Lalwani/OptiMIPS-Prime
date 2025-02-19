@@ -97,6 +97,7 @@ void Processor::pipeline_ID() {
     uint32_t funct = instruction & 0x3F;
     uint32_t imm   = instruction & 0xFFFF;
     
+   
     control.decode(instruction);
     
     int write_reg = control.link ? 31 : (control.reg_dest ? rd : rt);
@@ -105,28 +106,26 @@ void Processor::pipeline_ID() {
     
     // Check for load-use hazard with previous instruction
     if (id_ex.valid && id_ex.mem_read) {
-        if (id_ex.write_reg != 0 && (
-            (id_ex.write_reg == rs) || 
-            (!control.ALU_src && id_ex.write_reg == rt) ||
-            (control.mem_write && id_ex.write_reg == rt))) {
+        if ((id_ex.write_reg == rs && rs != 0) || 
+            (!control.ALU_src && id_ex.write_reg == rt && rt != 0)) {
             stall = true;
             DEBUG(cout << "ID: Load-use hazard detected with previous instruction, stalling\n");
         }
     }
     
-    // Check for RAW hazard with store data in EX stage
-    if (control.mem_write && id_ex.valid && id_ex.reg_write && id_ex.write_reg == rt) {
-        // Only stall if we can't forward the data
-        if (id_ex.mem_read) {
+    // Check for load-use hazard with instruction in MEM stage
+    if (ex_mem.valid && ex_mem.mem_read) {
+        if ((ex_mem.write_reg == rs && rs != 0) || 
+            (!control.ALU_src && ex_mem.write_reg == rt && rt != 0)) {
             stall = true;
-            DEBUG(cout << "ID: RAW hazard with store data detected, stalling\n");
+            DEBUG(cout << "ID: Load-use hazard detected with MEM stage, stalling\n");
         }
     }
     
     // Check for store after load hazard
     if (control.mem_write && id_ex.valid && id_ex.mem_read) {
-        // Only stall if we're using the loaded value
-        if (id_ex.write_reg != 0 && id_ex.write_reg == rt) {
+        // Only stall if the load's destination is used by the store
+        if (id_ex.write_reg == rt) {
             stall = true;
             DEBUG(cout << "ID: Store after load hazard detected, stalling\n");
         }
@@ -134,8 +133,8 @@ void Processor::pipeline_ID() {
     
     // Check for load after store hazard
     if (control.mem_read && id_ex.valid && id_ex.mem_write) {
-        // Stall if addresses might overlap
-        if (rs == id_ex.write_reg || (!control.ALU_src && rt == id_ex.write_reg)) {
+        // Only stall if addresses might overlap
+        if (rs == id_ex.rs || (!control.ALU_src && rt == id_ex.rt)) {
             stall = true;
             DEBUG(cout << "ID: Load after store hazard detected, stalling\n");
         }
@@ -143,27 +142,25 @@ void Processor::pipeline_ID() {
     
     // Check for store-store hazard (to same address)
     if (control.mem_write && id_ex.valid && id_ex.mem_write) {
-        // Stall if addresses might overlap
-        if (rs == id_ex.write_reg || (!control.ALU_src && rt == id_ex.write_reg)) {
+        // Only stall if addresses might overlap
+        if (rs == id_ex.rs || (!control.ALU_src && rt == id_ex.rt)) {
             stall = true;
             DEBUG(cout << "ID: Store-store hazard detected, stalling\n");
         }
     }
     
-    // Handle branch hazards
-    if (control.branch || control.jump) {
-        // Stall on branch if we need a value that's being loaded
-        if (id_ex.valid && id_ex.mem_read && id_ex.write_reg != 0 && 
-            (id_ex.write_reg == rs || (!control.ALU_src && id_ex.write_reg == rt))) {
+    // Check for RAW hazard with store data
+    if (control.mem_write && id_ex.valid && id_ex.reg_write && id_ex.write_reg == rt) {
+        stall = true;
+        DEBUG(cout << "ID: RAW hazard with store data detected, stalling\n");
+    }
+    
+    // Additional RAW hazard check for ALU operations
+    if (id_ex.valid && id_ex.reg_write) {
+        if ((id_ex.write_reg == rs && rs != 0) || 
+            (!control.ALU_src && id_ex.write_reg == rt && rt != 0)) {
             stall = true;
-            DEBUG(cout << "ID: Branch/Jump hazard with load detected, stalling\n");
-        }
-        
-        // Stall on branch if we need a value that's still in EX
-        if (id_ex.valid && id_ex.reg_write && id_ex.write_reg != 0 && 
-            (id_ex.write_reg == rs || (!control.ALU_src && id_ex.write_reg == rt))) {
-            stall = true;
-            DEBUG(cout << "ID: Branch/Jump hazard with EX stage detected, stalling\n");
+            DEBUG(cout << "ID: RAW hazard with ALU operation detected, stalling\n");
         }
     }
     
@@ -347,8 +344,12 @@ bool Processor::pipeline_MEM() {
     uint32_t mem_data = 0;
     bool success = true;
 
-    // For stores, do a single memory operation
+    // For stores, first read the current memory value for partial word operations
     if (ex_mem.mem_write) {
+        // First read stall
+        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
+        if (!success) return false;  // Stall if memory busy
+
         // Use the forwarded value from WB stage if available
         uint32_t write_data_mem = ex_mem.write_data;
         if (mem_wb.valid && mem_wb.reg_write && mem_wb.write_reg != 0 && 
@@ -357,47 +358,37 @@ bool Processor::pipeline_MEM() {
             DEBUG(cout << "MEM: Forwarding " << write_data_mem << " from WB for store\n");
         }
 
-        // For partial word operations, read current memory value first
-        if (ex_mem.halfword || ex_mem.byte) {
-            success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
-            if (!success) {
-                mem_stall_cycles = 1;  // One cycle for read
-                return false;
-            }
-            
-            // Apply masking for partial word operations
-            if (ex_mem.halfword) {
-                write_data_mem = (mem_data & 0xffff0000) | (write_data_mem & 0xffff);
-            } else { // byte
-                write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
-            }
+        // Apply masking for partial word operations
+        if (ex_mem.halfword) {
+            write_data_mem = (mem_data & 0xffff0000) | (write_data_mem & 0xffff);
+        } else if (ex_mem.byte) {
+            write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
         }
         
-        // Perform the store operation
+        // Add store operation stall - only 1 cycle for store
+        mem_stall_cycles = 1;
+        
+        // Second stall for write
         success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, 0, 1);
-        if (!success) {
-            mem_stall_cycles = 1;  // One cycle for write
-            return false;
-        }
+        if (!success) return false;
         
-        // Save the written value for forwarding
+        // Save both the written value and address for forwarding
         ex_mem.mem_read_data = write_data_mem;
         DEBUG(cout << "MEM: Stored value " << write_data_mem << " at address 0x" << hex << ex_mem.alu_result << dec << "\n");
     }
     
-    // For loads, perform a single read operation
+    // For loads, perform the read with stall
     if (ex_mem.mem_read) {
+        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
+        if (!success) return false;
+
+        // Add load operation stall - only 2 cycles for load
+        mem_stall_cycles = 2;
+
         // Check if there's a pending store to the same address in WB stage
         if (mem_wb.valid && mem_wb.mem_write && mem_wb.alu_result == ex_mem.alu_result) {
             mem_data = mem_wb.mem_read_data;  // Forward the stored value
             DEBUG(cout << "MEM: Forwarding stored value " << mem_data << " from WB for load\n");
-            success = true;
-        } else {
-            success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
-            if (!success) {
-                mem_stall_cycles = 2;  // Two cycles for load
-                return false;
-            }
         }
 
         // Apply masking and sign extension for loads
@@ -408,6 +399,10 @@ bool Processor::pipeline_MEM() {
             uint8_t byte = mem_data & 0xff;
             mem_data = (byte & 0x80) ? (0xffffff00 | byte) : byte;
         }
+        
+        // Additional stall cycle for load completion
+        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
+        if (!success) return false;
         
         // Save the read value for forwarding
         ex_mem.mem_read_data = mem_data;

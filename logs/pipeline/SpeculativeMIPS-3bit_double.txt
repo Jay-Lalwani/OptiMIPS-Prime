@@ -15615,6 +15615,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 604046482<-[0]
 L1 Cache (write hit): [0]<-11
 MEM: Stored value 11 at address 0x0
 L1 Cache (read hit): 0<-[5c]
@@ -15662,6 +15663,42 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 342
+R[0]: 0
+R[1]: 0
+R[2]: 11
+R[3]: 1
+R[4]: -1227133514
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
 L1 Cache (read hit): 0<-[60]
 IF: Fetched instruction 0x0 from PC 0x60
 REG_DEST: 1
@@ -15674,7 +15711,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 342
+CYCLE 343
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15719,7 +15756,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 343
+CYCLE 344
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15764,7 +15801,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 344
+CYCLE 345
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15809,7 +15846,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 345
+CYCLE 346
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15854,7 +15891,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 346
+CYCLE 347
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15899,7 +15936,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 347
+CYCLE 348
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15944,7 +15981,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 348
+CYCLE 349
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -15989,7 +16026,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 349
+CYCLE 350
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -16033,7 +16070,7 @@ MEM[87]: 0
 L2 Cache: replacing line at idx:2 way:0 due to conflicting address:80
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 350
+CYCLE 351
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -16078,7 +16115,7 @@ MEM[86]: 0
 MEM[87]: 0
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 351
+CYCLE 352
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -16112,4 +16149,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 176 nanoseconds.
+Completed execution in 176.5 nanoseconds.

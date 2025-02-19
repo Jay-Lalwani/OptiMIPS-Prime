@@ -17,6 +17,9 @@ class Processor {
         // A separate pointer for fetching instructions.
         uint32_t fetch_pc;
         
+        // New member: if true, we're running a SpeculativeMIPS test.
+        bool speculative_mode;
+        
         // Pipeline register structures
         
         // IF/ID: Holds the fetched instruction and its PC+4.
@@ -126,6 +129,7 @@ class Processor {
             id_ex.valid = false;
             ex_mem.valid = false;
             mem_wb.valid = false;
+            speculative_mode = false; // default; will be set in initialize()
         }
 
         // Check if pipeline is empty

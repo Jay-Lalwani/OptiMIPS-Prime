@@ -73,26 +73,29 @@ void Processor::pipelined_processor_advance() {
         return;
     }
     
-    // Add extra stall cycle for memory operations
-    if (ex_mem.valid && (ex_mem.mem_read || ex_mem.mem_write)) {
-        static bool mem_stall = true;
-        if (mem_stall) {
-            mem_stall = false;
+    // Memory operation stall
+    {
+        bool mem_stall = false;
+        if (ex_mem.valid && (ex_mem.mem_read || ex_mem.mem_write)) {
+            // Insert exactly one stall cycle for memory operations
+            mem_stall = true;
             DEBUG(cout << "Extra memory operation stall\n");
-            return;
         }
-        mem_stall = true;
+        if (mem_stall) {
+            return;  // Stall for one cycle
+        }
     }
     
-    // Add extra stall cycle for branch resolution
-    if (id_ex.valid && (id_ex.branch || id_ex.jump || id_ex.jump_reg)) {
-        static bool branch_stall = true;
-        if (branch_stall) {
-            branch_stall = false;
+    // Branch resolution stall
+    {
+        bool branch_stall = false;
+        if (id_ex.valid && (id_ex.branch || id_ex.jump || id_ex.jump_reg)) {
+            branch_stall = true;
             DEBUG(cout << "Extra branch resolution stall\n");
-            return;
         }
-        branch_stall = true;
+        if (branch_stall) {
+            return;  // Stall for one cycle
+        }
     }
     
     pipeline_IF();

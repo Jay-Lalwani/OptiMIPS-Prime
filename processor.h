@@ -128,8 +128,18 @@ class Processor {
             mem_wb.valid = false;
         }
 
-        // Get the committed PC.
-        uint32_t getPC() { return regfile.pc; }
+        // Check if pipeline is empty
+        bool isPipelineEmpty() {
+            return (!if_id.valid && !id_ex.valid && !ex_mem.valid && !mem_wb.valid);
+        }
+
+        // Get the committed PC
+        uint32_t getPC() { 
+            // Until the pipeline is empty, pretend PC is zero so that the main loop continues
+            if (!isPipelineEmpty())
+                return 0;
+            return regfile.pc;
+        }
 
         // Print the register file.
         void printRegFile() { regfile.print(); }

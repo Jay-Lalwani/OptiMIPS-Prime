@@ -135,8 +135,22 @@ def main():
         if not tests:
             return 1
         failed = 0
+        passed = 0
+        failed_tests = []
         for test in tests:
-            failed |= run_single_test(test)
+            result = run_single_test(test)
+            if result == 0:
+                passed += 1
+            else:
+                failed += 1
+                failed_tests.append(test)
+        print("\nSummary:")
+        print(f"Passed: {passed}")
+        print(f"Failed: {failed}")
+        if failed_tests:
+            print("\nFailed tests:")
+            for test in failed_tests:
+                print(f"  {test}")
         return failed
     
     return run_single_test(test_name)

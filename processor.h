@@ -53,6 +53,7 @@ class Processor {
             int rs;
             int rt;
             int rd;
+            int write_reg;       // Destination register (computed early for hazard detection)
             int opcode;          // Saved for ALU control generation.
             uint32_t shamt;
             uint32_t funct;
@@ -72,6 +73,7 @@ class Processor {
             // Data fields
             uint32_t alu_result;
             uint32_t write_data;  // For store instructions.
+            uint32_t mem_read_data; // For forwarding from memory loads
             int write_reg;        // Destination register.
             uint32_t pc_branch;   // The PC to be committed (either sequential or branch target).
             bool zero;            // ALU zero flag.

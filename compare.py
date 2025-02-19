@@ -8,6 +8,7 @@ between pipeline and single-cycle log files for a specific test case.
 Usage:
     python compare_registers.py [test_name]
     If test_name is not provided, lists all available tests
+    If test_name is 'all', runs all available tests
 """
 
 import os
@@ -129,6 +130,15 @@ def main():
         return 0 if list_available_tests() else 1
     
     test_name = sys.argv[1]
+    if test_name == 'all':
+        tests = list_available_tests()
+        if not tests:
+            return 1
+        failed = 0
+        for test in tests:
+            failed |= run_single_test(test)
+        return failed
+    
     return run_single_test(test_name)
 
 if __name__ == "__main__":

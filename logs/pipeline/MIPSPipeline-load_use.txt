@@ -2827,6 +2827,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 1<-[0]
+L1 Cache (read hit): 1<-[0]
 MEM: Loaded value 1 from address 0x0
 L1 Cache (read hit): 4331552<-[c]
 IF: Fetched instruction 0x421820 from PC 0xc
@@ -2972,6 +2973,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2<-[0]
+L1 Cache (read hit): 2<-[0]
 MEM: Loaded value 2 from address 0x0
 L1 Cache (read hit): 545587201<-[18]
 IF: Fetched instruction 0x20850001 from PC 0x18
@@ -3116,6 +3118,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 3<-[0]
+L1 Cache (read hit): 3<-[0]
 MEM: Loaded value 3 from address 0x0
 L1 Cache (read hit): 547749889<-[24]
 IF: Fetched instruction 0x20a60001 from PC 0x24
@@ -3259,6 +3262,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 4<-[0]
+L1 Cache (read hit): 4<-[0]
 MEM: Loaded value 4 from address 0x0
 L1 Cache (read hit): 2900754432<-[30]
 IF: Fetched instruction 0xace60000 from PC 0x30
@@ -3355,6 +3359,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 4<-[4]
 L1 Cache (read hit): 4<-[4]
 MEM: Loaded value 4 from address 0x4
 L1 Cache (read hit): 285736962<-[38]

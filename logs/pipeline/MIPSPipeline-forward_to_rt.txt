@@ -3013,6 +3013,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 15<-[f]
+L1 Cache (read hit): 15<-[f]
 MEM: Loaded value 15 from address 0xf
 L1 Cache (read hit): 21180450<-[1c]
 IF: Fetched instruction 0x1433022 from PC 0x1c

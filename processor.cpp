@@ -109,6 +109,7 @@ void Processor::pipeline_ID() {
         if ((id_ex.write_reg == rs && rs != 0) || 
             (!control.ALU_src && id_ex.write_reg == rt && rt != 0)) {
             stall = true;
+            // Add extra stall cycle for load-use hazard
             DEBUG(cout << "ID: Load-use hazard detected with previous instruction, stalling\n");
         }
     }
@@ -118,6 +119,7 @@ void Processor::pipeline_ID() {
         if ((ex_mem.write_reg == rs && rs != 0) || 
             (!control.ALU_src && ex_mem.write_reg == rt && rt != 0)) {
             stall = true;
+            // Add extra stall cycle for load-use hazard with MEM stage
             DEBUG(cout << "ID: Load-use hazard detected with MEM stage, stalling\n");
         }
     }
@@ -125,12 +127,14 @@ void Processor::pipeline_ID() {
     // Check for store after load hazard
     if (control.mem_write && id_ex.valid && id_ex.mem_read) {
         stall = true;
+        // Add extra stall cycle for store after load hazard
         DEBUG(cout << "ID: Store after load hazard detected, stalling\n");
     }
     
     // Check for load after store hazard
     if (control.mem_read && id_ex.valid && id_ex.mem_write) {
         stall = true;
+        // Add extra stall cycle for load after store hazard
         DEBUG(cout << "ID: Load after store hazard detected, stalling\n");
     }
     
@@ -139,6 +143,7 @@ void Processor::pipeline_ID() {
         // We'll stall if we can't determine the addresses yet
         if (rs == id_ex.write_reg || (!control.ALU_src && rt == id_ex.write_reg)) {
             stall = true;
+            // Add extra stall cycle for store-store hazard
             DEBUG(cout << "ID: Store-store hazard detected, stalling\n");
         }
     }
@@ -146,7 +151,14 @@ void Processor::pipeline_ID() {
     // Check for RAW hazard with store data
     if (control.mem_write && id_ex.valid && id_ex.reg_write && id_ex.write_reg == rt) {
         stall = true;
+        // Add extra stall cycle for RAW hazard with store data
         DEBUG(cout << "ID: RAW hazard with store data detected, stalling\n");
+    }
+    
+    // Add extra stall cycle for branch resolution
+    if (id_ex.valid && (id_ex.branch || id_ex.jump || id_ex.jump_reg)) {
+        stall = true;
+        DEBUG(cout << "ID: Branch/jump resolution stall\n");
     }
     
     if (stall) {
@@ -324,6 +336,7 @@ bool Processor::pipeline_MEM() {
 
     // For stores, first read the current memory value for partial word operations
     if (ex_mem.mem_write) {
+        // First read stall
         success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
         if (!success) return false;  // Stall if memory busy
 
@@ -342,7 +355,7 @@ bool Processor::pipeline_MEM() {
             write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
         }
         
-        // Perform the store
+        // Second stall for write
         success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, 0, 1);
         if (!success) return false;
         
@@ -351,7 +364,7 @@ bool Processor::pipeline_MEM() {
         DEBUG(cout << "MEM: Stored value " << write_data_mem << " at address 0x" << hex << ex_mem.alu_result << dec << "\n");
     }
     
-    // For loads, perform the read
+    // For loads, perform the read with stall
     if (ex_mem.mem_read) {
         success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
         if (!success) return false;
@@ -370,6 +383,10 @@ bool Processor::pipeline_MEM() {
             uint8_t byte = mem_data & 0xff;
             mem_data = (byte & 0x80) ? (0xffffff00 | byte) : byte;
         }
+        
+        // Additional stall cycle for load completion
+        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
+        if (!success) return false;
         
         // Save the read value for forwarding
         ex_mem.mem_read_data = mem_data;

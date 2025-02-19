@@ -9,6 +9,4 @@ exit
 EOF
 
 # Now that we're out of the container, run additional commands
-git add .
-git commit -m "Update Logs"
-git push
+python3 compare.py all

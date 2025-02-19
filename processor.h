@@ -86,6 +86,7 @@ class Processor {
             bool reg_write;
             bool mem_to_reg;
             bool link;
+            bool mem_write;  // Added for store-load forwarding
             // Data fields.
             uint32_t mem_read_data;
             uint32_t alu_result;

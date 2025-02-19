@@ -2788,6 +2788,7 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[2]
 
 CYCLE 62
@@ -2880,6 +2881,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 499 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 499 to R[1]
 
@@ -3018,6 +3020,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 498 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 498 to R[1]
 
@@ -3156,6 +3159,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 497 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 497 to R[1]
 
@@ -3294,6 +3298,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 496 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 496 to R[1]
 
@@ -3432,6 +3437,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 495 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 495 to R[1]
 
@@ -3570,6 +3576,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 494 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 494 to R[1]
 
@@ -3708,6 +3715,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 493 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 493 to R[1]
 
@@ -3846,6 +3854,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 492 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 492 to R[1]
 
@@ -3984,6 +3993,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 491 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 491 to R[1]
 
@@ -4122,6 +4132,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 490 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 490 to R[1]
 
@@ -4260,6 +4271,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 489 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 489 to R[1]
 
@@ -4398,6 +4410,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 488 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 488 to R[1]
 
@@ -4536,6 +4549,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 487 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 487 to R[1]
 
@@ -4674,6 +4688,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 486 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 486 to R[1]
 
@@ -4812,6 +4827,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 485 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 485 to R[1]
 
@@ -4950,6 +4966,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 484 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 484 to R[1]
 
@@ -5088,6 +5105,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 483 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 483 to R[1]
 
@@ -5226,6 +5244,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 482 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 482 to R[1]
 
@@ -5364,6 +5383,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 481 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 481 to R[1]
 
@@ -5502,6 +5522,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 480 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 480 to R[1]
 
@@ -5640,6 +5661,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 479 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 479 to R[1]
 
@@ -5778,6 +5800,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 478 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 478 to R[1]
 
@@ -5916,6 +5939,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 477 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 477 to R[1]
 
@@ -6054,6 +6078,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 476 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 476 to R[1]
 
@@ -6192,6 +6217,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 475 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 475 to R[1]
 
@@ -6330,6 +6356,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 474 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 474 to R[1]
 
@@ -6468,6 +6495,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 473 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 473 to R[1]
 
@@ -6606,6 +6634,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 472 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 472 to R[1]
 
@@ -6744,6 +6773,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 471 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 471 to R[1]
 
@@ -6882,6 +6912,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 470 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 470 to R[1]
 
@@ -7020,6 +7051,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 469 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 469 to R[1]
 
@@ -7158,6 +7190,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 468 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 468 to R[1]
 
@@ -7296,6 +7329,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 467 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 467 to R[1]
 
@@ -7434,6 +7468,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 466 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 466 to R[1]
 
@@ -7572,6 +7607,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 465 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 465 to R[1]
 
@@ -7710,6 +7746,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 464 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 464 to R[1]
 
@@ -7848,6 +7885,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 463 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 463 to R[1]
 
@@ -7986,6 +8024,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 462 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 462 to R[1]
 
@@ -8124,6 +8163,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 461 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 461 to R[1]
 
@@ -8262,6 +8302,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 460 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 460 to R[1]
 
@@ -8400,6 +8441,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 459 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 459 to R[1]
 
@@ -8538,6 +8580,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 458 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 458 to R[1]
 
@@ -8676,6 +8719,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 457 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 457 to R[1]
 
@@ -8814,6 +8858,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 456 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 456 to R[1]
 
@@ -8952,6 +8997,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 455 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 455 to R[1]
 
@@ -9090,6 +9136,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 454 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 454 to R[1]
 
@@ -9228,6 +9275,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 453 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 453 to R[1]
 
@@ -9366,6 +9414,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 452 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 452 to R[1]
 
@@ -9504,6 +9553,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 451 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 451 to R[1]
 
@@ -9642,6 +9692,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 450 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 450 to R[1]
 
@@ -9780,6 +9831,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 449 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 449 to R[1]
 
@@ -9918,6 +9970,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 448 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 448 to R[1]
 
@@ -10056,6 +10109,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 447 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 447 to R[1]
 
@@ -10194,6 +10248,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 446 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 446 to R[1]
 
@@ -10332,6 +10387,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 445 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 445 to R[1]
 
@@ -10470,6 +10526,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 444 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 444 to R[1]
 
@@ -10608,6 +10665,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 443 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 443 to R[1]
 
@@ -10746,6 +10804,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 442 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 442 to R[1]
 
@@ -10884,6 +10943,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 441 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 441 to R[1]
 
@@ -11022,6 +11082,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 440 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 440 to R[1]
 
@@ -11160,6 +11221,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 439 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 439 to R[1]
 
@@ -11298,6 +11360,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 438 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 438 to R[1]
 
@@ -11436,6 +11499,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 437 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 437 to R[1]
 
@@ -11574,6 +11638,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 436 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 436 to R[1]
 
@@ -11712,6 +11777,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 435 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 435 to R[1]
 
@@ -11850,6 +11916,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 434 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 434 to R[1]
 
@@ -11988,6 +12055,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 433 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 433 to R[1]
 
@@ -12126,6 +12194,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 432 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 432 to R[1]
 
@@ -12264,6 +12333,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 431 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 431 to R[1]
 
@@ -12402,6 +12472,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 430 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 430 to R[1]
 
@@ -12540,6 +12611,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 429 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 429 to R[1]
 
@@ -12678,6 +12750,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 428 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 428 to R[1]
 
@@ -12816,6 +12889,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 427 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 427 to R[1]
 
@@ -12954,6 +13028,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 426 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 426 to R[1]
 
@@ -13092,6 +13167,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 425 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 425 to R[1]
 
@@ -13230,6 +13306,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 424 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 424 to R[1]
 
@@ -13368,6 +13445,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 423 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 423 to R[1]
 
@@ -13506,6 +13584,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 422 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 422 to R[1]
 
@@ -13644,6 +13723,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 421 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 421 to R[1]
 
@@ -13782,6 +13862,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 420 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 420 to R[1]
 
@@ -13920,6 +14001,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 419 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 419 to R[1]
 
@@ -14058,6 +14140,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 418 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 418 to R[1]
 
@@ -14196,6 +14279,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 417 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 417 to R[1]
 
@@ -14334,6 +14418,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 416 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 416 to R[1]
 
@@ -14472,6 +14557,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 415 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 415 to R[1]
 
@@ -14610,6 +14696,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 414 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 414 to R[1]
 
@@ -14748,6 +14835,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 413 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 413 to R[1]
 
@@ -14886,6 +14974,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 412 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 412 to R[1]
 
@@ -15024,6 +15113,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 411 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 411 to R[1]
 
@@ -15162,6 +15252,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 410 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 410 to R[1]
 
@@ -15300,6 +15391,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 409 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 409 to R[1]
 
@@ -15438,6 +15530,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 408 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 408 to R[1]
 
@@ -15576,6 +15669,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 407 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 407 to R[1]
 
@@ -15714,6 +15808,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 406 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 406 to R[1]
 
@@ -15852,6 +15947,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 405 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 405 to R[1]
 
@@ -15990,6 +16086,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 404 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 404 to R[1]
 
@@ -16128,6 +16225,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 403 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 403 to R[1]
 
@@ -16266,6 +16364,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 402 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 402 to R[1]
 
@@ -16404,6 +16503,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 401 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 401 to R[1]
 
@@ -16542,6 +16642,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 400 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 400 to R[1]
 
@@ -16680,6 +16781,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 399 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 399 to R[1]
 
@@ -16818,6 +16920,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 398 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 398 to R[1]
 
@@ -16956,6 +17059,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 397 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 397 to R[1]
 
@@ -17094,6 +17198,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 396 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 396 to R[1]
 
@@ -17232,6 +17337,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 395 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 395 to R[1]
 
@@ -17370,6 +17476,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 394 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 394 to R[1]
 
@@ -17508,6 +17615,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 393 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 393 to R[1]
 
@@ -17646,6 +17754,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 392 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 392 to R[1]
 
@@ -17784,6 +17893,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 391 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 391 to R[1]
 
@@ -17922,6 +18032,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 390 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 390 to R[1]
 
@@ -18060,6 +18171,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 389 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 389 to R[1]
 
@@ -18198,6 +18310,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 388 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 388 to R[1]
 
@@ -18336,6 +18449,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 387 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 387 to R[1]
 
@@ -18474,6 +18588,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 386 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 386 to R[1]
 
@@ -18612,6 +18727,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 385 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 385 to R[1]
 
@@ -18750,6 +18866,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 384 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 384 to R[1]
 
@@ -18888,6 +19005,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 383 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 383 to R[1]
 
@@ -19026,6 +19144,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 382 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 382 to R[1]
 
@@ -19164,6 +19283,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 381 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 381 to R[1]
 
@@ -19302,6 +19422,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 380 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 380 to R[1]
 
@@ -19440,6 +19561,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 379 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 379 to R[1]
 
@@ -19578,6 +19700,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 378 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 378 to R[1]
 
@@ -19716,6 +19839,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 377 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 377 to R[1]
 
@@ -19854,6 +19978,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 376 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 376 to R[1]
 
@@ -19992,6 +20117,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 375 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 375 to R[1]
 
@@ -20130,6 +20256,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 374 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 374 to R[1]
 
@@ -20268,6 +20395,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 373 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 373 to R[1]
 
@@ -20406,6 +20534,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 372 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 372 to R[1]
 
@@ -20544,6 +20673,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 371 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 371 to R[1]
 
@@ -20682,6 +20812,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 370 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 370 to R[1]
 
@@ -20820,6 +20951,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 369 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 369 to R[1]
 
@@ -20958,6 +21090,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 368 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 368 to R[1]
 
@@ -21096,6 +21229,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 367 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 367 to R[1]
 
@@ -21234,6 +21368,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 366 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 366 to R[1]
 
@@ -21372,6 +21507,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 365 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 365 to R[1]
 
@@ -21510,6 +21646,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 364 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 364 to R[1]
 
@@ -21648,6 +21785,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 363 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 363 to R[1]
 
@@ -21786,6 +21924,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 362 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 362 to R[1]
 
@@ -21924,6 +22063,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 361 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 361 to R[1]
 
@@ -22062,6 +22202,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 360 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 360 to R[1]
 
@@ -22200,6 +22341,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 359 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 359 to R[1]
 
@@ -22338,6 +22480,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 358 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 358 to R[1]
 
@@ -22476,6 +22619,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 357 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 357 to R[1]
 
@@ -22614,6 +22758,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 356 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 356 to R[1]
 
@@ -22752,6 +22897,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 355 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 355 to R[1]
 
@@ -22890,6 +23036,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 354 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 354 to R[1]
 
@@ -23028,6 +23175,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 353 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 353 to R[1]
 
@@ -23166,6 +23314,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 352 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 352 to R[1]
 
@@ -23304,6 +23453,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 351 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 351 to R[1]
 
@@ -23442,6 +23592,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 350 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 350 to R[1]
 
@@ -23580,6 +23731,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 349 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 349 to R[1]
 
@@ -23718,6 +23870,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 348 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 348 to R[1]
 
@@ -23856,6 +24009,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 347 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 347 to R[1]
 
@@ -23994,6 +24148,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 346 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 346 to R[1]
 
@@ -24132,6 +24287,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 345 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 345 to R[1]
 
@@ -24270,6 +24426,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 344 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 344 to R[1]
 
@@ -24408,6 +24565,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 343 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 343 to R[1]
 
@@ -24546,6 +24704,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 342 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 342 to R[1]
 
@@ -24684,6 +24843,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 341 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 341 to R[1]
 
@@ -24822,6 +24982,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 340 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 340 to R[1]
 
@@ -24960,6 +25121,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 339 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 339 to R[1]
 
@@ -25098,6 +25260,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 338 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 338 to R[1]
 
@@ -25236,6 +25399,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 337 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 337 to R[1]
 
@@ -25374,6 +25538,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 336 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 336 to R[1]
 
@@ -25512,6 +25677,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 335 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 335 to R[1]
 
@@ -25650,6 +25816,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 334 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 334 to R[1]
 
@@ -25788,6 +25955,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 333 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 333 to R[1]
 
@@ -25926,6 +26094,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 332 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 332 to R[1]
 
@@ -26064,6 +26233,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 331 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 331 to R[1]
 
@@ -26202,6 +26372,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 330 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 330 to R[1]
 
@@ -26340,6 +26511,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 329 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 329 to R[1]
 
@@ -26478,6 +26650,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 328 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 328 to R[1]
 
@@ -26616,6 +26789,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 327 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 327 to R[1]
 
@@ -26754,6 +26928,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 326 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 326 to R[1]
 
@@ -26892,6 +27067,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 325 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 325 to R[1]
 
@@ -27030,6 +27206,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 324 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 324 to R[1]
 
@@ -27168,6 +27345,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 323 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 323 to R[1]
 
@@ -27306,6 +27484,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 322 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 322 to R[1]
 
@@ -27444,6 +27623,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 321 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 321 to R[1]
 
@@ -27582,6 +27762,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 320 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 320 to R[1]
 
@@ -27720,6 +27901,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 319 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 319 to R[1]
 
@@ -27858,6 +28040,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 318 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 318 to R[1]
 
@@ -27996,6 +28179,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 317 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 317 to R[1]
 
@@ -28134,6 +28318,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 316 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 316 to R[1]
 
@@ -28272,6 +28457,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 315 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 315 to R[1]
 
@@ -28410,6 +28596,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 314 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 314 to R[1]
 
@@ -28548,6 +28735,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 313 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 313 to R[1]
 
@@ -28686,6 +28874,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 312 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 312 to R[1]
 
@@ -28824,6 +29013,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 311 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 311 to R[1]
 
@@ -28962,6 +29152,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 310 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 310 to R[1]
 
@@ -29100,6 +29291,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 309 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 309 to R[1]
 
@@ -29238,6 +29430,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 308 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 308 to R[1]
 
@@ -29376,6 +29569,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 307 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 307 to R[1]
 
@@ -29514,6 +29708,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 306 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 306 to R[1]
 
@@ -29652,6 +29847,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 305 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 305 to R[1]
 
@@ -29790,6 +29986,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 304 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 304 to R[1]
 
@@ -29928,6 +30125,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 303 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 303 to R[1]
 
@@ -30066,6 +30264,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 302 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 302 to R[1]
 
@@ -30204,6 +30403,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 301 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 301 to R[1]
 
@@ -30342,6 +30542,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 300 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 300 to R[1]
 
@@ -30480,6 +30681,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 299 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 299 to R[1]
 
@@ -30618,6 +30820,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 298 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 298 to R[1]
 
@@ -30756,6 +30959,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 297 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 297 to R[1]
 
@@ -30894,6 +31098,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 296 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 296 to R[1]
 
@@ -31032,6 +31237,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 295 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 295 to R[1]
 
@@ -31170,6 +31376,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 294 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 294 to R[1]
 
@@ -31308,6 +31515,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 293 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 293 to R[1]
 
@@ -31446,6 +31654,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 292 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 292 to R[1]
 
@@ -31584,6 +31793,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 291 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 291 to R[1]
 
@@ -31722,6 +31932,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 290 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 290 to R[1]
 
@@ -31860,6 +32071,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 289 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 289 to R[1]
 
@@ -31998,6 +32210,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 288 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 288 to R[1]
 
@@ -32136,6 +32349,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 287 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 287 to R[1]
 
@@ -32274,6 +32488,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 286 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 286 to R[1]
 
@@ -32412,6 +32627,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 285 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 285 to R[1]
 
@@ -32550,6 +32766,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 284 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 284 to R[1]
 
@@ -32688,6 +32905,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 283 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 283 to R[1]
 
@@ -32826,6 +33044,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 282 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 282 to R[1]
 
@@ -32964,6 +33183,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 281 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 281 to R[1]
 
@@ -33102,6 +33322,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 280 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 280 to R[1]
 
@@ -33240,6 +33461,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 279 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 279 to R[1]
 
@@ -33378,6 +33600,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 278 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 278 to R[1]
 
@@ -33516,6 +33739,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 277 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 277 to R[1]
 
@@ -33654,6 +33878,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 276 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 276 to R[1]
 
@@ -33792,6 +34017,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 275 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 275 to R[1]
 
@@ -33930,6 +34156,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 274 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 274 to R[1]
 
@@ -34068,6 +34295,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 273 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 273 to R[1]
 
@@ -34206,6 +34434,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 272 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 272 to R[1]
 
@@ -34344,6 +34573,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 271 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 271 to R[1]
 
@@ -34482,6 +34712,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 270 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 270 to R[1]
 
@@ -34620,6 +34851,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 269 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 269 to R[1]
 
@@ -34758,6 +34990,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 268 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 268 to R[1]
 
@@ -34896,6 +35129,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 267 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 267 to R[1]
 
@@ -35034,6 +35268,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 266 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 266 to R[1]
 
@@ -35172,6 +35407,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 265 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 265 to R[1]
 
@@ -35310,6 +35546,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 264 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 264 to R[1]
 
@@ -35448,6 +35685,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 263 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 263 to R[1]
 
@@ -35586,6 +35824,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 262 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 262 to R[1]
 
@@ -35724,6 +35963,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 261 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 261 to R[1]
 
@@ -35862,6 +36102,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 260 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 260 to R[1]
 
@@ -36000,6 +36241,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 259 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 259 to R[1]
 
@@ -36138,6 +36380,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 258 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 258 to R[1]
 
@@ -36276,6 +36519,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 257 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 257 to R[1]
 
@@ -36414,6 +36658,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 256 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 256 to R[1]
 
@@ -36552,6 +36797,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 255 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 255 to R[1]
 
@@ -36690,6 +36936,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 254 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 254 to R[1]
 
@@ -36828,6 +37075,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 253 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 253 to R[1]
 
@@ -36966,6 +37214,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 252 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 252 to R[1]
 
@@ -37104,6 +37353,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 251 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 251 to R[1]
 
@@ -37242,6 +37492,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 250 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 250 to R[1]
 
@@ -37380,6 +37631,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 249 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 249 to R[1]
 
@@ -37518,6 +37770,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 248 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 248 to R[1]
 
@@ -37656,6 +37909,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 247 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 247 to R[1]
 
@@ -37794,6 +38048,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 246 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 246 to R[1]
 
@@ -37932,6 +38187,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 245 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 245 to R[1]
 
@@ -38070,6 +38326,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 244 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 244 to R[1]
 
@@ -38208,6 +38465,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 243 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 243 to R[1]
 
@@ -38346,6 +38604,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 242 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 242 to R[1]
 
@@ -38484,6 +38743,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 241 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 241 to R[1]
 
@@ -38622,6 +38882,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 240 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 240 to R[1]
 
@@ -38760,6 +39021,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 239 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 239 to R[1]
 
@@ -38898,6 +39160,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 238 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 238 to R[1]
 
@@ -39036,6 +39299,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 237 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 237 to R[1]
 
@@ -39174,6 +39438,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 236 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 236 to R[1]
 
@@ -39312,6 +39577,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 235 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 235 to R[1]
 
@@ -39450,6 +39716,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 234 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 234 to R[1]
 
@@ -39588,6 +39855,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 233 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 233 to R[1]
 
@@ -39726,6 +39994,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 232 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 232 to R[1]
 
@@ -39864,6 +40133,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 231 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 231 to R[1]
 
@@ -40002,6 +40272,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 230 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 230 to R[1]
 
@@ -40140,6 +40411,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 229 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 229 to R[1]
 
@@ -40278,6 +40550,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 228 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 228 to R[1]
 
@@ -40416,6 +40689,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 227 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 227 to R[1]
 
@@ -40554,6 +40828,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 226 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 226 to R[1]
 
@@ -40692,6 +40967,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 225 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 225 to R[1]
 
@@ -40830,6 +41106,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 224 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 224 to R[1]
 
@@ -40968,6 +41245,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 223 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 223 to R[1]
 
@@ -41106,6 +41384,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 222 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 222 to R[1]
 
@@ -41244,6 +41523,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 221 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 221 to R[1]
 
@@ -41382,6 +41662,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 220 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 220 to R[1]
 
@@ -41520,6 +41801,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 219 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 219 to R[1]
 
@@ -41658,6 +41940,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 218 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 218 to R[1]
 
@@ -41796,6 +42079,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 217 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 217 to R[1]
 
@@ -41934,6 +42218,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 216 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 216 to R[1]
 
@@ -42072,6 +42357,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 215 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 215 to R[1]
 
@@ -42210,6 +42496,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 214 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 214 to R[1]
 
@@ -42348,6 +42635,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 213 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 213 to R[1]
 
@@ -42486,6 +42774,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 212 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 212 to R[1]
 
@@ -42624,6 +42913,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 211 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 211 to R[1]
 
@@ -42762,6 +43052,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 210 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 210 to R[1]
 
@@ -42900,6 +43191,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 209 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 209 to R[1]
 
@@ -43038,6 +43330,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 208 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 208 to R[1]
 
@@ -43176,6 +43469,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 207 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 207 to R[1]
 
@@ -43314,6 +43608,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 206 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 206 to R[1]
 
@@ -43452,6 +43747,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 205 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 205 to R[1]
 
@@ -43590,6 +43886,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 204 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 204 to R[1]
 
@@ -43728,6 +44025,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 203 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 203 to R[1]
 
@@ -43866,6 +44164,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 202 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 202 to R[1]
 
@@ -44004,6 +44303,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 201 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 201 to R[1]
 
@@ -44142,6 +44442,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 200 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 200 to R[1]
 
@@ -44280,6 +44581,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 199 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 199 to R[1]
 
@@ -44418,6 +44720,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 198 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 198 to R[1]
 
@@ -44556,6 +44859,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 197 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 197 to R[1]
 
@@ -44694,6 +44998,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 196 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 196 to R[1]
 
@@ -44832,6 +45137,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 195 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 195 to R[1]
 
@@ -44970,6 +45276,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 194 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 194 to R[1]
 
@@ -45108,6 +45415,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 193 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 193 to R[1]
 
@@ -45246,6 +45554,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 192 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 192 to R[1]
 
@@ -45384,6 +45693,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 191 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 191 to R[1]
 
@@ -45522,6 +45832,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 190 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 190 to R[1]
 
@@ -45660,6 +45971,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 189 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 189 to R[1]
 
@@ -45798,6 +46110,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 188 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 188 to R[1]
 
@@ -45936,6 +46249,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 187 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 187 to R[1]
 
@@ -46074,6 +46388,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 186 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 186 to R[1]
 
@@ -46212,6 +46527,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 185 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 185 to R[1]
 
@@ -46350,6 +46666,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 184 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 184 to R[1]
 
@@ -46488,6 +46805,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 183 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 183 to R[1]
 
@@ -46626,6 +46944,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 182 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 182 to R[1]
 
@@ -46764,6 +47083,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 181 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 181 to R[1]
 
@@ -46902,6 +47222,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 180 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 180 to R[1]
 
@@ -47040,6 +47361,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 179 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 179 to R[1]
 
@@ -47178,6 +47500,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 178 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 178 to R[1]
 
@@ -47316,6 +47639,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 177 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 177 to R[1]
 
@@ -47454,6 +47778,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 176 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 176 to R[1]
 
@@ -47592,6 +47917,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 175 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 175 to R[1]
 
@@ -47730,6 +48056,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 174 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 174 to R[1]
 
@@ -47868,6 +48195,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 173 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 173 to R[1]
 
@@ -48006,6 +48334,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 172 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 172 to R[1]
 
@@ -48144,6 +48473,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 171 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 171 to R[1]
 
@@ -48282,6 +48612,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 170 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 170 to R[1]
 
@@ -48420,6 +48751,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 169 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 169 to R[1]
 
@@ -48558,6 +48890,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 168 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 168 to R[1]
 
@@ -48696,6 +49029,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 167 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 167 to R[1]
 
@@ -48834,6 +49168,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 166 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 166 to R[1]
 
@@ -48972,6 +49307,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 165 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 165 to R[1]
 
@@ -49110,6 +49446,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 164 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 164 to R[1]
 
@@ -49248,6 +49585,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 163 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 163 to R[1]
 
@@ -49386,6 +49724,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 162 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 162 to R[1]
 
@@ -49524,6 +49863,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 161 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 161 to R[1]
 
@@ -49662,6 +50002,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 160 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 160 to R[1]
 
@@ -49800,6 +50141,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 159 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 159 to R[1]
 
@@ -49938,6 +50280,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 158 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 158 to R[1]
 
@@ -50076,6 +50419,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 157 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 157 to R[1]
 
@@ -50214,6 +50558,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 156 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 156 to R[1]
 
@@ -50352,6 +50697,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 155 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 155 to R[1]
 
@@ -50490,6 +50836,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 154 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 154 to R[1]
 
@@ -50628,6 +50975,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 153 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 153 to R[1]
 
@@ -50766,6 +51114,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 152 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 152 to R[1]
 
@@ -50904,6 +51253,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 151 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 151 to R[1]
 
@@ -51042,6 +51392,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 150 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 150 to R[1]
 
@@ -51180,6 +51531,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 149 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 149 to R[1]
 
@@ -51318,6 +51670,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 148 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 148 to R[1]
 
@@ -51456,6 +51809,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 147 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 147 to R[1]
 
@@ -51594,6 +51948,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 146 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 146 to R[1]
 
@@ -51732,6 +52087,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 145 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 145 to R[1]
 
@@ -51870,6 +52226,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 144 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 144 to R[1]
 
@@ -52008,6 +52365,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 143 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 143 to R[1]
 
@@ -52146,6 +52504,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 142 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 142 to R[1]
 
@@ -52284,6 +52643,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 141 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 141 to R[1]
 
@@ -52422,6 +52782,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 140 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 140 to R[1]
 
@@ -52560,6 +52921,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 139 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 139 to R[1]
 
@@ -52698,6 +53060,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 138 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 138 to R[1]
 
@@ -52836,6 +53199,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 137 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 137 to R[1]
 
@@ -52974,6 +53338,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 136 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 136 to R[1]
 
@@ -53112,6 +53477,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 135 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 135 to R[1]
 
@@ -53250,6 +53616,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 134 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 134 to R[1]
 
@@ -53388,6 +53755,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 133 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 133 to R[1]
 
@@ -53526,6 +53894,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 132 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 132 to R[1]
 
@@ -53664,6 +54033,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 131 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 131 to R[1]
 
@@ -53802,6 +54172,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 130 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 130 to R[1]
 
@@ -53940,6 +54311,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 129 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 129 to R[1]
 
@@ -54078,6 +54450,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 128 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 128 to R[1]
 
@@ -54216,6 +54589,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 127 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 127 to R[1]
 
@@ -54354,6 +54728,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 126 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 126 to R[1]
 
@@ -54492,6 +54867,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 125 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 125 to R[1]
 
@@ -54630,6 +55006,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 124 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 124 to R[1]
 
@@ -54768,6 +55145,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 123 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 123 to R[1]
 
@@ -54906,6 +55284,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 122 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 122 to R[1]
 
@@ -55044,6 +55423,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 121 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 121 to R[1]
 
@@ -55182,6 +55562,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 120 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 120 to R[1]
 
@@ -55320,6 +55701,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 119 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 119 to R[1]
 
@@ -55458,6 +55840,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 118 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 118 to R[1]
 
@@ -55596,6 +55979,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 117 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 117 to R[1]
 
@@ -55734,6 +56118,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 116 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 116 to R[1]
 
@@ -55872,6 +56257,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 115 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 115 to R[1]
 
@@ -56010,6 +56396,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 114 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 114 to R[1]
 
@@ -56148,6 +56535,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 113 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 113 to R[1]
 
@@ -56286,6 +56674,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 112 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 112 to R[1]
 
@@ -56424,6 +56813,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 111 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 111 to R[1]
 
@@ -56562,6 +56952,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 110 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 110 to R[1]
 
@@ -56700,6 +57091,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 109 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 109 to R[1]
 
@@ -56838,6 +57230,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 108 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 108 to R[1]
 
@@ -56976,6 +57369,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 107 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 107 to R[1]
 
@@ -57114,6 +57508,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 106 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 106 to R[1]
 
@@ -57252,6 +57647,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 105 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 105 to R[1]
 
@@ -57390,6 +57786,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 104 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 104 to R[1]
 
@@ -57528,6 +57925,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 103 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 103 to R[1]
 
@@ -57666,6 +58064,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 102 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 102 to R[1]
 
@@ -57804,6 +58203,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 101 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 101 to R[1]
 
@@ -57942,6 +58342,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 100 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 100 to R[1]
 
@@ -58080,6 +58481,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 99 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 99 to R[1]
 
@@ -58218,6 +58620,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 98 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 98 to R[1]
 
@@ -58356,6 +58759,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 97 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 97 to R[1]
 
@@ -58494,6 +58898,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 96 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 96 to R[1]
 
@@ -58632,6 +59037,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 95 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 95 to R[1]
 
@@ -58770,6 +59176,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 94 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 94 to R[1]
 
@@ -58908,6 +59315,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 93 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 93 to R[1]
 
@@ -59046,6 +59454,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 92 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 92 to R[1]
 
@@ -59184,6 +59593,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 91 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 91 to R[1]
 
@@ -59322,6 +59732,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 90 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 90 to R[1]
 
@@ -59460,6 +59871,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 89 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 89 to R[1]
 
@@ -59598,6 +60010,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 88 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 88 to R[1]
 
@@ -59736,6 +60149,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 87 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 87 to R[1]
 
@@ -59874,6 +60288,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 86 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 86 to R[1]
 
@@ -60012,6 +60427,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 85 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 85 to R[1]
 
@@ -60150,6 +60566,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 84 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 84 to R[1]
 
@@ -60288,6 +60705,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 83 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 83 to R[1]
 
@@ -60426,6 +60844,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 82 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 82 to R[1]
 
@@ -60564,6 +60983,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 81 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 81 to R[1]
 
@@ -60702,6 +61122,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 80 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 80 to R[1]
 
@@ -60840,6 +61261,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 79 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 79 to R[1]
 
@@ -60978,6 +61400,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 78 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 78 to R[1]
 
@@ -61116,6 +61539,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 77 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 77 to R[1]
 
@@ -61254,6 +61678,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 76 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 76 to R[1]
 
@@ -61392,6 +61817,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 75 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 75 to R[1]
 
@@ -61530,6 +61956,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 74 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 74 to R[1]
 
@@ -61668,6 +62095,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 73 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 73 to R[1]
 
@@ -61806,6 +62234,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 72 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 72 to R[1]
 
@@ -61944,6 +62373,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 71 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 71 to R[1]
 
@@ -62082,6 +62512,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 70 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 70 to R[1]
 
@@ -62220,6 +62651,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 69 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 69 to R[1]
 
@@ -62358,6 +62790,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 68 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 68 to R[1]
 
@@ -62496,6 +62929,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 67 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 67 to R[1]
 
@@ -62634,6 +63068,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 66 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 66 to R[1]
 
@@ -62772,6 +63207,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 65 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 65 to R[1]
 
@@ -62910,6 +63346,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 64 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 64 to R[1]
 
@@ -63048,6 +63485,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 63 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 63 to R[1]
 
@@ -63186,6 +63624,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 62 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 62 to R[1]
 
@@ -63324,6 +63763,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 61 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 61 to R[1]
 
@@ -63462,6 +63902,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 60 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 60 to R[1]
 
@@ -63600,6 +64041,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 59 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 59 to R[1]
 
@@ -63738,6 +64180,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 58 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 58 to R[1]
 
@@ -63876,6 +64319,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 57 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 57 to R[1]
 
@@ -64014,6 +64458,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 56 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 56 to R[1]
 
@@ -64152,6 +64597,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 55 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 55 to R[1]
 
@@ -64290,6 +64736,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 54 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 54 to R[1]
 
@@ -64428,6 +64875,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 53 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 53 to R[1]
 
@@ -64566,6 +65014,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 52 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 52 to R[1]
 
@@ -64704,6 +65153,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 51 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 51 to R[1]
 
@@ -64842,6 +65292,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 50 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 50 to R[1]
 
@@ -64980,6 +65431,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 49 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 49 to R[1]
 
@@ -65118,6 +65570,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 48 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 48 to R[1]
 
@@ -65256,6 +65709,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 47 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 47 to R[1]
 
@@ -65394,6 +65848,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 46 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 46 to R[1]
 
@@ -65532,6 +65987,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 45 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 45 to R[1]
 
@@ -65670,6 +66126,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 44 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 44 to R[1]
 
@@ -65808,6 +66265,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 43 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 43 to R[1]
 
@@ -65946,6 +66404,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 42 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 42 to R[1]
 
@@ -66084,6 +66543,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 41 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 41 to R[1]
 
@@ -66222,6 +66682,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 40 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 40 to R[1]
 
@@ -66360,6 +66821,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 39 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 39 to R[1]
 
@@ -66498,6 +66960,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 38 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 38 to R[1]
 
@@ -66636,6 +67099,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 37 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 37 to R[1]
 
@@ -66774,6 +67238,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 36 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 36 to R[1]
 
@@ -66912,6 +67377,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 35 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 35 to R[1]
 
@@ -67050,6 +67516,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 34 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 34 to R[1]
 
@@ -67188,6 +67655,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 33 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 33 to R[1]
 
@@ -67326,6 +67794,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 32 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 32 to R[1]
 
@@ -67464,6 +67933,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 31 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 31 to R[1]
 
@@ -67602,6 +68072,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 30 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 30 to R[1]
 
@@ -67740,6 +68211,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 29 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 29 to R[1]
 
@@ -67878,6 +68350,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 28 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 28 to R[1]
 
@@ -68016,6 +68489,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 27 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 27 to R[1]
 
@@ -68154,6 +68628,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 26 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 26 to R[1]
 
@@ -68292,6 +68767,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 25 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 25 to R[1]
 
@@ -68430,6 +68906,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 24 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 24 to R[1]
 
@@ -68568,6 +69045,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 23 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 23 to R[1]
 
@@ -68706,6 +69184,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 22 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 22 to R[1]
 
@@ -68844,6 +69323,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 21 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 21 to R[1]
 
@@ -68982,6 +69462,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 20 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 20 to R[1]
 
@@ -69120,6 +69601,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 19 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 19 to R[1]
 
@@ -69258,6 +69740,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 18 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 18 to R[1]
 
@@ -69396,6 +69879,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 17 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 17 to R[1]
 
@@ -69534,6 +70018,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 16 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 16 to R[1]
 
@@ -69672,6 +70157,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 15 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 15 to R[1]
 
@@ -69810,6 +70296,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 14 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 14 to R[1]
 
@@ -69948,6 +70435,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 13 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 13 to R[1]
 
@@ -70086,6 +70574,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 12 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 12 to R[1]
 
@@ -70224,6 +70713,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 11 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 11 to R[1]
 
@@ -70362,6 +70852,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 10 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 10 to R[1]
 
@@ -70500,6 +70991,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 9 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 9 to R[1]
 
@@ -70638,6 +71130,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 8 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 8 to R[1]
 
@@ -70776,6 +71269,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 7 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 7 to R[1]
 
@@ -70914,6 +71408,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 6 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 6 to R[1]
 
@@ -71052,6 +71547,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 5 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 5 to R[1]
 
@@ -71190,6 +71686,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 4 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 4 to R[1]
 
@@ -71328,6 +71825,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 3 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 3 to R[1]
 
@@ -71466,6 +71964,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 2 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 2 to R[1]
 
@@ -71604,6 +72103,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x8
 WB: Writing 1 to R[1]
 
@@ -71742,6 +72242,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[1]
 
 CYCLE 1561
@@ -71869,7 +72370,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 536936948<-[0]
-L1 Cache (write hit): [0]<-0
+L1 Cache (write hit): [0]<-1000
+MEM: Stored value 1000 at address 0x0
 L1 Cache (read hit): 0<-[1c]
 IF: Fetched instruction 0x0 from PC 0x1c
 REG_DEST: 1

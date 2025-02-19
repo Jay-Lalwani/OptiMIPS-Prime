@@ -2880,6 +2880,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[8]
 
 CYCLE 64
@@ -2926,6 +2927,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 65
@@ -3063,6 +3065,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[9]
 
 CYCLE 68
@@ -3109,6 +3112,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 69
@@ -3292,6 +3296,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rt
 WB: Writing 0 to R[11]
 
 CYCLE 73
@@ -3338,6 +3343,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 300 from WB to rs
 WB: Writing 300 to R[11]
 
 CYCLE 74
@@ -6063,6 +6069,7 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[12c]
 L1 Cache (write hit): [12c]<-0
+MEM: Stored value 0 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched instruction 0x21290001 from PC 0x3c
 REG_DEST: 0
@@ -8899,6 +8906,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 WB: Writing 1 to R[12]
 
@@ -9083,6 +9091,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 202
@@ -9220,6 +9229,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[9]
 
 CYCLE 205
@@ -9266,6 +9276,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 206
@@ -9449,6 +9460,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rt
 WB: Writing 0 to R[11]
 
 CYCLE 210
@@ -9495,6 +9507,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 300 from WB to rs
 WB: Writing 300 to R[11]
 
 CYCLE 211
@@ -9531,7 +9544,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[12c]
-L1 Cache (write hit): [12c]<-0
+L1 Cache (write hit): [12c]<-1
+MEM: Stored value 1 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched instruction 0x21290001 from PC 0x3c
 REG_DEST: 0
@@ -9680,6 +9694,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 WB: Writing 1 to R[12]
 
@@ -9864,6 +9879,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 219
@@ -10001,6 +10017,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[9]
 
 CYCLE 222
@@ -10047,6 +10064,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 223
@@ -10230,6 +10248,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rt
 WB: Writing 0 to R[11]
 
 CYCLE 227
@@ -10276,6 +10295,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 300 from WB to rs
 WB: Writing 300 to R[11]
 
 CYCLE 228
@@ -10311,8 +10331,9 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[12c]
-L1 Cache (write hit): [12c]<-0
+L1 Cache (read hit): 1<-[12c]
+L1 Cache (write hit): [12c]<-2
+MEM: Stored value 2 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched instruction 0x21290001 from PC 0x3c
 REG_DEST: 0
@@ -10461,6 +10482,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 WB: Writing 1 to R[12]
 
@@ -10645,6 +10667,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 236
@@ -10782,6 +10805,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[9]
 
 CYCLE 239
@@ -10828,6 +10852,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 240
@@ -11011,6 +11036,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rt
 WB: Writing 0 to R[11]
 
 CYCLE 244
@@ -11057,6 +11083,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 300 from WB to rs
 WB: Writing 300 to R[11]
 
 CYCLE 245
@@ -11092,8 +11119,9 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[12c]
-L1 Cache (write hit): [12c]<-0
+L1 Cache (read hit): 2<-[12c]
+L1 Cache (write hit): [12c]<-3
+MEM: Stored value 3 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched instruction 0x21290001 from PC 0x3c
 REG_DEST: 0
@@ -11242,6 +11270,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 WB: Writing 1 to R[12]
 
@@ -11426,6 +11455,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 253
@@ -11563,6 +11593,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rs
 WB: Writing 0 to R[9]
 
 CYCLE 256
@@ -11609,6 +11640,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 WB: Writing 1 to R[12]
 
 CYCLE 257
@@ -11792,6 +11824,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 0 from WB to rt
 WB: Writing 0 to R[11]
 
 CYCLE 261
@@ -11838,6 +11871,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 300 from WB to rs
 WB: Writing 300 to R[11]
 
 CYCLE 262
@@ -11873,8 +11907,9 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[12c]
-L1 Cache (write hit): [12c]<-0
+L1 Cache (read hit): 3<-[12c]
+L1 Cache (write hit): [12c]<-4
+MEM: Stored value 4 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched instruction 0x21290001 from PC 0x3c
 REG_DEST: 0
@@ -12023,6 +12058,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 WB: Writing 1 to R[12]
 
@@ -12207,6 +12243,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 0 from WB to rs
 EX: Branch taken to 0x54
 WB: Writing 0 to R[12]
 

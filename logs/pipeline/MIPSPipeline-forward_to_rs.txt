@@ -2880,6 +2880,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 3 from WB to rs
 WB: Writing 3 to R[2]
 
 CYCLE 64
@@ -2926,6 +2927,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 3 from WB to rs
 WB: Writing 3 to R[3]
 
 CYCLE 65
@@ -2962,7 +2964,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 539230210<-[3]
-L1 Cache (write hit): [3]<-0
+L1 Cache (write hit): [3]<-2
+MEM: Stored value 2 at address 0x3
 L1 Cache (read hit): 2355429376<-[18]
 IF: Fetched instruction 0x8c650000 from PC 0x18
 REG_DEST: 0
@@ -3008,7 +3011,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[3]
+L1 Cache (read hit): 2<-[3]
+MEM: Loaded value 2 from address 0x3
 L1 Cache (read hit): 545521679<-[1c]
 IF: Fetched instruction 0x2084000f from PC 0x1c
 REG_DEST: 0
@@ -3020,7 +3024,7 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-WB: Writing 0 to R[5]
+WB: Writing 2 to R[5]
 
 CYCLE 67
 R[0]: 0
@@ -3028,7 +3032,7 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 2
-R[5]: 0
+R[5]: 2
 R[6]: 0
 R[7]: 0
 R[8]: 0
@@ -3074,7 +3078,7 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 17
-R[5]: 0
+R[5]: 2
 R[6]: 0
 R[7]: 0
 R[8]: 0
@@ -3112,7 +3116,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-WB: Writing 0 to R[6]
+WB: Writing 4 to R[6]
 
 CYCLE 69
 R[0]: 0
@@ -3120,8 +3124,8 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 17
-R[5]: 0
-R[6]: 0
+R[5]: 2
+R[6]: 4
 R[7]: 0
 R[8]: 0
 R[9]: 0
@@ -3166,8 +3170,8 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 17
-R[5]: 0
-R[6]: 0
+R[5]: 2
+R[6]: 4
 R[7]: 0
 R[8]: 0
 R[9]: 0
@@ -3212,8 +3216,8 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 17
-R[5]: 0
-R[6]: 0
+R[5]: 2
+R[6]: 4
 R[7]: 0
 R[8]: 0
 R[9]: 0
@@ -3258,8 +3262,8 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 17
-R[5]: 0
-R[6]: 0
+R[5]: 2
+R[6]: 4
 R[7]: 0
 R[8]: 0
 R[9]: 0
@@ -3304,8 +3308,8 @@ R[1]: 0
 R[2]: 3
 R[3]: 3
 R[4]: 17
-R[5]: 0
-R[6]: 0
+R[5]: 2
+R[6]: 4
 R[7]: 0
 R[8]: 0
 R[9]: 0

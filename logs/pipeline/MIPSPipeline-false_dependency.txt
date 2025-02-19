@@ -2788,6 +2788,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 2 from WB to rt
 WB: Writing 2 to R[2]
 
 CYCLE 62
@@ -2925,6 +2926,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 3 from WB for store data
 WB: Writing 3 to R[3]
 
 CYCLE 65
@@ -2962,6 +2964,7 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 536936449<-[0]
 L1 Cache (write hit): [0]<-0
+MEM: Stored value 0 at address 0x0
 L1 Cache (read hit): 4403234<-[18]
 IF: Fetched instruction 0x433022 from PC 0x18
 REG_DEST: 1
@@ -3064,6 +3067,7 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 3 from WB for store data
 WB: Writing 3 to R[4]
 
 CYCLE 68
@@ -3101,6 +3105,7 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[0]
 L1 Cache (write hit): [0]<-0
+MEM: Stored value 0 at address 0x0
 L1 Cache (read hit): 8597538<-[24]
 IF: Fetched instruction 0x833022 from PC 0x24
 REG_DEST: 1

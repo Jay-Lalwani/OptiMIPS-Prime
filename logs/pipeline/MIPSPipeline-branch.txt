@@ -2788,6 +2788,8 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 5 from WB to rs
+EX: Forwarding 5 from WB to rt
 EX: Branch taken to 0x2c
 WB: Writing 5 to R[5]
 
@@ -2880,6 +2882,7 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
+EX: Forwarding 2 from WB to rs
 WB: Writing 2 to R[2]
 
 CYCLE 64
@@ -2926,6 +2929,7 @@ ALU_OP: 3
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
+EX: Forwarding 4 from WB to rs
 WB: Writing 4 to R[2]
 
 CYCLE 65
@@ -2972,6 +2976,7 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 6 from WB to rs
 EX: Branch taken to 0x4c
 WB: Writing 6 to R[2]
 

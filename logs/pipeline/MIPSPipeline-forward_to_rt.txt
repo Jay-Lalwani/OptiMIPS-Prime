@@ -2834,6 +2834,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+EX: Forwarding 5 from WB to rt
 WB: Writing 5 to R[4]
 
 CYCLE 63
@@ -2926,6 +2927,8 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+EX: Forwarding 15 from WB to rs
+EX: Forwarding 15 from WB for store data
 WB: Writing 15 to R[3]
 
 CYCLE 65
@@ -2963,6 +2966,7 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 21237792<-[f]
 L1 Cache (write hit): [f]<-0
+MEM: Stored value 0 at address 0xf
 L1 Cache (read hit): 2355429376<-[18]
 IF: Fetched instruction 0x8c650000 from PC 0x18
 REG_DEST: 0
@@ -3009,6 +3013,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[f]
+MEM: Loaded value 0 from address 0xf
 L1 Cache (read hit): 21180450<-[1c]
 IF: Fetched instruction 0x1433022 from PC 0x1c
 REG_DEST: 1
@@ -3112,6 +3117,8 @@ ALU_OP: 1
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 0
+EX: Forwarding 0 from WB to rs
+EX: Forwarding 0 from WB to rt
 EX: Branch taken to 0x2c
 WB: Writing 0 to R[7]
 

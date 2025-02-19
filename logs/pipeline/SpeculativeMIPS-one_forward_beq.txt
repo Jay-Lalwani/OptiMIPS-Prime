@@ -117370,7 +117370,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 536936948<-[0]
-L1 Cache (write hit): [0]<-0
+L1 Cache (write hit): [0]<-500
+MEM: Stored value 500 at address 0x0
 L1 Cache (read hit): 0<-[24]
 IF: Fetched instruction 0x0 from PC 0x24
 REG_DEST: 1

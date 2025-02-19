@@ -3421,16 +3421,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 58 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 76
@@ -3466,8 +3457,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 57 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 11 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 58 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -3511,16 +3502,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 56 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 78
@@ -3556,8 +3538,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 55 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 10 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 57 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -3601,16 +3583,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 54 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 80
@@ -3646,8 +3619,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 53 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 9 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 56 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -3691,16 +3664,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 52 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 82
@@ -3736,8 +3700,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 51 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 8 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 55 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -3781,16 +3745,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 50 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 84
@@ -3826,8 +3781,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 49 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 7 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 54 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -3871,16 +3826,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 48 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 86
@@ -3916,7 +3862,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 12c: 47 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 6 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 53 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -3960,16 +3907,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 46 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 88
@@ -4005,8 +3943,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 45 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 5 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 52 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4050,16 +3988,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 44 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 90
@@ -4095,8 +4024,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 43 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 4 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 51 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4140,16 +4069,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 42 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 92
@@ -4185,8 +4105,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 41 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 3 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 50 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4230,16 +4150,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 40 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 94
@@ -4275,8 +4186,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 39 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 2 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 49 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4320,16 +4231,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 38 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 96
@@ -4365,8 +4267,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 37 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 1 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 48 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4410,16 +4312,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 36 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 98
@@ -4455,7 +4348,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 12c: 35 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 47 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4499,16 +4392,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 34 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 100
@@ -4544,8 +4428,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 33 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 11 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 46 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4589,16 +4473,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 32 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 102
@@ -4634,8 +4509,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 31 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 10 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 45 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4679,16 +4554,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 30 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 104
@@ -4724,8 +4590,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 29 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 9 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 44 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4769,16 +4635,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 28 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 106
@@ -4814,8 +4671,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 27 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 8 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 43 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4859,16 +4716,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 26 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 108
@@ -4904,8 +4752,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 25 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 7 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 42 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -4949,16 +4797,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 24 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 110
@@ -4994,7 +4833,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 12c: 23 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 6 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 41 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5038,16 +4878,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 22 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 112
@@ -5083,8 +4914,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 21 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 5 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 40 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5128,16 +4959,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 20 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 114
@@ -5173,8 +4995,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 19 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 4 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 39 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5218,16 +5040,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 18 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 116
@@ -5263,8 +5076,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 17 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 3 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 38 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5308,16 +5121,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 16 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 118
@@ -5353,8 +5157,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 15 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 2 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 37 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5398,16 +5202,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 14 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 120
@@ -5443,8 +5238,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 13 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 1 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 36 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5488,16 +5283,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 12 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 122
@@ -5533,7 +5319,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L2 Cache (read miss) at address 12c: 11 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 35 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5577,16 +5363,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 10 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 124
@@ -5622,8 +5399,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 9 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 11 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 34 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5667,16 +5444,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 8 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 126
@@ -5712,8 +5480,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 7 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 10 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 33 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5757,16 +5525,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 6 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 128
@@ -5802,8 +5561,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 5 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 9 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 32 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5847,16 +5606,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 4 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 130
@@ -5892,8 +5642,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 3 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 8 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 31 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -5937,16 +5687,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 2 cycles remaining to be serviced
-MEM[100]: 0
-MEM[101]: 0
-MEM[102]: 0
-MEM[103]: 0
-MEM[104]: 0
-MEM[105]: 0
-MEM[106]: 0
-MEM[107]: 0
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 132
@@ -5982,8 +5723,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 12c: 1 cycles remaining to be serviced
+L1 Cache (write miss) at address 12c: 7 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 30 cycles remaining to be serviced
 MEM[100]: 0
 MEM[101]: 0
 MEM[102]: 0
@@ -6027,9 +5768,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read miss) at address 12c: 1 cycles remaining to be serviced
-L2 Cache (read hit): 0<-[12c]
-L1 Cache: replacing line at idx:4 way:0 due to conflicting address:12c
+Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 134
@@ -6065,58 +5804,19 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[12c]
-L1 Cache (write hit): [12c]<-0
-MEM: Stored value 0 at address 0x12c
-L1 Cache (read hit): 556335105<-[3c]
-IF: Fetched instruction 0x21290001 from PC 0x3c
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 3
-MEM_WRITE: 0
-ALU_SRC: 1
-REG_WRITE: 1
-
-CYCLE 135
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
+L1 Cache (write miss) at address 12c: 6 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 29 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 136
+CYCLE 135
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6152,7 +5852,2394 @@ R[31]: 0
 Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
+CYCLE 136
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 5 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 28 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
 CYCLE 137
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 138
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 4 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 27 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 139
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 140
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 3 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 26 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 141
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 142
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 2 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 25 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 143
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 144
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 1 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 24 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 145
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 146
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L2 Cache (write miss) at address 12c: 23 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 147
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 148
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 11 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 22 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 149
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 150
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 10 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 21 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 151
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 152
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 9 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 20 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 153
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 154
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 8 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 19 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 155
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 156
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 7 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 18 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 157
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 158
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 6 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 17 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 159
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 160
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 5 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 16 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 161
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 162
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 4 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 15 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 163
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 164
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 3 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 14 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 165
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 166
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 2 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 13 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 167
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 168
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 1 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 12 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 169
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 170
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L2 Cache (write miss) at address 12c: 11 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 171
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 172
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 11 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 10 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 173
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 174
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 10 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 9 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 175
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 176
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 9 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 8 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 177
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 178
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 8 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 7 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 179
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 180
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 7 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 6 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 181
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 182
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 6 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 5 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 183
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 184
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 5 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 4 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 185
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 186
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 4 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 3 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 187
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 188
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 3 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 2 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 189
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 190
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 2 cycles remaining to be serviced
+L2 Cache (write miss) at address 12c: 1 cycles remaining to be serviced
+MEM[100]: 0
+MEM[101]: 0
+MEM[102]: 0
+MEM[103]: 0
+MEM[104]: 0
+MEM[105]: 0
+MEM[106]: 0
+MEM[107]: 0
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 191
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 192
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write miss) at address 12c: 1 cycles remaining to be serviced
+L2 Cache (write hit): [12c]<-0
+L1 Cache: replacing line at idx:4 way:0 due to conflicting address:12c
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 193
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 194
+R[0]: 0
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 300
+R[12]: 1
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 5
+R[17]: 5
+R[18]: 300
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (write hit): [12c]<-0
+MEM: Stored value 0 at address 0x12c
+L1 Cache (read hit): 556335105<-[3c]
+IF: Fetched instruction 0x21290001 from PC 0x3c
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
+
+CYCLE 195
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6196,7 +8283,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 138
+CYCLE 196
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6242,7 +8329,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 139
+CYCLE 197
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6287,7 +8374,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 140
+CYCLE 198
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6332,7 +8419,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 141
+CYCLE 199
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6377,7 +8464,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 142
+CYCLE 200
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6422,7 +8509,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 143
+CYCLE 201
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6467,7 +8554,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 144
+CYCLE 202
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6512,7 +8599,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 145
+CYCLE 203
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6557,7 +8644,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 146
+CYCLE 204
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6602,7 +8689,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 147
+CYCLE 205
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6647,7 +8734,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 148
+CYCLE 206
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6692,7 +8779,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 149
+CYCLE 207
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6736,7 +8823,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 150
+CYCLE 208
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6781,7 +8868,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 151
+CYCLE 209
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6826,7 +8913,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 152
+CYCLE 210
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6871,7 +8958,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 153
+CYCLE 211
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6916,7 +9003,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 154
+CYCLE 212
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6961,7 +9048,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 155
+CYCLE 213
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7006,7 +9093,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 156
+CYCLE 214
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7051,7 +9138,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 157
+CYCLE 215
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7096,7 +9183,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 158
+CYCLE 216
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7141,7 +9228,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 159
+CYCLE 217
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7186,7 +9273,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 160
+CYCLE 218
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7231,7 +9318,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 161
+CYCLE 219
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7275,7 +9362,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 162
+CYCLE 220
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7320,7 +9407,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 163
+CYCLE 221
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7365,7 +9452,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 164
+CYCLE 222
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7410,7 +9497,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 165
+CYCLE 223
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7455,7 +9542,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 166
+CYCLE 224
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7500,7 +9587,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 167
+CYCLE 225
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7545,7 +9632,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 168
+CYCLE 226
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7590,7 +9677,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 169
+CYCLE 227
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7635,7 +9722,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 170
+CYCLE 228
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7680,7 +9767,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 171
+CYCLE 229
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7725,7 +9812,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 172
+CYCLE 230
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7770,7 +9857,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 173
+CYCLE 231
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7814,7 +9901,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 174
+CYCLE 232
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7859,7 +9946,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 175
+CYCLE 233
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7904,7 +9991,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 176
+CYCLE 234
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7949,7 +10036,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 177
+CYCLE 235
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7994,7 +10081,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 178
+CYCLE 236
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8039,7 +10126,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 179
+CYCLE 237
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8084,7 +10171,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 180
+CYCLE 238
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8129,7 +10216,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 181
+CYCLE 239
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8174,7 +10261,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 182
+CYCLE 240
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8219,7 +10306,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 183
+CYCLE 241
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8264,7 +10351,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 184
+CYCLE 242
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8309,7 +10396,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 185
+CYCLE 243
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8353,7 +10440,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 186
+CYCLE 244
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8398,7 +10485,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 187
+CYCLE 245
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8443,7 +10530,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 188
+CYCLE 246
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8488,7 +10575,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 189
+CYCLE 247
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8533,7 +10620,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 190
+CYCLE 248
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8578,7 +10665,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 191
+CYCLE 249
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8623,7 +10710,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 192
+CYCLE 250
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8668,7 +10755,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 193
+CYCLE 251
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8713,7 +10800,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 194
+CYCLE 252
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8758,7 +10845,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 195
+CYCLE 253
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8803,7 +10890,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 196
+CYCLE 254
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8841,7 +10928,7 @@ L2 Cache (read hit): 268500983<-[40]
 L1 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 197
+CYCLE 255
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8887,7 +10974,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 198
+CYCLE 256
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8932,7 +11019,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 199
+CYCLE 257
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8979,7 +11066,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 200
+CYCLE 258
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9025,7 +11112,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 201
+CYCLE 259
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9071,7 +11158,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 202
+CYCLE 260
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9117,7 +11204,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 203
+CYCLE 261
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9163,7 +11250,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 204
+CYCLE 262
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9209,7 +11296,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 205
+CYCLE 263
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9254,7 +11341,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 206
+CYCLE 264
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9300,7 +11387,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 207
+CYCLE 265
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9347,7 +11434,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 208
+CYCLE 266
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9393,7 +11480,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 209
+CYCLE 267
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9438,7 +11525,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 210
+CYCLE 268
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9483,7 +11570,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 211
+CYCLE 269
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9530,7 +11617,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 212
+CYCLE 270
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9577,7 +11664,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 213
+CYCLE 271
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9611,7 +11698,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 300 to R[11]
-L1 Cache (read hit): 0<-[12c]
 L1 Cache (write hit): [12c]<-1
 MEM: Stored value 1 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
@@ -9626,79 +11712,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 214
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 1
-R[9]: 0
-R[10]: 1
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 215
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 1
-R[9]: 0
-R[10]: 1
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 0 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 216
+CYCLE 272
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9744,7 +11758,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 217
+CYCLE 273
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9790,7 +11804,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 218
+CYCLE 274
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9837,7 +11851,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 219
+CYCLE 275
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9883,7 +11897,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 220
+CYCLE 276
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9929,7 +11943,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 221
+CYCLE 277
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9975,7 +11989,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 222
+CYCLE 278
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10021,7 +12035,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 223
+CYCLE 279
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10067,7 +12081,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 224
+CYCLE 280
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10112,7 +12126,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 225
+CYCLE 281
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10158,7 +12172,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 226
+CYCLE 282
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10205,7 +12219,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 227
+CYCLE 283
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10251,7 +12265,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 228
+CYCLE 284
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10296,7 +12310,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 229
+CYCLE 285
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10341,7 +12355,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 230
+CYCLE 286
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10388,7 +12402,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 231
+CYCLE 287
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10435,7 +12449,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 232
+CYCLE 288
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10469,7 +12483,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 300 to R[11]
-L1 Cache (read hit): 1<-[12c]
 L1 Cache (write hit): [12c]<-2
 MEM: Stored value 2 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
@@ -10484,79 +12497,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 233
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 2
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 234
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 2
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 0 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 235
+CYCLE 289
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10602,7 +12543,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 236
+CYCLE 290
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10648,7 +12589,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 237
+CYCLE 291
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10695,7 +12636,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 238
+CYCLE 292
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10741,7 +12682,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 239
+CYCLE 293
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10787,7 +12728,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 240
+CYCLE 294
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10833,7 +12774,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 241
+CYCLE 295
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10879,7 +12820,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 242
+CYCLE 296
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10925,7 +12866,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 243
+CYCLE 297
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10970,7 +12911,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 244
+CYCLE 298
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11016,7 +12957,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 245
+CYCLE 299
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11063,7 +13004,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 246
+CYCLE 300
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11109,7 +13050,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 247
+CYCLE 301
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11154,7 +13095,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 248
+CYCLE 302
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11199,7 +13140,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 249
+CYCLE 303
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11246,7 +13187,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 250
+CYCLE 304
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11293,7 +13234,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 251
+CYCLE 305
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11327,7 +13268,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 300 to R[11]
-L1 Cache (read hit): 2<-[12c]
 L1 Cache (write hit): [12c]<-3
 MEM: Stored value 3 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
@@ -11342,79 +13282,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 252
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 3
-R[9]: 0
-R[10]: 3
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 253
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 3
-R[9]: 0
-R[10]: 3
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 0 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 254
+CYCLE 306
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11460,7 +13328,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 255
+CYCLE 307
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11506,7 +13374,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 256
+CYCLE 308
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11553,7 +13421,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 257
+CYCLE 309
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11599,7 +13467,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 258
+CYCLE 310
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11645,7 +13513,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 259
+CYCLE 311
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11691,7 +13559,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 260
+CYCLE 312
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11737,7 +13605,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 261
+CYCLE 313
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11783,7 +13651,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 262
+CYCLE 314
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11828,7 +13696,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 263
+CYCLE 315
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11874,7 +13742,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 264
+CYCLE 316
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11921,7 +13789,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 265
+CYCLE 317
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11967,7 +13835,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 266
+CYCLE 318
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12012,7 +13880,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 267
+CYCLE 319
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12057,7 +13925,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 268
+CYCLE 320
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12104,7 +13972,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 269
+CYCLE 321
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12151,7 +14019,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 270
+CYCLE 322
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12185,7 +14053,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 300 to R[11]
-L1 Cache (read hit): 3<-[12c]
 L1 Cache (write hit): [12c]<-4
 MEM: Stored value 4 at address 0x12c
 L1 Cache (read hit): 556335105<-[3c]
@@ -12200,79 +14067,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 271
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 4
-R[9]: 0
-R[10]: 4
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 272
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 4
-R[9]: 0
-R[10]: 4
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 0 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 273
+CYCLE 323
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12318,7 +14113,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 274
+CYCLE 324
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12364,7 +14159,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 275
+CYCLE 325
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12411,7 +14206,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 276
+CYCLE 326
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12457,7 +14252,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 277
+CYCLE 327
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12503,7 +14298,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 278
+CYCLE 328
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12549,7 +14344,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 279
+CYCLE 329
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12596,7 +14391,7 @@ REG_WRITE: 0
 EX: Forwarding 0 from WB to rs
 EX: Branch taken to 0x54
 
-CYCLE 280
+CYCLE 330
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12642,7 +14437,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 281
+CYCLE 331
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12687,7 +14482,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 282
+CYCLE 332
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12732,7 +14527,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 283
+CYCLE 333
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12777,7 +14572,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 284
+CYCLE 334
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12822,7 +14617,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 285
+CYCLE 335
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12867,7 +14662,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 286
+CYCLE 336
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12912,7 +14707,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 287
+CYCLE 337
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12957,7 +14752,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 288
+CYCLE 338
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13002,7 +14797,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 289
+CYCLE 339
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13047,7 +14842,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 290
+CYCLE 340
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13092,7 +14887,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 291
+CYCLE 341
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13136,7 +14931,7 @@ MEM[87]: 0
 L2 Cache: replacing line at idx:2 way:0 due to conflicting address:80
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 292
+CYCLE 342
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13181,7 +14976,7 @@ MEM[86]: 0
 MEM[87]: 0
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 293
+CYCLE 343
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13215,4 +15010,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 147 nanoseconds.
+Completed execution in 172 nanoseconds.

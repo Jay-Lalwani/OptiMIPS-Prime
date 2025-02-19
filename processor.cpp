@@ -124,34 +124,28 @@ void Processor::pipeline_ID() {
         }
     }
     
-    // Check for store after load hazard
-    if (control.mem_write && id_ex.valid && id_ex.mem_read) {
+    // Only stall for store after load if we need the loaded value for the store
+    if (control.mem_write && id_ex.valid && id_ex.mem_read && id_ex.write_reg == rt) {
         stall = true;
-        // Add extra stall cycle for store after load hazard
         DEBUG(cout << "ID: Store after load hazard detected, stalling\n");
     }
     
-    // Check for load after store hazard
-    if (control.mem_read && id_ex.valid && id_ex.mem_write) {
-        stall = true;
-        // Add extra stall cycle for load after store hazard
-        DEBUG(cout << "ID: Load after store hazard detected, stalling\n");
-    }
+    // No need to stall for load after store - memory forwarding will handle it
     
-    // Check for store-store hazard (to same address)
+    // Only stall for store-store if we're writing to the same address and need a value
     if (control.mem_write && id_ex.valid && id_ex.mem_write) {
-        // We'll stall if we can't determine the addresses yet
-        if (rs == id_ex.write_reg || (!control.ALU_src && rt == id_ex.write_reg)) {
+        // Only stall if we need a value that's being computed
+        if ((rs != 0 && rs == id_ex.write_reg) || 
+            (!control.ALU_src && rt != 0 && rt == id_ex.write_reg)) {
             stall = true;
-            // Add extra stall cycle for store-store hazard
             DEBUG(cout << "ID: Store-store hazard detected, stalling\n");
         }
     }
     
-    // Check for RAW hazard with store data
-    if (control.mem_write && id_ex.valid && id_ex.reg_write && id_ex.write_reg == rt) {
+    // Check for RAW hazard with store data only if we actually need the value
+    if (control.mem_write && id_ex.valid && id_ex.reg_write && 
+        id_ex.write_reg == rt && rt != 0) {
         stall = true;
-        // Add extra stall cycle for RAW hazard with store data
         DEBUG(cout << "ID: RAW hazard with store data detected, stalling\n");
     }
     
@@ -335,69 +329,68 @@ bool Processor::pipeline_MEM() {
     uint32_t mem_data = 0;
     bool success = true;
 
-    // For stores, first read the current memory value for partial word operations
-    if (ex_mem.mem_write) {
-        // First read stall
-        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
-        if (!success) return false;  // Stall if memory busy
+    // Only access memory if we need to
+    if (ex_mem.mem_write || ex_mem.mem_read) {
+        // For stores, first read the current memory value for partial word operations
+        if (ex_mem.mem_write) {
+            // First read stall
+            success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
+            if (!success) return false;  // Stall if memory busy
 
-        // Use the forwarded value from WB stage if available
-        uint32_t write_data_mem = ex_mem.write_data;
-        if (mem_wb.valid && mem_wb.reg_write && mem_wb.write_reg != 0 && 
-            mem_wb.write_reg == ex_mem.write_reg) {
-            write_data_mem = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
-            DEBUG(cout << "MEM: Forwarding " << write_data_mem << " from WB for store\n");
-        }
+            // Use the forwarded value from WB stage if available
+            uint32_t write_data_mem = ex_mem.write_data;
+            if (mem_wb.valid && mem_wb.reg_write && mem_wb.write_reg != 0 && 
+                mem_wb.write_reg == ex_mem.write_reg) {
+                write_data_mem = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
+                DEBUG(cout << "MEM: Forwarding " << write_data_mem << " from WB for store\n");
+            }
 
-        // Apply masking for partial word operations
-        if (ex_mem.halfword) {
-            write_data_mem = (mem_data & 0xffff0000) | (write_data_mem & 0xffff);
-        } else if (ex_mem.byte) {
-            write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
-        }
-        
-        // Add store operation stalls
-        mem_stall_cycles = 2;  // Two cycles for store operation
-        
-        // Second stall for write
-        success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, 0, 1);
-        if (!success) return false;
-        
-        // Save both the written value and address for forwarding
-        ex_mem.mem_read_data = write_data_mem;
-        DEBUG(cout << "MEM: Stored value " << write_data_mem << " at address 0x" << hex << ex_mem.alu_result << dec << "\n");
-    }
-    
-    // For loads, perform the read with stall
-    if (ex_mem.mem_read) {
-        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
-        if (!success) return false;
-
-        // Add load operation stalls
-        mem_stall_cycles = 3;  // Three cycles for load operation
-
-        // Check if there's a pending store to the same address in WB stage
-        if (mem_wb.valid && mem_wb.mem_write && mem_wb.alu_result == ex_mem.alu_result) {
-            mem_data = mem_wb.mem_read_data;  // Forward the stored value
-            DEBUG(cout << "MEM: Forwarding stored value " << mem_data << " from WB for load\n");
-        }
-
-        // Apply masking and sign extension for loads
-        if (ex_mem.halfword) {
-            uint16_t half = mem_data & 0xffff;
-            mem_data = (half & 0x8000) ? (0xffff0000 | half) : half;
-        } else if (ex_mem.byte) {
-            uint8_t byte = mem_data & 0xff;
-            mem_data = (byte & 0x80) ? (0xffffff00 | byte) : byte;
+            // Apply masking for partial word operations
+            if (ex_mem.halfword) {
+                write_data_mem = (mem_data & 0xffff0000) | (write_data_mem & 0xffff);
+            } else if (ex_mem.byte) {
+                write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
+            }
+            
+            // Add store operation stalls - reduced from 2 to 1
+            mem_stall_cycles = 1;  // One cycle for store operation
+            
+            // Second stall for write
+            success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, 0, 1);
+            if (!success) return false;
+            
+            // Save both the written value and address for forwarding
+            ex_mem.mem_read_data = write_data_mem;
+            DEBUG(cout << "MEM: Stored value " << write_data_mem << " at address 0x" << hex << ex_mem.alu_result << dec << "\n");
         }
         
-        // Additional stall cycle for load completion
-        success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
-        if (!success) return false;
-        
-        // Save the read value for forwarding
-        ex_mem.mem_read_data = mem_data;
-        DEBUG(cout << "MEM: Loaded value " << mem_data << " from address 0x" << hex << ex_mem.alu_result << dec << "\n");
+        // For loads, perform the read with stall
+        if (ex_mem.mem_read) {
+            success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
+            if (!success) return false;
+
+            // Add load operation stalls - reduced from 3 to 2
+            mem_stall_cycles = 2;  // Two cycles for load operation
+
+            // Check if there's a pending store to the same address in WB stage
+            if (mem_wb.valid && mem_wb.mem_write && mem_wb.alu_result == ex_mem.alu_result) {
+                mem_data = mem_wb.mem_read_data;  // Forward the stored value
+                DEBUG(cout << "MEM: Forwarding stored value " << mem_data << " from WB for load\n");
+            }
+
+            // Apply masking and sign extension for loads
+            if (ex_mem.halfword) {
+                uint16_t half = mem_data & 0xffff;
+                mem_data = (half & 0x8000) ? (0xffff0000 | half) : half;
+            } else if (ex_mem.byte) {
+                uint8_t byte = mem_data & 0xff;
+                mem_data = (byte & 0x80) ? (0xffffff00 | byte) : byte;
+            }
+            
+            // Save the read value for forwarding
+            ex_mem.mem_read_data = mem_data;
+            DEBUG(cout << "MEM: Loaded value " << mem_data << " from address 0x" << hex << ex_mem.alu_result << dec << "\n");
+        }
     }
     
     // Populate MEM/WB pipeline register

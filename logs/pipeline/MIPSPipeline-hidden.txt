@@ -6113,46 +6113,10 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 136
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
 Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 137
+CYCLE 136
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6196,7 +6160,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 138
+CYCLE 137
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6242,7 +6206,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 139
+CYCLE 138
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6287,7 +6251,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 140
+CYCLE 139
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6332,7 +6296,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 141
+CYCLE 140
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6377,7 +6341,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 142
+CYCLE 141
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6422,7 +6386,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 143
+CYCLE 142
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6467,7 +6431,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 144
+CYCLE 143
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6512,7 +6476,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 145
+CYCLE 144
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6557,7 +6521,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 146
+CYCLE 145
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6602,7 +6566,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 147
+CYCLE 146
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6647,7 +6611,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 148
+CYCLE 147
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6692,7 +6656,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 149
+CYCLE 148
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6736,7 +6700,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 150
+CYCLE 149
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6781,7 +6745,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 151
+CYCLE 150
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6826,7 +6790,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 152
+CYCLE 151
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6871,7 +6835,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 153
+CYCLE 152
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6916,7 +6880,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 154
+CYCLE 153
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -6961,7 +6925,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 155
+CYCLE 154
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7006,7 +6970,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 156
+CYCLE 155
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7051,7 +7015,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 157
+CYCLE 156
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7096,7 +7060,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 158
+CYCLE 157
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7141,7 +7105,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 159
+CYCLE 158
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7186,7 +7150,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 160
+CYCLE 159
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7231,7 +7195,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 161
+CYCLE 160
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7275,7 +7239,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 162
+CYCLE 161
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7320,7 +7284,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 163
+CYCLE 162
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7365,7 +7329,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 164
+CYCLE 163
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7410,7 +7374,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 165
+CYCLE 164
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7455,7 +7419,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 166
+CYCLE 165
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7500,7 +7464,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 167
+CYCLE 166
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7545,7 +7509,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 168
+CYCLE 167
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7590,7 +7554,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 169
+CYCLE 168
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7635,7 +7599,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 170
+CYCLE 169
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7680,7 +7644,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 171
+CYCLE 170
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7725,7 +7689,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 172
+CYCLE 171
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7770,7 +7734,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 173
+CYCLE 172
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7814,7 +7778,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 174
+CYCLE 173
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7859,7 +7823,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 175
+CYCLE 174
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7904,7 +7868,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 176
+CYCLE 175
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7949,7 +7913,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 177
+CYCLE 176
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -7994,7 +7958,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 178
+CYCLE 177
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8039,7 +8003,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 179
+CYCLE 178
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8084,7 +8048,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 180
+CYCLE 179
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8129,7 +8093,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 181
+CYCLE 180
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8174,7 +8138,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 182
+CYCLE 181
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8219,7 +8183,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 183
+CYCLE 182
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8264,7 +8228,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 184
+CYCLE 183
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8309,7 +8273,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 185
+CYCLE 184
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8353,7 +8317,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 186
+CYCLE 185
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8398,7 +8362,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 187
+CYCLE 186
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8443,7 +8407,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 188
+CYCLE 187
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8488,7 +8452,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 189
+CYCLE 188
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8533,7 +8497,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 190
+CYCLE 189
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8578,7 +8542,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 191
+CYCLE 190
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8623,7 +8587,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 192
+CYCLE 191
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8668,7 +8632,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 193
+CYCLE 192
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8713,7 +8677,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 194
+CYCLE 193
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8758,7 +8722,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 195
+CYCLE 194
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8803,7 +8767,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 196
+CYCLE 195
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8841,7 +8805,7 @@ L2 Cache (read hit): 268500983<-[40]
 L1 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 197
+CYCLE 196
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8887,7 +8851,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 198
+CYCLE 197
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8932,7 +8896,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 199
+CYCLE 198
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -8979,7 +8943,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 200
+CYCLE 199
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9025,7 +8989,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 201
+CYCLE 200
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9071,7 +9035,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 202
+CYCLE 201
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9117,7 +9081,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 203
+CYCLE 202
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9163,7 +9127,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 204
+CYCLE 203
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9209,7 +9173,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 205
+CYCLE 204
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9254,7 +9218,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 206
+CYCLE 205
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9300,7 +9264,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 207
+CYCLE 206
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9347,7 +9311,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 208
+CYCLE 207
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9393,7 +9357,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 209
+CYCLE 208
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9438,7 +9402,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 210
+CYCLE 209
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9483,7 +9447,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 211
+CYCLE 210
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9530,7 +9494,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 212
+CYCLE 211
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9577,7 +9541,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 213
+CYCLE 212
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9626,43 +9590,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 214
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 1
-R[9]: 0
-R[10]: 1
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 215
+CYCLE 213
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9698,7 +9626,7 @@ R[31]: 0
 Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 216
+CYCLE 214
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9744,7 +9672,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 217
+CYCLE 215
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9790,7 +9718,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 218
+CYCLE 216
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9837,7 +9765,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 219
+CYCLE 217
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9883,7 +9811,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 220
+CYCLE 218
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9929,7 +9857,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 221
+CYCLE 219
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -9975,7 +9903,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 222
+CYCLE 220
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10021,7 +9949,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 223
+CYCLE 221
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10067,7 +9995,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 224
+CYCLE 222
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10112,7 +10040,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 225
+CYCLE 223
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10158,7 +10086,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 226
+CYCLE 224
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10205,7 +10133,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 227
+CYCLE 225
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10251,7 +10179,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 228
+CYCLE 226
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10296,7 +10224,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 229
+CYCLE 227
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10341,7 +10269,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 230
+CYCLE 228
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10388,7 +10316,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 231
+CYCLE 229
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10435,7 +10363,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 232
+CYCLE 230
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10484,43 +10412,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 233
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 2
-R[9]: 0
-R[10]: 2
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 234
+CYCLE 231
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10556,7 +10448,7 @@ R[31]: 0
 Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 235
+CYCLE 232
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10602,7 +10494,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 236
+CYCLE 233
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10648,7 +10540,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 237
+CYCLE 234
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10695,7 +10587,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 238
+CYCLE 235
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10741,7 +10633,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 239
+CYCLE 236
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10787,7 +10679,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 240
+CYCLE 237
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10833,7 +10725,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 241
+CYCLE 238
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10879,7 +10771,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 242
+CYCLE 239
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10925,7 +10817,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 243
+CYCLE 240
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -10970,7 +10862,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 244
+CYCLE 241
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11016,7 +10908,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 245
+CYCLE 242
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11063,7 +10955,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 246
+CYCLE 243
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11109,7 +11001,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 247
+CYCLE 244
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11154,7 +11046,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 248
+CYCLE 245
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11199,7 +11091,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 249
+CYCLE 246
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11246,7 +11138,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 250
+CYCLE 247
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11293,7 +11185,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 251
+CYCLE 248
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11342,43 +11234,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 252
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 3
-R[9]: 0
-R[10]: 3
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 253
+CYCLE 249
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11414,7 +11270,7 @@ R[31]: 0
 Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 254
+CYCLE 250
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11460,7 +11316,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 255
+CYCLE 251
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11506,7 +11362,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 256
+CYCLE 252
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11553,7 +11409,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 257
+CYCLE 253
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11599,7 +11455,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 258
+CYCLE 254
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11645,7 +11501,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 259
+CYCLE 255
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11691,7 +11547,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 260
+CYCLE 256
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11737,7 +11593,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 261
+CYCLE 257
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11783,7 +11639,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 262
+CYCLE 258
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11828,7 +11684,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 263
+CYCLE 259
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11874,7 +11730,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rs
 
-CYCLE 264
+CYCLE 260
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11921,7 +11777,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 
-CYCLE 265
+CYCLE 261
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -11967,7 +11823,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 266
+CYCLE 262
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12012,7 +11868,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 267
+CYCLE 263
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12057,7 +11913,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 268
+CYCLE 264
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12104,7 +11960,7 @@ ALU_SRC: 0
 REG_WRITE: 1
 EX: Forwarding 0 from WB to rt
 
-CYCLE 269
+CYCLE 265
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12151,7 +12007,7 @@ ALU_SRC: 1
 REG_WRITE: 0
 EX: Forwarding 300 from WB to rs
 
-CYCLE 270
+CYCLE 266
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12200,43 +12056,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 271
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 4
-R[9]: 0
-R[10]: 4
-R[11]: 300
-R[12]: 1
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 5
-R[17]: 5
-R[18]: 300
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 272
+CYCLE 267
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12272,7 +12092,7 @@ R[31]: 0
 Memory operation stall, 0 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
-CYCLE 273
+CYCLE 268
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12318,7 +12138,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x20
 
-CYCLE 274
+CYCLE 269
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12364,7 +12184,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 275
+CYCLE 270
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12411,7 +12231,7 @@ REG_WRITE: 0
 EX: Forwarding 1 from WB to rs
 EX: Branch taken to 0x48
 
-CYCLE 276
+CYCLE 271
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12457,7 +12277,7 @@ MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
 
-CYCLE 277
+CYCLE 272
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12503,7 +12323,7 @@ ALU_SRC: 0
 REG_WRITE: 0
 EX: Branch taken to 0x10
 
-CYCLE 278
+CYCLE 273
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12549,7 +12369,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 279
+CYCLE 274
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12596,7 +12416,7 @@ REG_WRITE: 0
 EX: Forwarding 0 from WB to rs
 EX: Branch taken to 0x54
 
-CYCLE 280
+CYCLE 275
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12642,7 +12462,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 281
+CYCLE 276
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12687,7 +12507,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 282
+CYCLE 277
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12732,7 +12552,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 283
+CYCLE 278
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12777,7 +12597,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 284
+CYCLE 279
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12822,7 +12642,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 285
+CYCLE 280
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12867,7 +12687,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 286
+CYCLE 281
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12912,7 +12732,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 287
+CYCLE 282
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -12957,7 +12777,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 288
+CYCLE 283
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13002,7 +12822,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 289
+CYCLE 284
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13047,7 +12867,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 290
+CYCLE 285
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13092,7 +12912,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 291
+CYCLE 286
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13136,7 +12956,7 @@ MEM[87]: 0
 L2 Cache: replacing line at idx:2 way:0 due to conflicting address:80
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 292
+CYCLE 287
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13181,7 +13001,7 @@ MEM[86]: 0
 MEM[87]: 0
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 293
+CYCLE 288
 R[0]: 0
 R[1]: 0
 R[2]: 0
@@ -13215,4 +13035,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 147 nanoseconds.
+Completed execution in 144.5 nanoseconds.

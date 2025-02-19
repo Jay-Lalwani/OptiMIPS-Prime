@@ -3183,15 +3183,6 @@ R[30]: 0
 R[31]: 0
 WB: Writing 4294967294 to R[6]
 EX: Branch taken to 0x2c
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
 L1 Cache (read hit): 0<-[2c]
 IF: Fetched instruction 0x0 from PC 0x2c
 
@@ -3319,7 +3310,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0

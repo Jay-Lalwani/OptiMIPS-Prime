@@ -3421,15 +3421,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2<-[0]
 EX: Branch taken to 0x44
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -3565,7 +3556,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[0]
 L1 Cache (read miss) at address 44: 9 cycles remaining to be serviced
 L2 Cache (read miss) at address 44: 56 cycles remaining to be serviced
 MEM[40]: 0

@@ -9,4 +9,7 @@ exit
 EOF
 
 # Now that we're out of the container, run additional commands
-python3 compare.py all
+python3 compare.py all > grader_output.txt
+git add .
+git commit -m "run tests"
+git push

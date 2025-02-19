@@ -141,19 +141,19 @@ void Processor::pipeline_ID() {
 void Processor::pipeline_EX() {
     if (!id_ex.valid) return;
     
-    // Set up operands
+    // Set up operands (using shamt if the instruction is a shift)
     uint32_t operand_1 = id_ex.shift ? id_ex.shamt : id_ex.read_data_1;
     uint32_t operand_2 = id_ex.ALU_src ? id_ex.imm : id_ex.read_data_2;
     uint32_t alu_zero = 0;
     
-    // Generate ALU control and execute.
+    // Generate ALU control signals and execute the ALU operation.
     alu.generate_control_inputs(id_ex.ALU_op, id_ex.funct, id_ex.opcode);
     uint32_t alu_result = alu.execute(operand_1, operand_2, alu_zero);
     
-    // Compute branch target: PC+4 + (imm << 2)
+    // Compute branch target address (PC+4 plus shifted immediate)
     uint32_t branch_target = id_ex.pc_plus_4 + (id_ex.imm << 2);
     
-    // Populate EX/MEM pipeline register.
+    // Populate EX/MEM pipeline register with default (sequential) PC.
     ex_mem.reg_write   = id_ex.reg_write;
     ex_mem.mem_read    = id_ex.mem_read;
     ex_mem.mem_write   = id_ex.mem_write;
@@ -164,34 +164,38 @@ void Processor::pipeline_EX() {
     ex_mem.alu_result  = alu_result;
     ex_mem.write_data  = id_ex.read_data_2; // For store instructions.
     ex_mem.write_reg   = id_ex.link ? 31 : (id_ex.reg_dest ? id_ex.rd : id_ex.rt);
-    ex_mem.pc_branch   = id_ex.pc_plus_4;  // Default: sequential.
+    ex_mem.pc_branch   = id_ex.pc_plus_4;  // Default: sequential commit.
     ex_mem.zero        = (alu_zero == 1);
     ex_mem.valid       = true;
     
-    // Handle branch/jump hazards
-    if (id_ex.branch && ex_mem.zero) {
-        fetch_pc = branch_target;
-        ex_mem.pc_branch = branch_target;
-        flush_IF_ID_ID_EX();
-        DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_target << dec << "\n");
+    // --- Branch / Jump handling (with delay slot) ---
+    if (id_ex.branch) {
+        // For branches, check bne vs. beq:
+        //   • For beq: branch is taken if (ex_mem.zero == true)
+        //   • For bne: branch is taken if (ex_mem.zero == false)
+        bool branchTaken = (id_ex.bne && !ex_mem.zero) || (!id_ex.bne && ex_mem.zero);
+        if (branchTaken) {
+            // Update fetch_pc to the branch target.
+            fetch_pc = branch_target;
+            ex_mem.pc_branch = branch_target;
+            DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_target << dec << "\n");
+        }
+    } else if (id_ex.jump) {
+         uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
+         fetch_pc = jump_addr;
+         ex_mem.pc_branch = jump_addr;
+         DEBUG(cout << "EX: Jump to 0x" << hex << jump_addr << dec << "\n");
+    } else if (id_ex.jump_reg) {
+         fetch_pc = id_ex.read_data_1;
+         ex_mem.pc_branch = id_ex.read_data_1;
+         DEBUG(cout << "EX: Jump register to 0x" << hex << id_ex.read_data_1 << dec << "\n");
     }
-    else if (id_ex.jump) {
-        uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
-        fetch_pc = jump_addr;
-        ex_mem.pc_branch = jump_addr;
-        flush_IF_ID_ID_EX();
-        DEBUG(cout << "EX: Jump to 0x" << hex << jump_addr << dec << "\n");
-    }
-    else if (id_ex.jump_reg) {
-        fetch_pc = id_ex.read_data_1;
-        ex_mem.pc_branch = id_ex.read_data_1;
-        flush_IF_ID_ID_EX();
-        DEBUG(cout << "EX: Jump register to 0x" << hex << id_ex.read_data_1 << dec << "\n");
-    }
+    // Do NOT flush IF/ID here—the instruction in IF/ID is the branch delay slot and must execute.
     
-    // Clear ID/EX register.
+    // Clear the ID/EX register.
     id_ex.valid = false;
 }
+
 
 // -------------------- MEM Stage --------------------
 bool Processor::pipeline_MEM() {

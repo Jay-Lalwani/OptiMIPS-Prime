@@ -3,13 +3,11 @@
 compare_registers.py
 
 This script compares the register states in the last cycle
-between pipeline and single-cycle log files. It looks in the
-directories "logs/pipeline" and "logs/single_cycle" for files with
-matching names and prints out any differences between the registers
-(assuming registers are printed as "R[0]: <value>" lines in each cycle block).
+between pipeline and single-cycle log files for a specific test case.
 
 Usage:
-    python compare_registers.py
+    python compare_registers.py [test_name]
+    If test_name is not provided, lists all available tests
 
 Author: Your Name
 Date: YYYY-MM-DD
@@ -17,6 +15,7 @@ Date: YYYY-MM-DD
 
 import os
 import re
+import sys
 
 def extract_last_cycle_registers(filepath):
     """
@@ -78,51 +77,62 @@ def compare_registers(regs_pipeline, regs_single):
             differences[reg] = (val_pipeline, val_single)
     return differences
 
-def main():
+def list_available_tests():
+    """Lists all available test files and returns them."""
     pipeline_dir = os.path.join("logs", "pipeline")
     single_cycle_dir = os.path.join("logs", "single_cycle")
     
-    # List all .txt files in each directory.
     try:
-        pipeline_files = [f for f in os.listdir(pipeline_dir) if f.endswith(".txt")]
-        single_cycle_files = [f for f in os.listdir(single_cycle_dir) if f.endswith(".txt")]
-    except FileNotFoundError as e:
-        print("Error: One of the log directories does not exist.")
-        return
-    
-    # Determine common files (those with the same filename in both folders)
-    common_files = set(pipeline_files) & set(single_cycle_files)
-    if not common_files:
-        print("No common log files found in pipeline and single_cycle directories.")
-        return
+        pipeline_files = set(f for f in os.listdir(pipeline_dir) if f.endswith(".txt"))
+        single_cycle_files = set(f for f in os.listdir(single_cycle_dir) if f.endswith(".txt"))
+        common_files = pipeline_files & single_cycle_files
+        
+        if not common_files:
+            print("No test files found")
+            return []
+            
+        print("Available tests:")
+        for f in sorted(common_files):
+            print(f"  {f}")
+        return sorted(common_files)
+    except FileNotFoundError:
+        print("Error: Log directories not found")
+        return []
 
-    passed = 0
-    total = 0
-    # Compare register states for each common file.
-    for filename in sorted(common_files):
-        pipeline_path = os.path.join(pipeline_dir, filename)
-        single_cycle_path = os.path.join(single_cycle_dir, filename)
-        
-        reg_pipeline = extract_last_cycle_registers(pipeline_path)
-        reg_single = extract_last_cycle_registers(single_cycle_path)
-        diff = compare_registers(reg_pipeline, reg_single)
-        
-        total += 1
-        print(f"--- Comparing file: {filename} ---")
-        if diff:
-            print("Differences found:")
-            for reg_num in sorted(diff.keys()):
-                pipeline_val, single_val = diff[reg_num]
-                print(f"  R[{reg_num}]: pipeline = {pipeline_val}, single_cycle = {single_val}")
-            print(f"File {filename}: FAILED")
-        else:
-            print("Register states match exactly between pipeline and single-cycle.")
-            passed += 1
-            print(f"File {filename}: passed")
-        print()
+def run_single_test(test_name):
+    """Runs a single test comparison."""
+    pipeline_dir = os.path.join("logs", "pipeline")
+    single_cycle_dir = os.path.join("logs", "single_cycle")
     
-    print(f"\n{passed}/{total} tests passed.")
+    pipeline_path = os.path.join(pipeline_dir, test_name)
+    single_cycle_path = os.path.join(single_cycle_dir, test_name)
+    
+    if not os.path.exists(pipeline_path) or not os.path.exists(single_cycle_path):
+        print(f"Error: Test files for {test_name} not found")
+        return 1
+    
+    reg_pipeline = extract_last_cycle_registers(pipeline_path)
+    reg_single = extract_last_cycle_registers(single_cycle_path)
+    diff = compare_registers(reg_pipeline, reg_single)
+    
+    print(f"Running test: {test_name}")
+    if diff:
+        print("Differences found:")
+        for reg_num in sorted(diff.keys()):
+            pipeline_val, single_val = diff[reg_num]
+            print(f"  R[{reg_num}]: pipeline = {pipeline_val}, single_cycle = {single_val}")
+        return 1
+    else:
+        print("Register states match exactly between pipeline and single-cycle.")
+        return 0
 
-        
+def main():
+    if len(sys.argv) < 2:
+        # If no test specified, just list available tests
+        return 0 if list_available_tests() else 1
+    
+    test_name = sys.argv[1]
+    return run_single_test(test_name)
+
 if __name__ == "__main__":
-    main()
+    exit(main())

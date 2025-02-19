@@ -5,8 +5,10 @@ on:
   pull_request:
 
 jobs:
-  test:
+  prepare:
     runs-on: ubuntu-latest
+    outputs:
+      test_files: ${{ steps.get-tests.outputs.test_files }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -17,25 +19,38 @@ jobs:
           sudo apt-get install g++ gcc-mipsel-linux-gnu make python3
           sudo apt-get install gcc-mips*
 
-      - name: Build and Run Tests
+      - name: Build Tests
         run: |
           make clean
           make test
 
-      - name: Run Compare Registers Script
-        id: compare
+      - name: Get Test Files
+        id: get-tests
         run: |
-          # Run the python script that compares log files.
-          python3 compare.py | tee output.txt
+          echo "test_files=$(python3 compare.py | grep '  ' | sed 's/^  //' | jq -R -s -c 'split("\n")[:-1]')" >> $GITHUB_OUTPUT
 
-      - name: Count Passed Tests
-        run: |
-          PASS_COUNT=$(grep -c "Register states match exactly" output.txt)
-          TOTAL=$(grep -c "^--- Comparing file:" output.txt)
-          echo "Passed ${PASS_COUNT}/${TOTAL} tests"
-          echo "tests_passed=${PASS_COUNT}" >> $GITHUB_OUTPUT
-          echo "tests_total=${TOTAL}" >> $GITHUB_OUTPUT
+  test:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # Continue running other tests even if one fails
+      matrix:
+        test_file: ${{ fromJson(needs.prepare.outputs.test_files) }}
 
-      - name: Upload Summary
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
         run: |
-          echo "$(${ { steps.compare.outputs.tests_passed }}) of $(${ { steps.compare.outputs.tests_total }}) tests passed."
+          sudo apt-get update
+          sudo apt-get install g++ gcc-mipsel-linux-gnu make python3
+          sudo apt-get install gcc-mips*
+
+      - name: Build Tests
+        run: |
+          make clean
+          make test
+
+      - name: Run Test
+        run: python3 compare.py "${{ matrix.test_file }}"

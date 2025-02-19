@@ -1,0 +1,41 @@
+name: Run Tests and Compare Logs
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install g++ gcc-mipsel-linux-gnu make python3
+
+      - name: Build and Run Tests
+        run: |
+          make clean
+          make test
+
+      - name: Run Compare Registers Script
+        id: compare
+        run: |
+          # Run the python script that compares log files.
+          python3 compare_registers.py | tee output.txt
+
+      - name: Count Passed Tests
+        run: |
+          # Assume that the script prints lines like "Register states match exactly" for passing tests.
+          PASS_COUNT=$(grep -c "Register states match exactly" output.txt)
+          TOTAL=$(grep -c "^--- Comparing file:" output.txt)
+          echo "Passed ${PASS_COUNT}/${TOTAL} tests"
+          echo "tests_passed=${PASS_COUNT}" >> $GITHUB_OUTPUT
+          echo "tests_total=${TOTAL}" >> $GITHUB_OUTPUT
+
+      - name: Upload Summary
+        run: |
+          echo "$(${ { steps.compare.outputs.tests_passed }}) of $(${ { steps.compare.outputs.tests_total }}) tests passed."

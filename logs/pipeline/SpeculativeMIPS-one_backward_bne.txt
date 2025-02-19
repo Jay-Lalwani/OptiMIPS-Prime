@@ -72416,10 +72416,46 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-Memory operation stall, 0 cycles remaining
+Memory operation stall, 1 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 1565
+R[0]: 0
+R[1]: 0
+R[2]: 1000
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 1566
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72464,7 +72500,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1566
+CYCLE 1567
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72509,7 +72545,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1567
+CYCLE 1568
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72554,7 +72590,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1568
+CYCLE 1569
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72599,7 +72635,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1569
+CYCLE 1570
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72644,7 +72680,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1570
+CYCLE 1571
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72689,7 +72725,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1571
+CYCLE 1572
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72734,7 +72770,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1572
+CYCLE 1573
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72779,7 +72815,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 1573
+CYCLE 1574
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72823,7 +72859,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 1574
+CYCLE 1575
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72868,7 +72904,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 1575
+CYCLE 1576
 R[0]: 0
 R[1]: 0
 R[2]: 1000
@@ -72902,4 +72938,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 788 nanoseconds.
+Completed execution in 788.5 nanoseconds.

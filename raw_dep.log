@@ -1,11 +1,12 @@
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+Failed to open executable binary: test/MIPSPipeline-raw_dependency.bin
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 L2 Cache: replacing line at idx:0 way:0 due to conflicting address:0
 IF: Memory stall during fetch at PC 0x0
 
@@ -44,14 +45,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 11 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 58 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 1
@@ -89,14 +90,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 10 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 57 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 2
@@ -134,14 +135,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 9 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 56 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 3
@@ -179,14 +180,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 8 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 55 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 4
@@ -224,14 +225,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 7 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 54 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 5
@@ -269,14 +270,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 6 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 53 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 6
@@ -314,14 +315,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 5 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 52 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 7
@@ -359,14 +360,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 4 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 51 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 8
@@ -404,14 +405,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 3 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 50 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 9
@@ -449,14 +450,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 2 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 49 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 10
@@ -494,14 +495,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 1 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 48 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 11
@@ -538,14 +539,14 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L2 Cache (read miss) at address 0: 47 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 12
@@ -583,14 +584,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 11 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 46 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 13
@@ -628,14 +629,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 10 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 45 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 14
@@ -673,14 +674,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 9 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 44 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 15
@@ -718,14 +719,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 8 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 43 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 16
@@ -763,14 +764,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 7 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 42 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 17
@@ -808,14 +809,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 6 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 41 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 18
@@ -853,14 +854,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 5 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 40 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 19
@@ -898,14 +899,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 4 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 39 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 20
@@ -943,14 +944,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 3 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 38 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 21
@@ -988,14 +989,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 2 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 37 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 22
@@ -1033,14 +1034,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 1 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 36 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 23
@@ -1077,14 +1078,14 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L2 Cache (read miss) at address 0: 35 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 24
@@ -1122,14 +1123,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 11 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 34 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 25
@@ -1167,14 +1168,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 10 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 33 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 26
@@ -1212,14 +1213,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 9 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 32 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 27
@@ -1257,14 +1258,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 8 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 31 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 28
@@ -1302,14 +1303,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 7 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 30 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 29
@@ -1347,14 +1348,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 6 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 29 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 30
@@ -1392,14 +1393,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 5 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 28 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 31
@@ -1437,14 +1438,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 4 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 27 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 32
@@ -1482,14 +1483,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 3 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 26 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 33
@@ -1527,14 +1528,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 2 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 25 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 34
@@ -1572,14 +1573,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 1 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 24 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 35
@@ -1616,14 +1617,14 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L2 Cache (read miss) at address 0: 23 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 36
@@ -1661,14 +1662,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 11 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 22 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 37
@@ -1706,14 +1707,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 10 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 21 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 38
@@ -1751,14 +1752,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 9 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 20 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 39
@@ -1796,14 +1797,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 8 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 19 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 40
@@ -1841,14 +1842,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 7 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 18 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 41
@@ -1886,14 +1887,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 6 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 17 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 42
@@ -1931,14 +1932,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 5 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 16 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 43
@@ -1976,14 +1977,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 4 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 15 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 44
@@ -2021,14 +2022,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 3 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 14 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 45
@@ -2066,14 +2067,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 2 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 13 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 46
@@ -2111,14 +2112,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 1 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 12 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 47
@@ -2155,14 +2156,14 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L2 Cache (read miss) at address 0: 11 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 48
@@ -2200,14 +2201,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 11 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 10 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 49
@@ -2245,14 +2246,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 10 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 9 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 50
@@ -2290,14 +2291,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 9 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 8 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 51
@@ -2335,14 +2336,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 8 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 7 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 52
@@ -2380,14 +2381,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 7 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 6 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 53
@@ -2425,14 +2426,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 6 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 5 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 54
@@ -2470,14 +2471,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 5 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 4 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 55
@@ -2515,14 +2516,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 4 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 3 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 56
@@ -2560,14 +2561,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 3 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 2 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 57
@@ -2605,14 +2606,14 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 2 cycles remaining to be serviced
 L2 Cache (read miss) at address 0: 1 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: 20020002
-MEM[2]: 10220007
+MEM[0]: 0
+MEM[1]: 0
+MEM[2]: 0
 MEM[3]: 0
-MEM[4]: 221820
-MEM[5]: ac030000
-MEM[6]: 433022
-MEM[7]: 222020
+MEM[4]: 0
+MEM[5]: 0
+MEM[6]: 0
+MEM[7]: 0
 IF: Memory stall during fetch at PC 0x0
 
 CYCLE 58
@@ -2649,7 +2650,7 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read miss) at address 0: 1 cycles remaining to be serviced
-L2 Cache (read hit): 536936449<-[0]
+L2 Cache (read hit): 0<-[0]
 L1 Cache: replacing line at idx:0 way:0 due to conflicting address:0
 IF: Memory stall during fetch at PC 0x0
 
@@ -2686,16 +2687,16 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 536936449<-[0]
-IF: Fetched instruction 0x20010001 from PC 0x0
-REG_DEST: 0
+L1 Cache (read hit): 0<-[0]
+IF: Fetched instruction 0x0 from PC 0x0
+REG_DEST: 1
 JUMP: 0
 BRANCH: 0
 MEM_READ: 0
 MEM_TO_REG: 0
-ALU_OP: 3
+ALU_OP: 2
 MEM_WRITE: 0
-ALU_SRC: 1
+ALU_SRC: 0
 REG_WRITE: 1
 
 CYCLE 60
@@ -2731,16 +2732,16 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 537001986<-[4]
-IF: Fetched instruction 0x20020002 from PC 0x4
-REG_DEST: 0
+L1 Cache (read hit): 0<-[4]
+IF: Fetched instruction 0x0 from PC 0x4
+REG_DEST: 1
 JUMP: 0
 BRANCH: 0
 MEM_READ: 0
 MEM_TO_REG: 0
-ALU_OP: 3
+ALU_OP: 2
 MEM_WRITE: 0
-ALU_SRC: 1
+ALU_SRC: 0
 REG_WRITE: 1
 
 CYCLE 61
@@ -2776,23 +2777,21 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 1 to R[1]
-L1 Cache (read hit): 270663687<-[8]
-IF: Fetched instruction 0x10220007 from PC 0x8
-REG_DEST: 0
+L1 Cache (read hit): 0<-[8]
+IF: Fetched instruction 0x0 from PC 0x8
+REG_DEST: 1
 JUMP: 0
-BRANCH: 1
+BRANCH: 0
 MEM_READ: 0
 MEM_TO_REG: 0
-ALU_OP: 1
+ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
-REG_WRITE: 0
-EX: Forwarding 2 from WB to rt
+REG_WRITE: 1
 
 CYCLE 62
 R[0]: 0
-R[1]: 1
+R[1]: 0
 R[2]: 0
 R[3]: 0
 R[4]: 0
@@ -2823,7 +2822,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 2 to R[2]
 L1 Cache (read hit): 0<-[c]
 IF: Fetched instruction 0x0 from PC 0xc
 REG_DEST: 1
@@ -2838,8 +2836,8 @@ REG_WRITE: 1
 
 CYCLE 63
 R[0]: 0
-R[1]: 1
-R[2]: 2
+R[1]: 0
+R[2]: 0
 R[3]: 0
 R[4]: 0
 R[5]: 0
@@ -2869,8 +2867,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 2234400<-[10]
-IF: Fetched instruction 0x221820 from PC 0x10
+L1 Cache (read hit): 0<-[10]
+IF: Fetched instruction 0x0 from PC 0x10
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -2883,8 +2881,8 @@ REG_WRITE: 1
 
 CYCLE 64
 R[0]: 0
-R[1]: 1
-R[2]: 2
+R[1]: 0
+R[2]: 0
 R[3]: 0
 R[4]: 0
 R[5]: 0
@@ -2914,23 +2912,22 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 2885877760<-[14]
-IF: Fetched instruction 0xac030000 from PC 0x14
-REG_DEST: 0
+L1 Cache (read hit): 0<-[14]
+IF: Fetched instruction 0x0 from PC 0x14
+REG_DEST: 1
 JUMP: 0
 BRANCH: 0
 MEM_READ: 0
 MEM_TO_REG: 0
-ALU_OP: 0
-MEM_WRITE: 1
-ALU_SRC: 1
-REG_WRITE: 0
-EX: Forwarding 3 from WB for store data
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 
 CYCLE 65
 R[0]: 0
-R[1]: 1
-R[2]: 2
+R[1]: 0
+R[2]: 0
 R[3]: 0
 R[4]: 0
 R[5]: 0
@@ -2960,12 +2957,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 3 to R[3]
-L1 Cache (read hit): 536936449<-[0]
-L1 Cache (write hit): [0]<-3
-MEM: Stored value 3 at address 0x0
-L1 Cache (read hit): 4403234<-[18]
-IF: Fetched instruction 0x433022 from PC 0x18
+L1 Cache (read hit): 0<-[18]
+IF: Fetched instruction 0x0 from PC 0x18
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -2978,9 +2971,9 @@ REG_WRITE: 1
 
 CYCLE 66
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
 R[4]: 0
 R[5]: 0
 R[6]: 0
@@ -3009,14 +3002,23 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
+L1 Cache (read hit): 0<-[1c]
+IF: Fetched instruction 0x0 from PC 0x1c
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 
 CYCLE 67
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
 R[4]: 0
 R[5]: 0
 R[6]: 0
@@ -3045,14 +3047,23 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-Memory operation stall, 0 cycles remaining
-Memory stall encountered. Pipeline is stalled.
+L1 Cache (read hit): 0<-[20]
+IF: Fetched instruction 0x0 from PC 0x20
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 
 CYCLE 68
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
 R[4]: 0
 R[5]: 0
 R[6]: 0
@@ -3081,8 +3092,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 2236448<-[1c]
-IF: Fetched instruction 0x222020 from PC 0x1c
+L1 Cache (read hit): 0<-[24]
+IF: Fetched instruction 0x0 from PC 0x24
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -3095,180 +3106,12 @@ REG_WRITE: 1
 
 CYCLE 69
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
 R[4]: 0
 R[5]: 0
 R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-WB: Writing 4294967295 to R[6]
-L1 Cache (read hit): 2885943296<-[20]
-IF: Fetched instruction 0xac040000 from PC 0x20
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 0
-MEM_WRITE: 1
-ALU_SRC: 1
-REG_WRITE: 0
-EX: Forwarding 3 from WB for store data
-
-CYCLE 70
-R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 0
-R[5]: 0
-R[6]: -1
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-WB: Writing 3 to R[4]
-L1 Cache (read hit): 3<-[0]
-L1 Cache (write hit): [0]<-3
-MEM: Stored value 3 at address 0x0
-L1 Cache (read hit): 8597538<-[24]
-IF: Fetched instruction 0x833022 from PC 0x24
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-
-CYCLE 71
-R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
-R[5]: 0
-R[6]: -1
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 1 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 72
-R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
-R[5]: 0
-R[6]: -1
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-Memory operation stall, 0 cycles remaining
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 73
-R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
-R[5]: 0
-R[6]: -1
 R[7]: 0
 R[8]: 0
 R[9]: 0
@@ -3306,14 +3149,14 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 74
+CYCLE 70
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
-R[6]: -1
+R[6]: 0
 R[7]: 0
 R[8]: 0
 R[9]: 0
@@ -3339,7 +3182,6 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[6]
 L1 Cache (read hit): 0<-[2c]
 IF: Fetched instruction 0x0 from PC 0x2c
 REG_DEST: 1
@@ -3352,12 +3194,12 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 75
+CYCLE 71
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3397,12 +3239,12 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 76
+CYCLE 72
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3442,12 +3284,12 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 77
+CYCLE 73
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3487,12 +3329,12 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 78
+CYCLE 74
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3532,12 +3374,12 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 79
+CYCLE 75
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3576,12 +3418,12 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 80
+CYCLE 76
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3621,12 +3463,12 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 81
+CYCLE 77
 R[0]: 0
-R[1]: 1
-R[2]: 2
-R[3]: 3
-R[4]: 3
+R[1]: 0
+R[2]: 0
+R[3]: 0
+R[4]: 0
 R[5]: 0
 R[6]: 0
 R[7]: 0
@@ -3655,4 +3497,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 41 nanoseconds.
+Completed execution in 39 nanoseconds.

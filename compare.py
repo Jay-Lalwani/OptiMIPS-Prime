@@ -87,7 +87,7 @@ def extract_last_cycle_registers(filepath):
     # use the final set of registers read.
     if current_regs:
         last_regs = current_regs.copy()
-    return last_regs, total_cycles
+    return last_regs, total_cycles + 1
 
 def compare_registers(regs_pipeline, regs_single):
     """

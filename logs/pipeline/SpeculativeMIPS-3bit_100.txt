@@ -9859,10 +9859,46 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-Memory operation stall, 0 cycles remaining
+Memory operation stall, 1 cycles remaining
 Memory stall encountered. Pipeline is stalled.
 
 CYCLE 215
+R[0]: 0
+R[1]: 0
+R[2]: 11
+R[3]: 1
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+Memory operation stall, 0 cycles remaining
+Memory stall encountered. Pipeline is stalled.
+
+CYCLE 216
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -9907,7 +9943,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 216
+CYCLE 217
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -9951,7 +9987,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 217
+CYCLE 218
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -9996,7 +10032,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 218
+CYCLE 219
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10041,7 +10077,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 219
+CYCLE 220
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10086,7 +10122,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 220
+CYCLE 221
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10131,7 +10167,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 221
+CYCLE 222
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10176,7 +10212,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 222
+CYCLE 223
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10221,7 +10257,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 223
+CYCLE 224
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10266,7 +10302,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 224
+CYCLE 225
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10311,7 +10347,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 225
+CYCLE 226
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10356,7 +10392,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 226
+CYCLE 227
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10401,7 +10437,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 227
+CYCLE 228
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10446,7 +10482,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 228
+CYCLE 229
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10490,7 +10526,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 229
+CYCLE 230
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10535,7 +10571,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 230
+CYCLE 231
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10580,7 +10616,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 231
+CYCLE 232
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10625,7 +10661,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 232
+CYCLE 233
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10670,7 +10706,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 233
+CYCLE 234
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10715,7 +10751,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 234
+CYCLE 235
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10760,7 +10796,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 235
+CYCLE 236
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10805,7 +10841,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 236
+CYCLE 237
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10850,7 +10886,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 237
+CYCLE 238
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10895,7 +10931,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 238
+CYCLE 239
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10940,7 +10976,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 239
+CYCLE 240
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -10985,7 +11021,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 240
+CYCLE 241
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11029,7 +11065,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 241
+CYCLE 242
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11074,7 +11110,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 242
+CYCLE 243
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11119,7 +11155,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 243
+CYCLE 244
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11164,7 +11200,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 244
+CYCLE 245
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11209,7 +11245,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 245
+CYCLE 246
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11254,7 +11290,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 246
+CYCLE 247
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11299,7 +11335,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 247
+CYCLE 248
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11344,7 +11380,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 248
+CYCLE 249
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11389,7 +11425,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 249
+CYCLE 250
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11434,7 +11470,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 250
+CYCLE 251
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11479,7 +11515,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 251
+CYCLE 252
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11524,7 +11560,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 252
+CYCLE 253
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11568,7 +11604,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 253
+CYCLE 254
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11613,7 +11649,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 254
+CYCLE 255
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11658,7 +11694,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 255
+CYCLE 256
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11703,7 +11739,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 256
+CYCLE 257
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11748,7 +11784,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 257
+CYCLE 258
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11793,7 +11829,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 258
+CYCLE 259
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11838,7 +11874,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 259
+CYCLE 260
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11883,7 +11919,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 260
+CYCLE 261
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11928,7 +11964,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 261
+CYCLE 262
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -11973,7 +12009,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 262
+CYCLE 263
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12018,7 +12054,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 263
+CYCLE 264
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12063,7 +12099,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 264
+CYCLE 265
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12107,7 +12143,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 265
+CYCLE 266
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12152,7 +12188,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 266
+CYCLE 267
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12197,7 +12233,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 267
+CYCLE 268
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12242,7 +12278,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 268
+CYCLE 269
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12287,7 +12323,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 269
+CYCLE 270
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12332,7 +12368,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 270
+CYCLE 271
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12377,7 +12413,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 271
+CYCLE 272
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12422,7 +12458,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 272
+CYCLE 273
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12467,7 +12503,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 273
+CYCLE 274
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12512,7 +12548,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 274
+CYCLE 275
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12557,7 +12593,7 @@ MEM[46]: 0
 MEM[47]: 0
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 275
+CYCLE 276
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12595,7 +12631,7 @@ L2 Cache (read hit): 0<-[40]
 L1 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 276
+CYCLE 277
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12640,7 +12676,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 277
+CYCLE 278
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12685,7 +12721,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 278
+CYCLE 279
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12730,7 +12766,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 279
+CYCLE 280
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12775,7 +12811,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 280
+CYCLE 281
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12820,7 +12856,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 281
+CYCLE 282
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12865,7 +12901,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 282
+CYCLE 283
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12910,7 +12946,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 283
+CYCLE 284
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -12955,7 +12991,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 284
+CYCLE 285
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13000,7 +13036,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 285
+CYCLE 286
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13045,7 +13081,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 286
+CYCLE 287
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13090,7 +13126,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 287
+CYCLE 288
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13135,7 +13171,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 288
+CYCLE 289
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13180,7 +13216,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 289
+CYCLE 290
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13225,7 +13261,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 290
+CYCLE 291
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13270,7 +13306,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 291
+CYCLE 292
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13315,7 +13351,7 @@ MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
 
-CYCLE 292
+CYCLE 293
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13359,7 +13395,7 @@ MEM[87]: 0
 L2 Cache: replacing line at idx:2 way:0 due to conflicting address:80
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 293
+CYCLE 294
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13404,7 +13440,7 @@ MEM[86]: 0
 MEM[87]: 0
 IF: Memory stall during fetch at PC 0x80
 
-CYCLE 294
+CYCLE 295
 R[0]: 0
 R[1]: 0
 R[2]: 11
@@ -13438,4 +13474,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 147.5 nanoseconds.
+Completed execution in 148 nanoseconds.

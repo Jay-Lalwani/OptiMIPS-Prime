@@ -109,6 +109,7 @@ void Processor::pipeline_ID() {
         if ((id_ex.write_reg == rs && rs != 0) || 
             (!control.ALU_src && id_ex.write_reg == rt && rt != 0)) {
             stall = true;
+            // Add extra stall cycle for load-use hazard
             DEBUG(cout << "ID: Load-use hazard detected with previous instruction, stalling\n");
         }
     }
@@ -118,33 +119,31 @@ void Processor::pipeline_ID() {
         if ((ex_mem.write_reg == rs && rs != 0) || 
             (!control.ALU_src && ex_mem.write_reg == rt && rt != 0)) {
             stall = true;
+            // Add extra stall cycle for load-use hazard with MEM stage
             DEBUG(cout << "ID: Load-use hazard detected with MEM stage, stalling\n");
         }
     }
     
     // Check for store after load hazard
     if (control.mem_write && id_ex.valid && id_ex.mem_read) {
-        // Only stall if the load's destination is used by the store
-        if (id_ex.write_reg == rt) {
-            stall = true;
-            DEBUG(cout << "ID: Store after load hazard detected, stalling\n");
-        }
+        stall = true;
+        // Add extra stall cycle for store after load hazard
+        DEBUG(cout << "ID: Store after load hazard detected, stalling\n");
     }
     
     // Check for load after store hazard
     if (control.mem_read && id_ex.valid && id_ex.mem_write) {
-        // Only stall if addresses might overlap
-        if (rs == id_ex.rs || (!control.ALU_src && rt == id_ex.rt)) {
-            stall = true;
-            DEBUG(cout << "ID: Load after store hazard detected, stalling\n");
-        }
+        stall = true;
+        // Add extra stall cycle for load after store hazard
+        DEBUG(cout << "ID: Load after store hazard detected, stalling\n");
     }
     
     // Check for store-store hazard (to same address)
     if (control.mem_write && id_ex.valid && id_ex.mem_write) {
-        // Only stall if addresses might overlap
-        if (rs == id_ex.rs || (!control.ALU_src && rt == id_ex.rt)) {
+        // We'll stall if we can't determine the addresses yet
+        if (rs == id_ex.write_reg || (!control.ALU_src && rt == id_ex.write_reg)) {
             stall = true;
+            // Add extra stall cycle for store-store hazard
             DEBUG(cout << "ID: Store-store hazard detected, stalling\n");
         }
     }
@@ -152,16 +151,8 @@ void Processor::pipeline_ID() {
     // Check for RAW hazard with store data
     if (control.mem_write && id_ex.valid && id_ex.reg_write && id_ex.write_reg == rt) {
         stall = true;
+        // Add extra stall cycle for RAW hazard with store data
         DEBUG(cout << "ID: RAW hazard with store data detected, stalling\n");
-    }
-    
-    // Additional RAW hazard check for ALU operations
-    if (id_ex.valid && id_ex.reg_write) {
-        if ((id_ex.write_reg == rs && rs != 0) || 
-            (!control.ALU_src && id_ex.write_reg == rt && rt != 0)) {
-            stall = true;
-            DEBUG(cout << "ID: RAW hazard with ALU operation detected, stalling\n");
-        }
     }
     
     if (stall) {
@@ -365,8 +356,8 @@ bool Processor::pipeline_MEM() {
             write_data_mem = (mem_data & 0xffffff00) | (write_data_mem & 0xff);
         }
         
-        // Add store operation stall - only 1 cycle for store
-        mem_stall_cycles = 1;
+        // Add store operation stalls
+        mem_stall_cycles = 2;  // Two cycles for store operation
         
         // Second stall for write
         success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, 0, 1);
@@ -382,8 +373,8 @@ bool Processor::pipeline_MEM() {
         success = memory->access(ex_mem.alu_result, mem_data, 0, 1, 0);
         if (!success) return false;
 
-        // Add load operation stall - only 2 cycles for load
-        mem_stall_cycles = 2;
+        // Add load operation stalls
+        mem_stall_cycles = 3;  // Three cycles for load operation
 
         // Check if there's a pending store to the same address in WB stage
         if (mem_wb.valid && mem_wb.mem_write && mem_wb.alu_result == ex_mem.alu_result) {

@@ -8,9 +8,6 @@ between pipeline and single-cycle log files for a specific test case.
 Usage:
     python compare_registers.py [test_name]
     If test_name is not provided, lists all available tests
-
-Author: Your Name
-Date: YYYY-MM-DD
 """
 
 import os

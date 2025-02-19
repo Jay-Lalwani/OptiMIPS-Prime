@@ -29,7 +29,7 @@ jobs:
         run: |
           echo "test_files=$(python3 compare.py | grep '  ' | sed 's/^  //' | jq -R -s -c 'split("\n")[:-1]')" >> $GITHUB_OUTPUT
 
-  test:
+  test-registers:
     needs: prepare
     runs-on: ubuntu-latest
     strategy:
@@ -52,5 +52,40 @@ jobs:
           make clean
           make test
 
-      - name: Run Test
-        run: python3 compare.py "${{ matrix.test_file }}"
+      - name: Run Register State Test
+        run: python3 compare.py "${{ matrix.test_file }}" --check-type=registers
+
+  test-cycles:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # Continue running other tests even if one fails
+      matrix:
+        test_file: ${{ fromJson(needs.prepare.outputs.test_files) }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install g++ gcc-mipsel-linux-gnu make python3
+          sudo apt-get install gcc-mips*
+
+      - name: Build Tests
+        run: |
+          make clean
+          make test
+
+      - name: Run Cycle Count Test
+        run: python3 compare.py "${{ matrix.test_file }}" --check-type=cycles
+
+  summary:
+    needs: [test-registers, test-cycles]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Summarize Test Results
+        run: |
+          echo "All tests completed."
+          echo "Check individual test results above for details on register state and cycle count comparisons."

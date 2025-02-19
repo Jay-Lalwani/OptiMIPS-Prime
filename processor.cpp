@@ -61,45 +61,20 @@ void Processor::advance() {
 
 // -------------------- Pipelined Advance --------------------
 void Processor::pipelined_processor_advance() {
-    static bool first_instruction = true;
-    static int pipeline_fill_stalls = 4;  // Initial pipeline fill takes 4 cycles
-    
-    // Handle initial pipeline fill stalls
-    if (first_instruction) {
-        if (pipeline_fill_stalls > 0) {
-            pipeline_fill_stalls--;
-            DEBUG(cout << "Pipeline fill stall, " << pipeline_fill_stalls << " cycles remaining\n");
-            return;
-        }
-        first_instruction = false;
-    }
+  
+   
+    pipeline_WB();
 
-    // Execute pipeline stages in-order (IF to WB)
-    // This ensures correct timing and cycle counts
-    if (!pipeline_MEM()) {  // Check MEM stall first
+    if (!pipeline_MEM()) {
         DEBUG(cout << "Memory stall encountered. Pipeline is stalled.\n");
         return;
     }
     
-    // Adjust extra stall insertion based on speculative mode
-    if (speculative_mode) {
-        // For SpeculativeMIPS tests, insert two extra stall cycles when a branch or memory hazard is present
-        if (ex_mem.valid && (ex_mem.mem_read || ex_mem.mem_write)) {
-            DEBUG(cout << "Speculative mode: Extra memory operation stall\n");
-            return;  // First extra stall cycle
-        }
-        if (id_ex.valid && (id_ex.branch || id_ex.jump || id_ex.jump_reg)) {
-            DEBUG(cout << "Speculative mode: Extra branch resolution stall\n");
-            return;  // First extra stall cycle
-        }
-    }
-    // For pipeline tests (non-speculative mode), we don't insert any extra stalls here
-    // The hazard bubbles inserted in the ID stage should be sufficient
-    
     pipeline_IF();
     pipeline_ID();
     pipeline_EX();
-    pipeline_WB();
+     
+  
 }
 
 // -------------------- IF Stage --------------------

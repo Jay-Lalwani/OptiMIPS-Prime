@@ -53,14 +53,16 @@ void Processor::advance() {
 
 // -------------------- Pipelined Advance --------------------
 void Processor::pipelined_processor_advance() {
-    pipeline_WB();
-    if (!pipeline_MEM()) {
+    // Execute pipeline stages in-order (IF to WB)
+    // This ensures correct timing and cycle counts
+    if (!pipeline_MEM()) {  // Check MEM stall first
         DEBUG(cout << "Memory stall encountered. Pipeline is stalled.\n");
-        return; // Stall the pipeline.
+        return;
     }
-    pipeline_EX();
-    pipeline_ID();
     pipeline_IF();
+    pipeline_ID();
+    pipeline_EX();
+    pipeline_WB();
 }
 
 // -------------------- IF Stage --------------------

@@ -2688,6 +2688,15 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 536936449<-[0]
 IF: Fetched instruction 0x20010001 from PC 0x0
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 3
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 
 CYCLE 60
 R[0]: 0
@@ -2722,51 +2731,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 3
-MEM_WRITE: 0
-ALU_SRC: 1
-REG_WRITE: 1
 L1 Cache (read hit): 2885746688<-[4]
 IF: Fetched instruction 0xac010000 from PC 0x4
-
-CYCLE 61
-R[0]: 0
-R[1]: 0
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
 REG_DEST: 0
 JUMP: 0
 BRANCH: 0
@@ -2776,12 +2742,11 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
-L1 Cache (read hit): 2349465600<-[8]
-IF: Fetched instruction 0x8c0a0000 from PC 0x8
+WB: Writing 1 to R[1]
 
-CYCLE 62
+CYCLE 61
 R[0]: 0
-R[1]: 0
+R[1]: 1
 R[2]: 0
 R[3]: 0
 R[4]: 0
@@ -2812,6 +2777,10 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 536936449<-[0]
+L1 Cache (write hit): [0]<-0
+L1 Cache (read hit): 2349465600<-[8]
+IF: Fetched instruction 0x8c0a0000 from PC 0x8
 REG_DEST: 0
 JUMP: 0
 BRANCH: 0
@@ -2821,12 +2790,10 @@ ALU_OP: 0
 MEM_WRITE: 0
 ALU_SRC: 1
 REG_WRITE: 1
-L1 Cache (read hit): 0<-[c]
-IF: Fetched instruction 0x0 from PC 0xc
 
-CYCLE 63
+CYCLE 62
 R[0]: 0
-R[1]: 0
+R[1]: 1
 R[2]: 0
 R[3]: 0
 R[4]: 0
@@ -2857,9 +2824,9 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 1 to R[1]
-L1 Cache (read hit): 536936449<-[0]
-L1 Cache (write hit): [0]<-0
+L1 Cache (read hit): 0<-[0]
+L1 Cache (read hit): 0<-[c]
+IF: Fetched instruction 0x0 from PC 0xc
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -2869,8 +2836,53 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+WB: Writing 0 to R[10]
+
+CYCLE 63
+R[0]: 0
+R[1]: 1
+R[2]: 0
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
 L1 Cache (read hit): 2886336516<-[10]
 IF: Fetched instruction 0xac0a0004 from PC 0x10
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 0
+MEM_WRITE: 1
+ALU_SRC: 1
+REG_WRITE: 0
+WB: Writing 0 to R[0]
 
 CYCLE 64
 R[0]: 0
@@ -2905,18 +2917,19 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[0]
+L1 Cache (read hit): 2885746688<-[4]
+L1 Cache (write hit): [4]<-4
+L1 Cache (read hit): 2348941316<-[14]
+IF: Fetched instruction 0x8c020004 from PC 0x14
 REG_DEST: 0
 JUMP: 0
 BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
+MEM_READ: 1
+MEM_TO_REG: 1
 ALU_OP: 0
-MEM_WRITE: 1
+MEM_WRITE: 0
 ALU_SRC: 1
-REG_WRITE: 0
-L1 Cache (read hit): 2348941316<-[14]
-IF: Fetched instruction 0x8c020004 from PC 0x14
+REG_WRITE: 1
 
 CYCLE 65
 R[0]: 0
@@ -2951,55 +2964,9 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[10]
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 1
-MEM_TO_REG: 1
-ALU_OP: 0
-MEM_WRITE: 0
-ALU_SRC: 1
-REG_WRITE: 1
+L1 Cache (read hit): 4<-[4]
 L1 Cache (read hit): 2164768<-[18]
 IF: Fetched instruction 0x210820 from PC 0x18
-
-CYCLE 66
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-WB: Writing 0 to R[0]
-L1 Cache (read hit): 2885746688<-[4]
-L1 Cache (write hit): [4]<-4
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -3009,102 +2976,9 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 2885812232<-[1c]
-IF: Fetched instruction 0xac020008 from PC 0x1c
-
-CYCLE 67
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read hit): 4<-[4]
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 0
-MEM_WRITE: 1
-ALU_SRC: 1
-REG_WRITE: 0
-L1 Cache (read hit): 2349006856<-[20]
-IF: Fetched instruction 0x8c030008 from PC 0x20
-
-CYCLE 68
-R[0]: 0
-R[1]: 1
-R[2]: 0
-R[3]: 0
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
 WB: Writing 4 to R[2]
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 1
-MEM_TO_REG: 1
-ALU_OP: 0
-MEM_WRITE: 0
-ALU_SRC: 1
-REG_WRITE: 1
-L1 Cache (read hit): 2164768<-[24]
-IF: Fetched instruction 0x210820 from PC 0x24
 
-CYCLE 69
+CYCLE 66
 R[0]: 0
 R[1]: 1
 R[2]: 4
@@ -3137,22 +3011,67 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 2 to R[1]
-L1 Cache (read hit): 2349465600<-[8]
-L1 Cache (write hit): [8]<-8
-REG_DEST: 1
+L1 Cache (read hit): 2885812232<-[1c]
+IF: Fetched instruction 0xac020008 from PC 0x1c
+REG_DEST: 0
 JUMP: 0
 BRANCH: 0
 MEM_READ: 0
 MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-L1 Cache (read hit): 2885746688<-[28]
-IF: Fetched instruction 0xac010000 from PC 0x28
+ALU_OP: 0
+MEM_WRITE: 1
+ALU_SRC: 1
+REG_WRITE: 0
+WB: Writing 2 to R[1]
 
-CYCLE 70
+CYCLE 67
+R[0]: 0
+R[1]: 2
+R[2]: 4
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read hit): 2349465600<-[8]
+L1 Cache (write hit): [8]<-8
+L1 Cache (read hit): 2349006856<-[20]
+IF: Fetched instruction 0x8c030008 from PC 0x20
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 1
+MEM_TO_REG: 1
+ALU_OP: 0
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
+
+CYCLE 68
 R[0]: 0
 R[1]: 2
 R[2]: 4
@@ -3186,6 +3105,54 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 8<-[8]
+L1 Cache (read hit): 2164768<-[24]
+IF: Fetched instruction 0x210820 from PC 0x24
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+WB: Writing 8 to R[3]
+
+CYCLE 69
+R[0]: 0
+R[1]: 2
+R[2]: 4
+R[3]: 8
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read hit): 2885746688<-[28]
+IF: Fetched instruction 0xac010000 from PC 0x28
 REG_DEST: 0
 JUMP: 0
 BRANCH: 0
@@ -3195,14 +3162,60 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
+WB: Writing 4 to R[1]
+
+CYCLE 70
+R[0]: 0
+R[1]: 4
+R[2]: 4
+R[3]: 8
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read hit): 0<-[0]
+L1 Cache (write hit): [0]<-0
 L1 Cache (read hit): 2349072384<-[2c]
 IF: Fetched instruction 0x8c040000 from PC 0x2c
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 1
+MEM_TO_REG: 1
+ALU_OP: 0
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 
 CYCLE 71
 R[0]: 0
-R[1]: 2
+R[1]: 4
 R[2]: 4
-R[3]: 0
+R[3]: 8
 R[4]: 0
 R[5]: 0
 R[6]: 0
@@ -3231,22 +3244,23 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 8 to R[3]
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 1
-MEM_TO_REG: 1
-ALU_OP: 0
-MEM_WRITE: 0
-ALU_SRC: 1
-REG_WRITE: 1
+L1 Cache (read hit): 0<-[0]
 L1 Cache (read hit): 2164768<-[30]
 IF: Fetched instruction 0x210820 from PC 0x30
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
+WB: Writing 0 to R[4]
 
 CYCLE 72
 R[0]: 0
-R[1]: 2
+R[1]: 4
 R[2]: 4
 R[3]: 8
 R[4]: 0
@@ -3277,9 +3291,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 4 to R[1]
-L1 Cache (read hit): 0<-[0]
-L1 Cache (write hit): [0]<-0
+L1 Cache (read hit): 4329504<-[34]
+IF: Fetched instruction 0x421020 from PC 0x34
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -3289,12 +3302,11 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 4329504<-[34]
-IF: Fetched instruction 0x421020 from PC 0x34
+WB: Writing 8 to R[1]
 
 CYCLE 73
 R[0]: 0
-R[1]: 4
+R[1]: 8
 R[2]: 4
 R[3]: 8
 R[4]: 0
@@ -3325,53 +3337,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[0]
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
 L1 Cache (read hit): 2885746692<-[38]
 IF: Fetched instruction 0xac010004 from PC 0x38
-
-CYCLE 74
-R[0]: 0
-R[1]: 4
-R[2]: 4
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-WB: Writing 0 to R[4]
 REG_DEST: 0
 JUMP: 0
 BRANCH: 0
@@ -3381,560 +3348,9 @@ ALU_OP: 0
 MEM_WRITE: 1
 ALU_SRC: 1
 REG_WRITE: 0
-L1 Cache (read hit): 2349137924<-[3c]
-IF: Fetched instruction 0x8c050004 from PC 0x3c
-
-CYCLE 75
-R[0]: 0
-R[1]: 4
-R[2]: 4
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-WB: Writing 8 to R[1]
-REG_DEST: 0
-JUMP: 0
-BRANCH: 0
-MEM_READ: 1
-MEM_TO_REG: 1
-ALU_OP: 0
-MEM_WRITE: 0
-ALU_SRC: 1
-REG_WRITE: 1
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
-IF: Memory stall during fetch at PC 0x40
-
-CYCLE 76
-R[0]: 0
-R[1]: 8
-R[2]: 4
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
 WB: Writing 8 to R[2]
-L1 Cache (read miss) at address 4: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 58 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
 
-CYCLE 77
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 57 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 78
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 56 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 79
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 55 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 80
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 54 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 81
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 53 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 82
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 52 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 83
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 51 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 84
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 50 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 85
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 49 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 86
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 48 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 87
+CYCLE 74
 R[0]: 0
 R[1]: 8
 R[2]: 8
@@ -3969,513 +3385,19 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 4<-[4]
 L1 Cache (write hit): [4]<-4
-L2 Cache (read miss) at address 40: 47 cycles remaining to be serviced
-MEM[40]: 0
-MEM[41]: 0
-MEM[42]: 0
-MEM[43]: 0
-MEM[44]: 0
-MEM[45]: 0
-MEM[46]: 0
-MEM[47]: 0
-IF: Memory stall during fetch at PC 0x40
+L1 Cache (read hit): 2349137924<-[3c]
+IF: Fetched instruction 0x8c050004 from PC 0x3c
+REG_DEST: 0
+JUMP: 0
+BRANCH: 0
+MEM_READ: 1
+MEM_TO_REG: 1
+ALU_OP: 0
+MEM_WRITE: 0
+ALU_SRC: 1
+REG_WRITE: 1
 
-CYCLE 88
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 11 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 46 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 89
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 10 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 45 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 90
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 9 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 44 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 91
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 8 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 43 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 92
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 7 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 42 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 93
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 6 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 41 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 94
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 5 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 40 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 95
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 4 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 39 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 96
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 3 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 38 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 97
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 2 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 37 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 98
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 0
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-L1 Cache (read miss) at address 4: 1 cycles remaining to be serviced
-L2 Cache (read miss) at address 4: 36 cycles remaining to be serviced
-MEM[0]: 20010001
-MEM[1]: ac010000
-MEM[2]: 8c0a0000
-MEM[3]: 0
-MEM[4]: ac0a0004
-MEM[5]: 8c020004
-MEM[6]: 210820
-MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
-
-CYCLE 99
+CYCLE 75
 R[0]: 0
 R[1]: 8
 R[2]: 8
@@ -4509,7 +3431,6 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 4<-[4]
-L2 Cache (read miss) at address 40: 35 cycles remaining to be serviced
 MEM[40]: 0
 MEM[41]: 0
 MEM[42]: 0
@@ -4518,15 +3439,17 @@ MEM[44]: 0
 MEM[45]: 0
 MEM[46]: 0
 MEM[47]: 0
+L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
+WB: Writing 4 to R[5]
 
-CYCLE 100
+CYCLE 76
 R[0]: 0
 R[1]: 8
 R[2]: 8
 R[3]: 8
 R[4]: 0
-R[5]: 0
+R[5]: 4
 R[6]: 0
 R[7]: 0
 R[8]: 0
@@ -4553,7 +3476,1084 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 4 to R[5]
+L1 Cache (read miss) at address 40: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 58 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 77
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 57 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 78
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 56 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 79
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 55 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 80
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 54 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 81
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 53 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 82
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 52 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 83
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 51 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 84
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 50 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 85
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 49 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 86
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 48 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 87
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L2 Cache (read miss) at address 40: 47 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 88
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 11 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 46 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 89
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 10 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 45 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 90
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 9 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 44 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 91
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 8 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 43 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 92
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 7 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 42 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 93
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 6 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 41 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 94
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 5 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 40 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 95
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 4 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 39 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 96
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 3 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 38 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 97
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 2 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 37 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 98
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L1 Cache (read miss) at address 40: 1 cycles remaining to be serviced
+L2 Cache (read miss) at address 40: 36 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 99
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+L2 Cache (read miss) at address 40: 35 cycles remaining to be serviced
+MEM[40]: 0
+MEM[41]: 0
+MEM[42]: 0
+MEM[43]: 0
+MEM[44]: 0
+MEM[45]: 0
+MEM[46]: 0
+MEM[47]: 0
+IF: Memory stall during fetch at PC 0x40
+
+CYCLE 100
+R[0]: 0
+R[1]: 8
+R[2]: 8
+R[3]: 8
+R[4]: 0
+R[5]: 4
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
 L1 Cache (read miss) at address 40: 11 cycles remaining to be serviced
 L2 Cache (read miss) at address 40: 34 cycles remaining to be serviced
 MEM[40]: 0
@@ -6122,6 +6122,15 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[40]
 IF: Fetched instruction 0x0 from PC 0x40
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 
 CYCLE 136
 R[0]: 0
@@ -6156,6 +6165,8 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
+L1 Cache (read hit): 0<-[44]
+IF: Fetched instruction 0x0 from PC 0x44
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -6165,8 +6176,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 0<-[44]
-IF: Fetched instruction 0x0 from PC 0x44
+WB: Writing 0 to R[0]
 
 CYCLE 137
 R[0]: 0
@@ -6201,141 +6211,5 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-L1 Cache (read hit): 0<-[48]
-IF: Fetched instruction 0x0 from PC 0x48
 
-CYCLE 138
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-L1 Cache (read hit): 0<-[4c]
-IF: Fetched instruction 0x0 from PC 0x4c
-
-CYCLE 139
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-WB: Writing 0 to R[0]
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-L1 Cache (read hit): 0<-[50]
-IF: Fetched instruction 0x0 from PC 0x50
-
-CYCLE 140
-R[0]: 0
-R[1]: 8
-R[2]: 8
-R[3]: 8
-R[4]: 0
-R[5]: 4
-R[6]: 0
-R[7]: 0
-R[8]: 0
-R[9]: 0
-R[10]: 0
-R[11]: 0
-R[12]: 0
-R[13]: 0
-R[14]: 0
-R[15]: 0
-R[16]: 0
-R[17]: 0
-R[18]: 0
-R[19]: 0
-R[20]: 0
-R[21]: 0
-R[22]: 0
-R[23]: 0
-R[24]: 0
-R[25]: 0
-R[26]: 0
-R[27]: 0
-R[28]: 0
-R[29]: 0
-R[30]: 0
-R[31]: 0
-
-Completed execution in 70.5 nanoseconds.
+Completed execution in 69 nanoseconds.

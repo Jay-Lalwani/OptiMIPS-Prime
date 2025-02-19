@@ -15,6 +15,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install g++ gcc-mipsel-linux-gnu make python3
+          sudo apt-get install gcc-mips*
 
       - name: Build and Run Tests
         run: |

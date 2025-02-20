@@ -22,8 +22,8 @@ Available tests:
 
 Running test: MIPSPipeline-branch.txt
 Register state differences found:
-  R[2]: pipeline = 4, single_cycle = 6
-Cycle count mismatch: expected 138, got 137
+  R[2]: pipeline = 2, single_cycle = 6
+Cycle count mismatch: expected 138, got 134
 
 Running test: MIPSPipeline-dependent_stores.txt
 Register state differences found:
@@ -98,36 +98,34 @@ Cycle count mismatch: expected 154, got 152
 
 Running test: SpeculativeMIPS-3bit_011.txt
 Register state differences found:
-  R[1]: pipeline = 91, single_cycle = 0
-  R[2]: pipeline = 0, single_cycle = 21
+  R[2]: pipeline = 5, single_cycle = 21
   R[3]: pipeline = 0, single_cycle = 1
-Cycle count mismatch: expected 390, got 139
+Cycle count mismatch: expected 390, got 192
 
 Running test: SpeculativeMIPS-3bit_100.txt
 Register state differences found:
-  R[1]: pipeline = 36, single_cycle = 0
-  R[2]: pipeline = 0, single_cycle = 11
+  R[2]: pipeline = 2, single_cycle = 11
   R[3]: pipeline = 0, single_cycle = 1
-Cycle count mismatch: expected 382, got 139
+Cycle count mismatch: expected 382, got 183
 
 Running test: SpeculativeMIPS-3bit_double.txt
 Register state differences found:
-  R[1]: pipeline = 36, single_cycle = 0
-  R[2]: pipeline = 0, single_cycle = 11
+  R[2]: pipeline = 3, single_cycle = 11
+  R[3]: pipeline = 0, single_cycle = 1
   R[4]: pipeline = 182, single_cycle = -1227133514
-Cycle count mismatch: expected 510, got 146
+Cycle count mismatch: expected 510, got 212
 
 Running test: SpeculativeMIPS-hidden.txt
 Register state differences found:
-  R[1]: pipeline = 511, single_cycle = 0
-  R[3]: pipeline = 1, single_cycle = 4
+  R[1]: pipeline = -1, single_cycle = 0
+  R[3]: pipeline = 0, single_cycle = 4
   R[4]: pipeline = -32768, single_cycle = 32768
   R[5]: pipeline = 0, single_cycle = 2
-  R[6]: pipeline = 0, single_cycle = 17745
-  R[7]: pipeline = 0, single_cycle = 9214
-  R[8]: pipeline = 0, single_cycle = 4780
-  R[9]: pipeline = 0, single_cycle = 2184
-Cycle count mismatch: expected 16069, got 213
+  R[6]: pipeline = 32890, single_cycle = 17745
+  R[7]: pipeline = 16206, single_cycle = 9214
+  R[8]: pipeline = 140, single_cycle = 4780
+  R[9]: pipeline = 4048, single_cycle = 2184
+Cycle count mismatch: expected 16069, got 13527
 
 Running test: SpeculativeMIPS-one_backward_beq.txt
 Register state differences found:
@@ -137,9 +135,9 @@ Cycle count mismatch: expected 3074, got 2582
 
 Running test: SpeculativeMIPS-one_backward_bne.txt
 Register state differences found:
-  R[1]: pipeline = 499, single_cycle = 0
-  R[2]: pipeline = 2, single_cycle = 1000
-Cycle count mismatch: expected 2569, got 72
+  R[1]: pipeline = -1, single_cycle = 0
+  R[2]: pipeline = 1002, single_cycle = 1000
+Cycle count mismatch: expected 2569, got 2072
 
 Running test: SpeculativeMIPS-one_forward_beq.txt
 Register state differences found:
@@ -149,24 +147,21 @@ Cycle count mismatch: expected 3575, got 132
 
 Running test: SpeculativeMIPS-one_forward_bne.txt
 Register state differences found:
-  R[1]: pipeline = 500, single_cycle = -1
-  R[2]: pipeline = 0, single_cycle = 1002
-  R[3]: pipeline = 0, single_cycle = 1
-Cycle count mismatch: expected 4083, got 72
+  R[1]: pipeline = -2, single_cycle = -1
+  R[2]: pipeline = 1004, single_cycle = 1002
+Cycle count mismatch: expected 4083, got 3586
 
 Running test: SpeculativeMIPS-static_branch.txt
 Register state differences found:
-  R[1]: pipeline = 127, single_cycle = 0
-  R[2]: pipeline = 0, single_cycle = 32
+  R[2]: pipeline = 7, single_cycle = 32
   R[3]: pipeline = 0, single_cycle = 1
-Cycle count mismatch: expected 390, got 139
+Cycle count mismatch: expected 390, got 194
 
 Running test: SpeculativeMIPS-test_case_local.txt
 Register state differences found:
-  R[1]: pipeline = 499, single_cycle = 0
-  R[2]: pipeline = 0, single_cycle = 250
+  R[1]: pipeline = -1, single_cycle = 0
   R[3]: pipeline = 0, single_cycle = 1
-Cycle count mismatch: expected 4070, got 75
+Cycle count mismatch: expected 4070, got 3325
 
 Summary:
 

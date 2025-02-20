@@ -169,7 +169,7 @@ void Processor::pipeline_EX() {
     ex_mem.valid       = true;
     
     // Handle branch/jump hazards
-    if (id_ex.branch && ex_mem.zero) {
+    if ((id_ex.branch && !id_ex.bne && ex_mem.zero) || (id_ex.bne && !ex_mem.zero)) {
         fetch_pc = branch_target;
         ex_mem.pc_branch = branch_target;
         flush_IF_ID_ID_EX();

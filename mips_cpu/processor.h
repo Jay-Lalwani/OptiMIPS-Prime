@@ -14,28 +14,24 @@ class Processor {
         Memory *memory;
         Registers regfile;
         
-        // Separate pointer for instruction fetching.
+        // Instruction fetch pointer.
         uint32_t fetch_pc;
         
-        // Pipeline register structures
-        
-        // IF/ID: Holds the fetched instruction and its PC+4.
+        // Pipeline register structures (current state).
         struct IF_ID {
             uint32_t instruction;
             uint32_t pc_plus_4;
             bool valid;
         };
-        
-        // ID/EX: Holds the decoded fields, control signals, and register data.
         struct ID_EX {
-            // Control signals
+            // Control signals.
             bool reg_dest;
             bool ALU_src;
             bool reg_write;
             bool mem_read;
             bool mem_write;
             bool mem_to_reg;
-            unsigned ALU_op; // 2-bit value
+            unsigned ALU_op; // 2-bit value.
             bool branch;
             bool jump;
             bool jump_reg;
@@ -45,7 +41,7 @@ class Processor {
             bool bne;
             bool halfword;
             bool byte;
-            // Data fields
+            // Data fields.
             uint32_t pc_plus_4;  // For sequential commit.
             uint32_t read_data_1;
             uint32_t read_data_2;
@@ -53,13 +49,11 @@ class Processor {
             int rs;
             int rt;
             int rd;
-            int opcode;          // Saved for ALU control generation.
+            int opcode;          // For ALU control.
             uint32_t shamt;
             uint32_t funct;
             bool valid;
         };
-        
-        // EX/MEM: Holds results from the ALU and related signals.
         struct EX_MEM {
             // Control signals for MEM and WB.
             bool reg_write;
@@ -69,16 +63,14 @@ class Processor {
             bool link;
             bool halfword;
             bool byte;
-            // Data fields
+            // Data fields.
             uint32_t alu_result;
             uint32_t write_data;  // For store instructions.
             int write_reg;        // Destination register.
-            uint32_t pc_branch;   // PC to be committed (sequential or branch target).
+            uint32_t pc_branch;   // Committed PC.
             bool zero;            // ALU zero flag.
             bool valid;
         };
-        
-        // MEM/WB: Holds data to be written back.
         struct MEM_WB {
             // Control signals for WB stage.
             bool reg_write;
@@ -88,36 +80,35 @@ class Processor {
             uint32_t mem_read_data;
             uint32_t alu_result;
             int write_reg;
-            uint32_t pc_plus_4;   // Next sequential PC (or branch target).
+            uint32_t pc_plus_4;   // Committed PC.
             bool valid;
         };
         
-        // Pipeline registers.
+        // Current pipeline registers.
         IF_ID if_id;
         ID_EX id_ex;
         EX_MEM ex_mem;
         MEM_WB mem_wb;
         
-        // Pipeline stage functions.
-        void pipeline_IF();
-        void pipeline_ID();
-        void pipeline_EX();
-        bool pipeline_MEM(); // Returns false to stall.
-        void pipeline_WB();
+        // Pipeline stage functions that compute next-state values.
+        // (Each function uses only the current state to compute its “next” register.)
+        IF_ID compute_IF();
+        ID_EX compute_ID(const IF_ID &if_reg);
+        EX_MEM compute_EX(const ID_EX &id_reg);
+        MEM_WB compute_MEM(const EX_MEM &ex_reg);
+        // WB stage updates the register file using the current MEM/WB.
+        void do_WB(const MEM_WB &mw_reg);
         
-        // Flush IF/ID and ID/EX registers (used on branch/jump mispredictions).
+        // Utility: flush IF/ID and ID/EX (for control hazards).
         void flush_IF_ID_ID_EX();
         
         // Single-cycle processor advancement.
         void single_cycle_processor_advance();
         
-        // Pipelined processor advancement.
-        void pipelined_processor_advance();
- 
     public:
         Processor(Memory *mem) { 
             regfile.pc = 0; 
-            fetch_pc = 0;   // Separate fetch pointer.
+            fetch_pc = 0; 
             memory = mem; 
             if_id.valid = false;
             id_ex.valid = false;

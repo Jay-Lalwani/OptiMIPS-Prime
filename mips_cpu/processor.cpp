@@ -11,7 +11,6 @@ using namespace std;
 
 // -------------------- Initialization --------------------
 void Processor::initialize(int level) {
-    // Initialize control signals to baseline values.
     control = { .reg_dest    = 0, 
                 .jump        = 0,
                 .jump_reg    = 0,
@@ -28,9 +27,8 @@ void Processor::initialize(int level) {
                 .ALU_src     = 0,
                 .reg_write   = 0,
                 .zero_extend = 0 };
-   
     opt_level = level;
-    // Reset pipeline registers.
+    // Clear pipeline registers.
     if_id.valid = false;
     id_ex.valid = false;
     ex_mem.valid = false;
@@ -43,147 +41,132 @@ void Processor::advance() {
         case 0:
             single_cycle_processor_advance();
             break;
-        case 1:
-            pipelined_processor_advance();
+        case 1: {
+            // Cycle-accurate update: compute next states based on current state.
+            IF_ID next_if = compute_IF();
+            ID_EX next_id = compute_ID(if_id);
+            // If a load–use hazard is detected in the current ID/EX stage, then stall:
+            // Do not update next_id (bubble) and keep if_id unchanged.
+            bool hazard = false;
+            if (id_ex.valid && id_ex.mem_read) {
+                int loadDest = id_ex.rt; // For load, destination is rt.
+                int src1 = (if_id.instruction >> 21) & 0x1F;
+                int src2 = (if_id.instruction >> 16) & 0x1F;
+                if (loadDest != 0 && (src1 == loadDest || src2 == loadDest))
+                    hazard = true;
+            }
+            if (hazard) {
+                DEBUG(cout << "ID: Load-use hazard detected. Stalling (inserting bubble).\n");
+                next_id.valid = false;
+                // Do not update IF/ID; keep it for the next cycle.
+                next_if = if_id;
+            }
+            EX_MEM next_ex = compute_EX(next_id);
+            MEM_WB next_mw = compute_MEM(next_ex);
+            do_WB(mem_wb); // Use current MEM/WB for WB.
+            // Now update pipeline registers simultaneously.
+            if_id = next_if;
+            id_ex = next_id;
+            ex_mem = next_ex;
+            mem_wb = next_mw;
             break;
+        }
         default:
             break;
     }
 }
 
-// -------------------- Pipelined Advance --------------------
-void Processor::pipelined_processor_advance() {
-    pipeline_WB();
-    if (!pipeline_MEM()) {
-        DEBUG(cout << "Memory stall encountered. Stalling pipeline.\n");
-        return; // Stall if memory access is busy.
-    }
-    pipeline_EX();
-
-    // --- Hazard Detection: Load–Use Data Hazard ---
-    // If the instruction in EX/MEM is a load (mem_read == true)
-    // and the instruction waiting in IF/ID uses its destination register,
-    // then stall the pipeline (i.e. do not update ID and IF registers).
-    bool stallDetected = false;
-    if (ex_mem.valid && ex_mem.mem_read && if_id.valid) {
-        int loadDest = ex_mem.write_reg;  // Destination register of the load.
-        int if_rs = (if_id.instruction >> 21) & 0x1F;
-        int if_rt = (if_id.instruction >> 16) & 0x1F;
-        if (if_rs == loadDest || if_rt == loadDest) {
-            stallDetected = true;
-        }
-    }
-    if (stallDetected) {
-        DEBUG(cout << "Load–use hazard detected. Stalling pipeline for one cycle.\n");
-        // By returning without calling pipeline_ID and pipeline_IF,
-        // we effectively stall the pipeline while preserving the IF/ID register.
-        return;
-    }
-
-    pipeline_ID();
-    pipeline_IF();
-}
-
 // -------------------- IF Stage --------------------
-void Processor::pipeline_IF() {
-    uint32_t instruction = 0;
-    // Fetch instruction from memory using fetch_pc.
-    bool fetchSuccess = memory->access(fetch_pc, instruction, 0, 1, 0);
-    if (!fetchSuccess) {
-        DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << hex << fetch_pc << dec << "\n");
-        return;
+Processor::IF_ID Processor::compute_IF() {
+    IF_ID next;
+    uint32_t instr = 0;
+    bool fetched = memory->access(fetch_pc, instr, 0, 1, 0);
+    if (fetched) {
+        next.instruction = instr;
+        next.pc_plus_4 = fetch_pc + 4;
+        next.valid = true;
+        DEBUG(cout << "IF: Fetched 0x" << hex << instr << " from PC 0x" << fetch_pc << dec << "\n");
+        fetch_pc += 4;
+    } else {
+        next.valid = false;
     }
-    if_id.instruction = instruction;
-    if_id.pc_plus_4 = fetch_pc + 4;
-    if_id.valid = true;
-    DEBUG(cout << "IF: Fetched instruction 0x" << hex << instruction 
-              << " from PC 0x" << fetch_pc << dec << "\n");
-    fetch_pc += 4;
+    return next;
 }
 
 // -------------------- ID Stage --------------------
-void Processor::pipeline_ID() {
-    if (!if_id.valid) return;
-    uint32_t instruction = if_id.instruction;
-    
-    // Decode fields.
+Processor::ID_EX Processor::compute_ID(const IF_ID &if_reg) {
+    ID_EX next;
+    if (!if_reg.valid) {
+        next.valid = false;
+        return next;
+    }
+    uint32_t instruction = if_reg.instruction;
     int opcode = (instruction >> 26) & 0x3F;
-    int rs     = (instruction >> 21) & 0x1F;
-    int rt     = (instruction >> 16) & 0x1F;
-    int rd     = (instruction >> 11) & 0x1F;
+    int rs = (instruction >> 21) & 0x1F;
+    int rt = (instruction >> 16) & 0x1F;
+    int rd = (instruction >> 11) & 0x1F;
     uint32_t shamt = (instruction >> 6) & 0x1F;
     uint32_t funct = instruction & 0x3F;
-    uint32_t imm   = instruction & 0xFFFF;
-    
-    // Sign-extend immediate if needed.
-    imm = control.zero_extend ? imm : ((imm >> 15) ? (0xFFFF0000 | imm) : imm);
-    
+    uint32_t imm = instruction & 0xFFFF;
     // Decode control signals.
     control.decode(instruction);
-    DEBUG(control.print());
-    
+    // For sign-extension, use control.zero_extend.
+    imm = control.zero_extend ? imm : ((imm >> 15) ? (0xFFFF0000 | imm) : imm);
     // Read registers.
-    uint32_t read_data_1 = 0, read_data_2 = 0;
-    regfile.access(rs, rt, read_data_1, read_data_2, 0, false, 0);
-    
-    // Populate ID/EX pipeline register.
-    id_ex.reg_dest    = control.reg_dest;
-    id_ex.ALU_src     = control.ALU_src;
-    id_ex.reg_write   = control.reg_write;
-    id_ex.mem_read    = control.mem_read;
-    id_ex.mem_write   = control.mem_write;
-    id_ex.mem_to_reg  = control.mem_to_reg;
-    id_ex.ALU_op      = control.ALU_op;
-    id_ex.branch      = control.branch;
-    id_ex.jump        = control.jump;
-    id_ex.jump_reg    = control.jump_reg;
-    id_ex.link        = control.link;
-    id_ex.shift       = control.shift;
-    id_ex.zero_extend = control.zero_extend;
-    id_ex.bne         = control.bne;
-    id_ex.halfword    = control.halfword;
-    id_ex.byte        = control.byte;
-    id_ex.pc_plus_4   = if_id.pc_plus_4;
-    id_ex.read_data_1 = read_data_1;
-    id_ex.read_data_2 = read_data_2;
-    id_ex.imm         = imm;
-    id_ex.rs          = rs;
-    id_ex.rt          = rt;
-    id_ex.rd          = rd;
-    id_ex.opcode      = opcode;
-    id_ex.shamt       = shamt;
-    id_ex.funct       = funct;
-    id_ex.valid       = true;
-    
-    // Clear IF/ID register after consuming its data.
-    if_id.valid = false;
+    uint32_t rd1 = 0, rd2 = 0;
+    regfile.access(rs, rt, rd1, rd2, 0, false, 0);
+    next.reg_dest    = control.reg_dest;
+    next.ALU_src     = control.ALU_src;
+    next.reg_write   = control.reg_write;
+    next.mem_read    = control.mem_read;
+    next.mem_write   = control.mem_write;
+    next.mem_to_reg  = control.mem_to_reg;
+    next.ALU_op      = control.ALU_op;
+    next.branch      = control.branch;
+    next.jump        = control.jump;
+    next.jump_reg    = control.jump_reg;
+    next.link        = control.link;
+    next.shift       = control.shift;
+    next.zero_extend = control.zero_extend;
+    next.bne         = control.bne;
+    next.halfword    = control.halfword;
+    next.byte        = control.byte;
+    next.pc_plus_4   = if_reg.pc_plus_4;
+    next.read_data_1 = rd1;
+    next.read_data_2 = rd2;
+    next.imm         = imm;
+    next.rs          = rs;
+    next.rt          = rt;
+    next.rd          = rd;
+    next.opcode      = opcode;
+    next.shamt       = shamt;
+    next.funct       = funct;
+    next.valid       = true;
+    return next;
 }
 
 // -------------------- EX Stage --------------------
-void Processor::pipeline_EX() {
-    if (!id_ex.valid) return;
-    
-    // --- Forwarding Logic ---
-    // Determine operands with possible forwarding from later stages.
-    uint32_t op1 = id_ex.shift ? id_ex.shamt : id_ex.read_data_1;
-    uint32_t op2 = id_ex.ALU_src ? id_ex.imm : id_ex.read_data_2;
-    
-    // Forward operand 1 (if not a shift instruction).
-    if (!id_ex.shift) {
-        int rs = id_ex.rs;
+Processor::EX_MEM Processor::compute_EX(const ID_EX &id_reg) {
+    EX_MEM next;
+    if (!id_reg.valid) {
+        next.valid = false;
+        return next;
+    }
+    // Compute ALU operands with forwarding.
+    uint32_t op1 = id_reg.shift ? id_reg.shamt : id_reg.read_data_1;
+    uint32_t op2 = id_reg.ALU_src ? id_reg.imm : id_reg.read_data_2;
+    // Forwarding: check current ex_mem and mem_wb.
+    if (!id_reg.shift) {
+        int rs = id_reg.rs;
         if (rs != 0) {
-            // Check EX/MEM stage.
             if (ex_mem.valid && ex_mem.reg_write && (ex_mem.write_reg == rs))
                 op1 = ex_mem.alu_result;
-            // Otherwise, check MEM/WB stage.
             else if (mem_wb.valid && mem_wb.reg_write && (mem_wb.write_reg == rs))
                 op1 = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
         }
     }
-    
-    // Forward operand 2 if using a register (i.e. not immediate).
-    if (!id_ex.ALU_src) {
-        int rt = id_ex.rt;
+    if (!id_reg.ALU_src) {
+        int rt = id_reg.rt;
         if (rt != 0) {
             if (ex_mem.valid && ex_mem.reg_write && (ex_mem.write_reg == rt))
                 op2 = ex_mem.alu_result;
@@ -191,128 +174,98 @@ void Processor::pipeline_EX() {
                 op2 = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
         }
     }
-    
     uint32_t alu_zero = 0;
-    
-    // Generate ALU control signals and execute the operation.
-    alu.generate_control_inputs(id_ex.ALU_op, id_ex.funct, id_ex.opcode);
+    alu.generate_control_inputs(id_reg.ALU_op, id_reg.funct, id_reg.opcode);
     uint32_t alu_result = alu.execute(op1, op2, alu_zero);
-    
-    // Compute branch target address: PC+4 + (imm << 2).
-    uint32_t branch_target = id_ex.pc_plus_4 + (id_ex.imm << 2);
-    
-    // Populate EX/MEM pipeline register.
-    ex_mem.reg_write   = id_ex.reg_write;
-    ex_mem.mem_read    = id_ex.mem_read;
-    ex_mem.mem_write   = id_ex.mem_write;
-    ex_mem.mem_to_reg  = id_ex.mem_to_reg;
-    ex_mem.link        = id_ex.link;
-    ex_mem.halfword    = id_ex.halfword;
-    ex_mem.byte        = id_ex.byte;
-    ex_mem.alu_result  = alu_result;
-    ex_mem.write_data  = id_ex.read_data_2; // For store instructions.
-    // Determine destination register: for R-type use rd (if reg_dest==1), otherwise rt.
-    ex_mem.write_reg   = id_ex.link ? 31 : (id_ex.reg_dest ? id_ex.rd : id_ex.rt);
-    ex_mem.pc_branch   = id_ex.pc_plus_4;  // Default sequential commit.
-    ex_mem.zero        = (alu_zero == 1);
-    ex_mem.valid       = true;
-    
+    uint32_t branch_target = id_reg.pc_plus_4 + (id_reg.imm << 2);
+    next.reg_write = id_reg.reg_write;
+    next.mem_read = id_reg.mem_read;
+    next.mem_write = id_reg.mem_write;
+    next.mem_to_reg = id_reg.mem_to_reg;
+    next.link = id_reg.link;
+    next.halfword = id_reg.halfword;
+    next.byte = id_reg.byte;
+    next.alu_result = alu_result;
+    next.write_data = id_reg.read_data_2;
+    next.write_reg = id_reg.link ? 31 : (id_reg.reg_dest ? id_reg.rd : id_reg.rt);
+    next.pc_branch = id_reg.pc_plus_4;  // default sequential.
+    next.zero = (alu_zero == 1);
+    next.valid = true;
     // --- Control Hazard Resolution ---
-    // For branch instructions: if branch condition is met (or not met for bne),
-    // or for jump/jump-register instructions, flush the following stages.
-    if ((id_ex.branch && !id_ex.bne && ex_mem.zero) || (id_ex.bne && !ex_mem.zero)) {
-        uint32_t branch_addr = branch_target;
-        fetch_pc = branch_addr;
-        ex_mem.pc_branch = branch_addr;
+    if ((id_reg.branch && !id_reg.bne && next.zero) || (id_reg.bne && !next.zero)) {
+        fetch_pc = branch_target;
+        next.pc_branch = branch_target;
         flush_IF_ID_ID_EX();
-        DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_addr << dec << "\n");
     }
-    else if (id_ex.jump) {
-        uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
+    else if (id_reg.jump) {
+        uint32_t jump_addr = (id_reg.pc_plus_4 & 0xF0000000) | ((id_reg.imm & 0x03FFFFFF) << 2);
         fetch_pc = jump_addr;
-        ex_mem.pc_branch = jump_addr;
+        next.pc_branch = jump_addr;
         flush_IF_ID_ID_EX();
-        DEBUG(cout << "EX: Jump to 0x" << hex << jump_addr << dec << "\n");
     }
-    else if (id_ex.jump_reg) {
-        fetch_pc = id_ex.read_data_1;
-        ex_mem.pc_branch = id_ex.read_data_1;
+    else if (id_reg.jump_reg) {
+        fetch_pc = id_reg.read_data_1;
+        next.pc_branch = id_reg.read_data_1;
         flush_IF_ID_ID_EX();
-        DEBUG(cout << "EX: Jump register to 0x" << hex << id_ex.read_data_1 << dec << "\n");
     }
-    
-    // Clear the ID/EX register once its contents have been processed.
-    id_ex.valid = false;
+    return next;
 }
 
 // -------------------- MEM Stage --------------------
-bool Processor::pipeline_MEM() {
-    if (!ex_mem.valid) return true;
-    
+Processor::MEM_WB Processor::compute_MEM(const EX_MEM &ex_reg) {
+    MEM_WB next;
+    if (!ex_reg.valid) {
+        next.valid = false;
+        return next;
+    }
     uint32_t mem_data = 0;
-    // Perform memory access. (For both load and store.)
-    bool success = memory->access(ex_mem.alu_result, mem_data, 0, ex_mem.mem_read || ex_mem.mem_write, 0);
-    if (!success) return false; // Stall if memory is busy.
-    
-    if (ex_mem.mem_write) {
-        uint32_t write_data_mem = ex_mem.write_data;
-        if (ex_mem.halfword) {
-            write_data_mem = (mem_data & 0xffff0000) | (ex_mem.write_data & 0xffff);
-        } else if (ex_mem.byte) {
-            write_data_mem = (mem_data & 0xffffff00) | (ex_mem.write_data & 0xff);
+    bool success = memory->access(ex_reg.alu_result, mem_data, 0, ex_reg.mem_read || ex_reg.mem_write, 0);
+    if (success) {
+        if (ex_reg.mem_write) {
+            uint32_t wd = ex_reg.write_data;
+            if (ex_reg.halfword)
+                wd = (mem_data & 0xffff0000) | (ex_reg.write_data & 0xffff);
+            else if (ex_reg.byte)
+                wd = (mem_data & 0xffffff00) | (ex_reg.write_data & 0xff);
+            success = memory->access(ex_reg.alu_result, mem_data, wd, ex_reg.mem_read, ex_reg.mem_write);
         }
-        success = memory->access(ex_mem.alu_result, mem_data, write_data_mem, ex_mem.mem_read, ex_mem.mem_write);
-        if (!success) return false;
-    }
-    
-    // For load instructions, apply appropriate masking.
-    if (ex_mem.mem_read) {
-        if (ex_mem.halfword) {
-            mem_data &= 0xffff;
-        } else if (ex_mem.byte) {
-            mem_data &= 0xff;
+        if (ex_reg.mem_read) {
+            if (ex_reg.halfword)
+                mem_data &= 0xffff;
+            else if (ex_reg.byte)
+                mem_data &= 0xff;
         }
+        next.reg_write = ex_reg.reg_write;
+        next.mem_to_reg = ex_reg.mem_to_reg;
+        next.link = ex_reg.link;
+        next.alu_result = ex_reg.alu_result;
+        next.write_reg = ex_reg.write_reg;
+        next.pc_plus_4 = ex_reg.pc_branch;
+        next.mem_read_data = mem_data;
+        next.valid = true;
+    } else {
+        next.valid = false;
     }
-    
-    // Populate MEM/WB pipeline register.
-    mem_wb.reg_write     = ex_mem.reg_write;
-    mem_wb.mem_to_reg    = ex_mem.mem_to_reg;
-    mem_wb.link          = ex_mem.link;
-    mem_wb.alu_result    = ex_mem.alu_result;
-    mem_wb.write_reg     = ex_mem.write_reg;
-    mem_wb.pc_plus_4     = ex_mem.pc_branch; // This holds the committed PC.
-    mem_wb.mem_read_data = mem_data;
-    mem_wb.valid         = true;
-    
-    // Clear EX/MEM register.
-    ex_mem.valid = false;
-    return true;
+    return next;
 }
 
 // -------------------- WB Stage --------------------
-void Processor::pipeline_WB() {
-    if (!mem_wb.valid) return;
-    
+void Processor::do_WB(const MEM_WB &mw_reg) {
+    if (!mw_reg.valid) return;
     uint32_t write_data = 0;
-    if (mem_wb.link) {
-        // For link instructions, register $31 gets PC+8.
-        write_data = mem_wb.pc_plus_4 + 4;
-    } else if (mem_wb.mem_to_reg) {
-        write_data = mem_wb.mem_read_data;
-    } else {
-        write_data = mem_wb.alu_result;
-    }
-    
-    if (mem_wb.reg_write) {
+    if (mw_reg.link)
+        write_data = mw_reg.pc_plus_4 + 4;
+    else if (mw_reg.mem_to_reg)
+        write_data = mw_reg.mem_read_data;
+    else
+        write_data = mw_reg.alu_result;
+    if (mw_reg.reg_write) {
         uint32_t dummy1, dummy2;
-        regfile.access(0, 0, dummy1, dummy2, mem_wb.write_reg, true, write_data);
-        DEBUG(cout << "WB: Writing " << write_data << " to R[" << mem_wb.write_reg << "]\n");
+        regfile.access(0, 0, dummy1, dummy2, mw_reg.write_reg, true, write_data);
+        DEBUG(cout << "WB: Writing " << write_data << " to R[" << mw_reg.write_reg << "]\n");
     }
-    // Update the committed PC.
-    regfile.pc = mem_wb.pc_plus_4;
-    
-    // Clear MEM/WB register.
-    mem_wb.valid = false;
+    // Update committed PC.
+    regfile.pc = mw_reg.pc_plus_4;
 }
 
 // -------------------- Flush --------------------
@@ -327,44 +280,37 @@ void Processor::single_cycle_processor_advance() {
     memory->access(regfile.pc, instruction, 0, 1, 0);
     DEBUG(cout << "\nPC: 0x" << hex << regfile.pc << dec << "\n");
     regfile.pc += 4;
-    
     control.decode(instruction);
     DEBUG(control.print());
-
+    
     int opcode = (instruction >> 26) & 0x3F;
     int rs = (instruction >> 21) & 0x1F;
     int rt = (instruction >> 16) & 0x1F;
     int rd = (instruction >> 11) & 0x1F;
     int shamt = (instruction >> 6) & 0x1F;
-    int funct = instruction & 0x3F;
+    int funct = (instruction & 0x3F);
     uint32_t imm = instruction & 0xFFFF;
     int addr = instruction & 0x3FFFFFF;
     
-    uint32_t read_data_1 = 0, read_data_2 = 0;
-    regfile.access(rs, rt, read_data_1, read_data_2, 0, 0, 0);
-    
+    uint32_t rd1 = 0, rd2 = 0;
+    regfile.access(rs, rt, rd1, rd2, 0, false, 0);
     alu.generate_control_inputs(control.ALU_op, funct, opcode);
     imm = control.zero_extend ? imm : ((imm >> 15) ? (0xFFFF0000 | imm) : imm);
-    
-    uint32_t operand_1 = control.shift ? shamt : read_data_1;
-    uint32_t operand_2 = control.ALU_src ? imm : read_data_2;
+    uint32_t operand_1 = control.shift ? shamt : rd1;
+    uint32_t operand_2 = control.ALU_src ? imm : rd2;
     uint32_t alu_zero = 0;
-    
     uint32_t alu_result = alu.execute(operand_1, operand_2, alu_zero);
     
-    uint32_t read_data_mem = 0, write_data_mem = 0;
-    memory->access(alu_result, read_data_mem, 0, control.mem_read | control.mem_write, 0);
-    write_data_mem = control.halfword ? (read_data_mem & 0xFFFF0000) | (read_data_2 & 0xFFFF) :
-                     control.byte ? (read_data_mem & 0xFFFFFF00) | (read_data_2 & 0xFF) :
-                     read_data_2;
-    memory->access(alu_result, read_data_mem, write_data_mem, control.mem_read, control.mem_write);
-    read_data_mem &= control.halfword ? 0xFFFF : control.byte ? 0xFF : 0xFFFFFFFF;
+    uint32_t mem_rd = 0, wd = 0;
+    memory->access(alu_result, mem_rd, 0, control.mem_read | control.mem_write, 0);
+    wd = control.halfword ? (mem_rd & 0xFFFF0000) | (rd2 & 0xFFFF) :
+         control.byte ? (mem_rd & 0xFFFFFF00) | (rd2 & 0xFF) : rd2;
+    memory->access(alu_result, mem_rd, wd, control.mem_read, control.mem_write);
+    mem_rd &= control.halfword ? 0xFFFF : control.byte ? 0xFF : 0xFFFFFFFF;
     
-    int write_reg = control.link ? 31 : control.reg_dest ? rd : rt;
-    uint32_t write_data = control.link ? regfile.pc + 8 : control.mem_to_reg ? read_data_mem : alu_result;
-    
-    regfile.access(0, 0, read_data_2, read_data_2, write_reg, control.reg_write, write_data);
-    
+    int wr = control.link ? 31 : control.reg_dest ? rd : rt;
+    uint32_t write_data = control.link ? regfile.pc + 8 : control.mem_to_reg ? mem_rd : alu_result;
+    regfile.access(0, 0, rd2, rd2, wr, control.reg_write, write_data);
     regfile.pc += ((control.branch && !control.bne && alu_zero) || (control.bne && !alu_zero)) ? (imm << 2) : 0;
-    regfile.pc = control.jump_reg ? read_data_1 : control.jump ? ((regfile.pc & 0xF0000000) | (addr << 2)) : regfile.pc;
+    regfile.pc = control.jump_reg ? rd1 : control.jump ? ((regfile.pc & 0xF0000000) | (addr << 2)) : regfile.pc;
 }

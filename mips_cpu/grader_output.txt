@@ -22,41 +22,34 @@ Available tests:
 
 Running test: MIPSPipeline-branch.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 138, got 134
+Cycle count mismatch: expected 138, got 132
 
 Running test: MIPSPipeline-dependent_stores.txt
 Register state differences found:
   R[2]: pipeline = 0, single_cycle = 2
   R[3]: pipeline = 0, single_cycle = 1
   R[4]: pipeline = 2, single_cycle = 4
-  R[5]: pipeline = 4, single_cycle = 8
+  R[5]: pipeline = 0, single_cycle = 8
   R[10]: pipeline = 0, single_cycle = 1
-Cycle count mismatch: expected 142, got 140
+Cycle count mismatch: expected 142, got 137
 
 Running test: MIPSPipeline-false_dependency.txt
-Register state differences found:
-  R[6]: pipeline = -3, single_cycle = 0
-Cycle count mismatch: expected 78, got 76
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 78, got 74
 
 Running test: MIPSPipeline-forward_to_rs.txt
-Register state differences found:
-  R[2]: pipeline = 2, single_cycle = 3
-  R[3]: pipeline = 2, single_cycle = 3
-  R[5]: pipeline = 539099137, single_cycle = 2
-  R[6]: pipeline = 0, single_cycle = 4
-Cycle count mismatch: expected 78, got 76
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 78, got 74
 
 Running test: MIPSPipeline-forward_to_rt.txt
 Register state differences found:
-  R[3]: pipeline = 12, single_cycle = 15
-  R[5]: pipeline = 539623434, single_cycle = 15
-  R[6]: pipeline = -2, single_cycle = -5
+  R[5]: pipeline = 0, single_cycle = 15
   R[7]: pipeline = 0, single_cycle = 30
-Cycle count mismatch: expected 79, got 76
+Cycle count mismatch: expected 79, got 74
 
 Running test: MIPSPipeline-hidden.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 264, got 226
+Cycle count mismatch: expected 264, got 242
 
 Running test: MIPSPipeline-load_use.txt
 Register state differences found:
@@ -66,97 +59,71 @@ Register state differences found:
   R[5]: pipeline = 1, single_cycle = 3
   R[6]: pipeline = 2, single_cycle = 4
   R[7]: pipeline = 0, single_cycle = 4
-  R[8]: pipeline = 2, single_cycle = 4
-Cycle count mismatch: expected 150, got 148
+  R[8]: pipeline = 0, single_cycle = 4
+Cycle count mismatch: expected 150, got 141
 
 Running test: MIPSPipeline-raw_dependency.txt
-Register state differences found:
-  R[3]: pipeline = 1, single_cycle = 2
-  R[4]: pipeline = 2, single_cycle = 3
-  R[5]: pipeline = 3, single_cycle = 5
-  R[6]: pipeline = 3, single_cycle = 8
-  R[7]: pipeline = 3, single_cycle = 13
-  R[8]: pipeline = 3, single_cycle = 21
-  R[9]: pipeline = 3, single_cycle = 34
-  R[10]: pipeline = 3, single_cycle = 55
-Cycle count mismatch: expected 78, got 76
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 78, got 74
 
 Running test: MIPSPipeline-reg_file_fowarding.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 70, got 68
+Cycle count mismatch: expected 70, got 66
 
 Running test: MIPSPipeline-simple_no_branch_no_dep.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 154, got 152
+Cycle count mismatch: expected 154, got 150
 
 Running test: SpeculativeMIPS-3bit_011.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 390, got 346
+Cycle count mismatch: expected 390, got 344
 
 Running test: SpeculativeMIPS-3bit_100.txt
-Register state differences found:
-  R[2]: pipeline = 10, single_cycle = 11
-Cycle count mismatch: expected 382, got 329
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 382, got 328
 
 Running test: SpeculativeMIPS-3bit_double.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 510, got 427
+Cycle count mismatch: expected 510, got 425
 
 Running test: SpeculativeMIPS-hidden.txt
-Register state differences found:
-  R[3]: pipeline = 0, single_cycle = 4
-  R[4]: pipeline = -32768, single_cycle = 32768
-  R[5]: pipeline = 0, single_cycle = 2
-  R[6]: pipeline = 32825, single_cycle = 17745
-  R[7]: pipeline = 16174, single_cycle = 9214
-  R[8]: pipeline = 140, single_cycle = 4780
-  R[9]: pipeline = 4040, single_cycle = 2184
-Cycle count mismatch: expected 16069, got 13501
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 16069, got 13301
 
 Running test: SpeculativeMIPS-one_backward_beq.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 3074, got 2572
+Cycle count mismatch: expected 3074, got 2570
 
 Running test: SpeculativeMIPS-one_backward_bne.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 2569, got 2068
+Cycle count mismatch: expected 2569, got 2066
 
 Running test: SpeculativeMIPS-one_forward_beq.txt
-Register state differences found:
-  R[1]: pipeline = 500, single_cycle = 0
-  R[2]: pipeline = 0, single_cycle = 500
-Cycle count mismatch: expected 3575, got 132
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 3575, got 3070
 
 Running test: SpeculativeMIPS-one_forward_bne.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 4083, got 3579
+Cycle count mismatch: expected 4083, got 3577
 
 Running test: SpeculativeMIPS-static_branch.txt
-Register state differences found:
-  R[2]: pipeline = 31, single_cycle = 32
-Cycle count mismatch: expected 390, got 356
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 390, got 355
 
 Running test: SpeculativeMIPS-test_case_local.txt
 Register states match exactly between pipeline and single-cycle.
-Cycle count mismatch: expected 4070, got 3319
+Cycle count mismatch: expected 4070, got 3317
 
 Summary:
 
 Register State Comparison:
-Passed: 10
-Failed: 10
+Passed: 17
+Failed: 3
 
 Failed register state tests:
   MIPSPipeline-dependent_stores.txt
-  MIPSPipeline-false_dependency.txt
-  MIPSPipeline-forward_to_rs.txt
   MIPSPipeline-forward_to_rt.txt
   MIPSPipeline-load_use.txt
-  MIPSPipeline-raw_dependency.txt
-  SpeculativeMIPS-3bit_100.txt
-  SpeculativeMIPS-hidden.txt
-  SpeculativeMIPS-one_forward_beq.txt
-  SpeculativeMIPS-static_branch.txt
 
 Cycle Count Comparison:
 Passed: 0

@@ -2700,7 +2700,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2348941312<-[8]
 IF: Fetched 0x8c020000 from PC 0x8
-L1 Cache (read hit): 536936449<-[0]
 L1 Cache (write hit): [0]<-1
 WB: Writing 1 to R[1]
 
@@ -2739,7 +2738,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 4331552<-[c]
 IF: Fetched 0x421820 from PC 0xc
-L1 Cache (read hit): 1<-[0]
 
 CYCLE 63
 R[0]: 0
@@ -2850,7 +2848,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 545587201<-[18]
 IF: Fetched 0x20850001 from PC 0x18
-L1 Cache (read hit): 1<-[0]
 WB: Writing 2 to R[3]
 
 CYCLE 66
@@ -2962,7 +2959,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 547749889<-[24]
 IF: Fetched 0x20a60001 from PC 0x24
-L1 Cache (read hit): 1<-[0]
 WB: Writing 2 to R[5]
 
 CYCLE 69
@@ -3074,7 +3070,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2900754432<-[30]
 IF: Fetched 0xace60000 from PC 0x30
-L1 Cache (read hit): 1<-[0]
 WB: Writing 3 to R[6]
 
 CYCLE 72
@@ -3150,7 +3145,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 285736962<-[38]
 IF: Fetched 0x11080002 from PC 0x38
-L1 Cache (read hit): 1<-[1]
 L1 Cache (write hit): [1]<-3
 
 CYCLE 74

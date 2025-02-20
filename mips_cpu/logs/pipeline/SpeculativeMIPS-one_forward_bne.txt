@@ -131604,7 +131604,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 0<-[28]
 IF: Fetched 0x0 from PC 0x28
-L1 Cache (read hit): 536936948<-[0]
 L1 Cache (write hit): [0]<-1002
 WB: Writing 0 to R[0]
 

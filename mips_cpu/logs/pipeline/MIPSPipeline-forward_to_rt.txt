@@ -2848,7 +2848,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 2355429376<-[18]
 IF: Fetched 0x8c650000 from PC 0x18
-L1 Cache (read hit): 21237792<-[f]
 L1 Cache (write hit): [f]<-15
 WB: Writing 15 to R[3]
 
@@ -2887,7 +2886,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 21180450<-[1c]
 IF: Fetched 0x1433022 from PC 0x1c
-L1 Cache (read hit): 15<-[f]
 
 CYCLE 67
 R[0]: 0

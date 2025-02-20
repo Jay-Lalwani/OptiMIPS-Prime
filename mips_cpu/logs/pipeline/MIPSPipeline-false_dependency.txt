@@ -2847,7 +2847,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 4403234<-[18]
 IF: Fetched 0x433022 from PC 0x18
-L1 Cache (read hit): 536936449<-[0]
 L1 Cache (write hit): [0]<-3
 WB: Writing 3 to R[3]
 
@@ -2959,7 +2958,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 8597538<-[24]
 IF: Fetched 0x833022 from PC 0x24
-L1 Cache (read hit): 3<-[0]
 L1 Cache (write hit): [0]<-3
 WB: Writing 3 to R[4]
 

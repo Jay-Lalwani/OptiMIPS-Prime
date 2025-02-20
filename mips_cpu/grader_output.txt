@@ -25,9 +25,8 @@ Register states match exactly between pipeline and single-cycle.
 Cycle count mismatch: expected 138, got 132
 
 Running test: MIPSPipeline-dependent_stores.txt
-Register state differences found:
-  R[5]: pipeline = 0, single_cycle = 8
-Cycle count mismatch: expected 142, got 137
+Register states match exactly between pipeline and single-cycle.
+Cycle count mismatch: expected 142, got 138
 
 Running test: MIPSPipeline-false_dependency.txt
 Register states match exactly between pipeline and single-cycle.
@@ -109,11 +108,10 @@ Cycle count mismatch: expected 4070, got 3317
 Summary:
 
 Register State Comparison:
-Passed: 18
-Failed: 2
+Passed: 19
+Failed: 1
 
 Failed register state tests:
-  MIPSPipeline-dependent_stores.txt
   MIPSPipeline-load_use.txt
 
 Cycle Count Comparison:

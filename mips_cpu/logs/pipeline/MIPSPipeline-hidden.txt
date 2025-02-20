@@ -6508,7 +6508,7 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched 0x21290001 from PC 0x3c
-L2 Cache (read hit): 0<-[12c]
+L2 Cache (write hit): [12c]<-1
 L1 Cache: replacing line at idx:4 way:0 due to conflicting address:12c
 WB: Writing 300 to R[11]
 
@@ -7640,7 +7640,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched 0x21290001 from PC 0x3c
-L1 Cache (read hit): 0<-[12c]
 L1 Cache (write hit): [12c]<-2
 WB: Writing 300 to R[11]
 
@@ -8376,7 +8375,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched 0x21290001 from PC 0x3c
-L1 Cache (read hit): 2<-[12c]
 L1 Cache (write hit): [12c]<-3
 WB: Writing 300 to R[11]
 
@@ -9112,7 +9110,6 @@ R[30]: 0
 R[31]: 0
 L1 Cache (read hit): 556335105<-[3c]
 IF: Fetched 0x21290001 from PC 0x3c
-L1 Cache (read hit): 3<-[12c]
 L1 Cache (write hit): [12c]<-4
 WB: Writing 300 to R[11]
 

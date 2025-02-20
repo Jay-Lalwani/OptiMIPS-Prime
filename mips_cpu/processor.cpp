@@ -33,6 +33,8 @@ void Processor::initialize(int level) {
     id_ex.valid = false;
     ex_mem.valid = false;
     mem_wb.valid = false;
+    // Clear store-forwarding tracking.
+    last_store_valid = false;
 }
 
 // -------------------- Advance --------------------
@@ -188,8 +190,7 @@ Processor::EX_MEM Processor::compute_EX(const ID_EX &id_reg) {
     next.byte = id_reg.byte;
     next.alu_result = alu_result;
     
-    // *** Added forwarding for store data ***
-    // For store instructions, the data to be written (from rt) must be forwarded if needed.
+    // Forwarding for store data (for sw instructions).
     uint32_t store_data = id_reg.read_data_2;
     if (id_reg.mem_write) {
         int store_reg = id_reg.rt;
@@ -234,32 +235,46 @@ Processor::MEM_WB Processor::compute_MEM(const EX_MEM &ex_reg) {
         return next;
     }
     uint32_t mem_data = 0;
-    bool success = memory->access(ex_reg.alu_result, mem_data, 0, ex_reg.mem_read || ex_reg.mem_write, 0);
+    bool success = false;
+    
+    // For store instructions, update memory and record the store for forwarding.
+    if (ex_reg.mem_write) {
+         // Record this store for forwarding.
+         last_store_addr = ex_reg.alu_result;
+         last_store_data = ex_reg.write_data;
+         last_store_valid = true;
+         // Execute store (simulate memory write).
+         success = memory->access(ex_reg.alu_result, mem_data, ex_reg.write_data, ex_reg.mem_read, ex_reg.mem_write);
+    } 
+    // For load instructions, try to forward from the pending store if addresses match.
+    else if (ex_reg.mem_read) {
+         if (last_store_valid && (last_store_addr == ex_reg.alu_result)) {
+              mem_data = last_store_data;
+              success = true;
+         } else {
+              success = memory->access(ex_reg.alu_result, mem_data, 0, ex_reg.mem_read, ex_reg.mem_write);
+         }
+         if (ex_reg.halfword)
+              mem_data &= 0xffff;
+         else if (ex_reg.byte)
+              mem_data &= 0xff;
+    }
+    else {
+         // For instructions that do not access memory.
+         success = true;
+    }
+    
     if (success) {
-        if (ex_reg.mem_write) {
-            uint32_t wd = ex_reg.write_data;
-            if (ex_reg.halfword)
-                wd = (mem_data & 0xffff0000) | (ex_reg.write_data & 0xffff);
-            else if (ex_reg.byte)
-                wd = (mem_data & 0xffffff00) | (ex_reg.write_data & 0xff);
-            success = memory->access(ex_reg.alu_result, mem_data, wd, ex_reg.mem_read, ex_reg.mem_write);
-        }
-        if (ex_reg.mem_read) {
-            if (ex_reg.halfword)
-                mem_data &= 0xffff;
-            else if (ex_reg.byte)
-                mem_data &= 0xff;
-        }
-        next.reg_write = ex_reg.reg_write;
-        next.mem_to_reg = ex_reg.mem_to_reg;
-        next.link = ex_reg.link;
-        next.alu_result = ex_reg.alu_result;
-        next.write_reg = ex_reg.write_reg;
-        next.pc_plus_4 = ex_reg.pc_branch;
-        next.mem_read_data = mem_data;
-        next.valid = true;
+         next.reg_write = ex_reg.reg_write;
+         next.mem_to_reg = ex_reg.mem_to_reg;
+         next.link = ex_reg.link;
+         next.alu_result = ex_reg.alu_result;
+         next.write_reg = ex_reg.write_reg;
+         next.pc_plus_4 = ex_reg.pc_branch;
+         next.mem_read_data = mem_data;
+         next.valid = true;
     } else {
-        next.valid = false;
+         next.valid = false;
     }
     return next;
 }

@@ -105,6 +105,11 @@ class Processor {
         // Single-cycle processor advancement.
         void single_cycle_processor_advance();
         
+        // *** NEW: Tracking pending store for memory forwarding ***
+        uint32_t last_store_addr;
+        uint32_t last_store_data;
+        bool last_store_valid;
+        
     public:
         Processor(Memory *mem) { 
             regfile.pc = 0; 
@@ -114,6 +119,7 @@ class Processor {
             id_ex.valid = false;
             ex_mem.valid = false;
             mem_wb.valid = false;
+            last_store_valid = false;
         }
 
         // Get the committed PC.

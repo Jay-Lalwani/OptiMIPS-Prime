@@ -12,7 +12,6 @@ class Processor {
         ALU alu;
         control_t control;
         Memory *memory;
-        bool branch_taken;  // Track if a branch was taken
         Registers regfile;
         
         // A separate pointer for fetching instructions.

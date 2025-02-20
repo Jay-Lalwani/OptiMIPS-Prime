@@ -35,9 +35,6 @@ void Processor::initialize(int level) {
     id_ex.valid = false;
     ex_mem.valid = false;
     mem_wb.valid = false;
-    
-    // Reset our branch delay flag.
-    branch_taken = false;
 }
 
 // -------------------- Advance --------------------
@@ -68,29 +65,17 @@ void Processor::pipelined_processor_advance() {
 
 // -------------------- IF Stage --------------------
 void Processor::pipeline_IF() {
-    // If a branch was taken in the previous cycle, then the instruction in IF/ID
-    // (i.e. the branch delay slot) should be allowed to proceed. In this cycle,
-    // we do not fetch a new instruction.
-    if (branch_taken) {
-        DEBUG(cout << "IF: Branch delay slot - not fetching a new instruction this cycle.\n");
-        // Clear the flag now so that on the next cycle fetch resumes.
-        branch_taken = false;
-        return;
-    }
-    
     uint32_t instruction = 0;
     // Fetch instruction from memory using fetch_pc
     bool fetchSuccess = memory->access(fetch_pc, instruction, 0, 1, 0);
     if (!fetchSuccess) {
-        DEBUG(cout << "IF: Memory stall during fetch at PC 0x" 
-                   << hex << fetch_pc << dec << "\n");
+        DEBUG(cout << "IF: Memory stall during fetch at PC 0x" << hex << fetch_pc << dec << "\n");
         return;
     }
     if_id.instruction = instruction;
     if_id.pc_plus_4 = fetch_pc + 4;
     if_id.valid = true;
-    DEBUG(cout << "IF: Fetched instruction 0x" << hex << instruction 
-               << " from PC 0x" << fetch_pc << dec << "\n");
+    DEBUG(cout << "IF: Fetched instruction 0x" << hex << instruction << " from PC 0x" << fetch_pc << dec << "\n");
     fetch_pc += 4;
 }
 
@@ -108,7 +93,7 @@ void Processor::pipeline_ID() {
     uint32_t funct = instruction & 0x3F;
     uint32_t imm   = instruction & 0xFFFF;
     
-    // Sign–extend the immediate.
+    // Sign-extend the immediate
     imm = control.zero_extend ? imm : ((imm >> 15) ? (0xFFFF0000 | imm) : imm);
     
     // Decode control signals.
@@ -119,7 +104,7 @@ void Processor::pipeline_ID() {
     uint32_t read_data_1 = 0, read_data_2 = 0;
     regfile.access(rs, rt, read_data_1, read_data_2, 0, false, 0);
     
-    // Populate ID/EX pipeline register.
+    // Populate ID/EX pipeline register
     id_ex.reg_dest    = control.reg_dest;
     id_ex.ALU_src     = control.ALU_src;
     id_ex.reg_write   = control.reg_write;
@@ -148,7 +133,7 @@ void Processor::pipeline_ID() {
     id_ex.funct       = funct;
     id_ex.valid       = true;
     
-    // Clear IF/ID register (we have already consumed its contents).
+    // Clear IF/ID register.
     if_id.valid = false;
 }
 
@@ -156,7 +141,7 @@ void Processor::pipeline_ID() {
 void Processor::pipeline_EX() {
     if (!id_ex.valid) return;
     
-    // Set up operands.
+    // Set up operands
     uint32_t operand_1 = id_ex.shift ? id_ex.shamt : id_ex.read_data_1;
     uint32_t operand_2 = id_ex.ALU_src ? id_ex.imm : id_ex.read_data_2;
     uint32_t alu_zero = 0;
@@ -183,30 +168,24 @@ void Processor::pipeline_EX() {
     ex_mem.zero        = (alu_zero == 1);
     ex_mem.valid       = true;
     
-    // Handle branch/jump hazards.
-    if ( id_ex.branch &&
-         (
-           (!id_ex.bne && ex_mem.zero) ||
-           (id_ex.bne && !ex_mem.zero)
-         )
-       )
-    {
-        // Branch condition is met. Update the fetch PC to the branch target.
+    // Handle branch/jump hazards
+    if (id_ex.branch && ex_mem.zero) {
         fetch_pc = branch_target;
         ex_mem.pc_branch = branch_target;
-        // Set the branch_taken flag so that the IF stage will stall this cycle.
-        branch_taken = true;
+        flush_IF_ID_ID_EX();
         DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_target << dec << "\n");
     }
     else if (id_ex.jump) {
         uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
         fetch_pc = jump_addr;
         ex_mem.pc_branch = jump_addr;
+        flush_IF_ID_ID_EX();
         DEBUG(cout << "EX: Jump to 0x" << hex << jump_addr << dec << "\n");
     }
     else if (id_ex.jump_reg) {
         fetch_pc = id_ex.read_data_1;
         ex_mem.pc_branch = id_ex.read_data_1;
+        flush_IF_ID_ID_EX();
         DEBUG(cout << "EX: Jump register to 0x" << hex << id_ex.read_data_1 << dec << "\n");
     }
     
@@ -275,8 +254,7 @@ void Processor::pipeline_WB() {
     if (mem_wb.reg_write) {
         uint32_t dummy1, dummy2;
         regfile.access(0, 0, dummy1, dummy2, mem_wb.write_reg, true, write_data);
-        DEBUG(cout << "WB: Writing " << write_data << " to R[" 
-                   << mem_wb.write_reg << "]\n");
+        DEBUG(cout << "WB: Writing " << write_data << " to R[" << mem_wb.write_reg << "]\n");
     }
     // Update the committed PC here.
     regfile.pc = mem_wb.pc_plus_4;

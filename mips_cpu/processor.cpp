@@ -165,11 +165,12 @@ void Processor::pipeline_EX() {
     ex_mem.write_data  = id_ex.read_data_2; // For store instructions.
     ex_mem.write_reg   = id_ex.link ? 31 : (id_ex.reg_dest ? id_ex.rd : id_ex.rt);
     ex_mem.pc_branch   = id_ex.pc_plus_4;  // Default: sequential.
-    ex_mem.zero        = (alu_zero == 1);
+    ex_mem.zero        = alu_zero;  // Store actual ALU zero flag
     ex_mem.valid       = true;
     
     // Handle branch/jump hazards
-    if ((id_ex.branch && !id_ex.bne && ex_mem.zero) || (id_ex.bne && !ex_mem.zero)) {
+    bool take_branch = (id_ex.branch && !id_ex.bne && alu_zero) || (id_ex.bne && !alu_zero);
+    if (take_branch) {
         fetch_pc = branch_target;
         ex_mem.pc_branch = branch_target;
         flush_IF_ID_ID_EX();

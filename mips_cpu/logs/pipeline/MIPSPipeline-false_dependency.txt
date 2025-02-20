@@ -2868,8 +2868,7 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 0<-[28]
-IF: Fetched instruction 0x0 from PC 0x28
+IF: Branch delay slot - not fetching a new instruction this cycle.
 
 CYCLE 64
 R[0]: 0
@@ -2905,17 +2904,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 2 to R[2]
-REG_DEST: 1
-JUMP: 0
-BRANCH: 0
-MEM_READ: 0
-MEM_TO_REG: 0
-ALU_OP: 2
-MEM_WRITE: 0
-ALU_SRC: 0
-REG_WRITE: 1
-L1 Cache (read hit): 0<-[2c]
-IF: Fetched instruction 0x0 from PC 0x2c
+L1 Cache (read hit): 0<-[28]
+IF: Fetched instruction 0x0 from PC 0x28
 
 CYCLE 65
 R[0]: 0
@@ -2959,8 +2949,8 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
-L1 Cache (read hit): 0<-[30]
-IF: Fetched instruction 0x0 from PC 0x30
+L1 Cache (read hit): 0<-[2c]
+IF: Fetched instruction 0x0 from PC 0x2c
 
 CYCLE 66
 R[0]: 0
@@ -3005,10 +2995,55 @@ ALU_OP: 2
 MEM_WRITE: 0
 ALU_SRC: 0
 REG_WRITE: 1
+L1 Cache (read hit): 0<-[30]
+IF: Fetched instruction 0x0 from PC 0x30
+
+CYCLE 67
+R[0]: 0
+R[1]: 1
+R[2]: 2
+R[3]: 0
+R[4]: 0
+R[5]: 0
+R[6]: 0
+R[7]: 0
+R[8]: 0
+R[9]: 0
+R[10]: 0
+R[11]: 0
+R[12]: 0
+R[13]: 0
+R[14]: 0
+R[15]: 0
+R[16]: 0
+R[17]: 0
+R[18]: 0
+R[19]: 0
+R[20]: 0
+R[21]: 0
+R[22]: 0
+R[23]: 0
+R[24]: 0
+R[25]: 0
+R[26]: 0
+R[27]: 0
+R[28]: 0
+R[29]: 0
+R[30]: 0
+R[31]: 0
+REG_DEST: 1
+JUMP: 0
+BRANCH: 0
+MEM_READ: 0
+MEM_TO_REG: 0
+ALU_OP: 2
+MEM_WRITE: 0
+ALU_SRC: 0
+REG_WRITE: 1
 L1 Cache (read hit): 0<-[34]
 IF: Fetched instruction 0x0 from PC 0x34
 
-CYCLE 67
+CYCLE 68
 R[0]: 0
 R[1]: 1
 R[2]: 2
@@ -3054,7 +3089,7 @@ REG_WRITE: 1
 L1 Cache (read hit): 0<-[38]
 IF: Fetched instruction 0x0 from PC 0x38
 
-CYCLE 68
+CYCLE 69
 R[0]: 0
 R[1]: 1
 R[2]: 2
@@ -3100,7 +3135,7 @@ REG_WRITE: 1
 L1 Cache (read hit): 0<-[3c]
 IF: Fetched instruction 0x0 from PC 0x3c
 
-CYCLE 69
+CYCLE 70
 R[0]: 0
 R[1]: 1
 R[2]: 2
@@ -3154,7 +3189,7 @@ MEM[47]: 0
 L2 Cache: replacing line at idx:1 way:0 due to conflicting address:40
 IF: Memory stall during fetch at PC 0x40
 
-CYCLE 70
+CYCLE 71
 R[0]: 0
 R[1]: 1
 R[2]: 2
@@ -3188,4 +3223,4 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 
-Completed execution in 35.5 nanoseconds.
+Completed execution in 36 nanoseconds.

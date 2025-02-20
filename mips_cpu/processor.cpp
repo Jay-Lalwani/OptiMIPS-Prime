@@ -178,20 +178,17 @@ void Processor::pipeline_EX() {
     {
         fetch_pc = branch_target;
         ex_mem.pc_branch = branch_target;
-        if_id.valid = false;
         DEBUG(cout << "EX: Branch taken to 0x" << hex << branch_target << dec << "\n");
     }
     else if (id_ex.jump) {
         uint32_t jump_addr = (id_ex.pc_plus_4 & 0xF0000000) | ((id_ex.imm & 0x03FFFFFF) << 2);
         fetch_pc = jump_addr;
         ex_mem.pc_branch = jump_addr;
-        if_id.valid = false;
         DEBUG(cout << "EX: Jump to 0x" << hex << jump_addr << dec << "\n");
     }
     else if (id_ex.jump_reg) {
         fetch_pc = id_ex.read_data_1;
         ex_mem.pc_branch = id_ex.read_data_1;
-        if_id.valid = false;
         DEBUG(cout << "EX: Jump register to 0x" << hex << id_ex.read_data_1 << dec << "\n");
     }
     

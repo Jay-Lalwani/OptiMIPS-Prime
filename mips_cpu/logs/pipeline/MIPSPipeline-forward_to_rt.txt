@@ -2995,7 +2995,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 10 to R[2]
+WB: Writing 15 to R[2]
 REG_DEST: 0
 JUMP: 0
 BRANCH: 0
@@ -3011,7 +3011,7 @@ IF: Fetched instruction 0x1433022 from PC 0x1c
 CYCLE 67
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 0
 R[4]: 5
 R[5]: 0
@@ -3042,8 +3042,8 @@ R[29]: 0
 R[30]: 0
 R[31]: 0
 WB: Writing 12 to R[3]
-L1 Cache (read hit): 539623434<-[0]
-L1 Cache (write hit): [0]<-0
+L1 Cache (read hit): 21237792<-[c]
+L1 Cache (write hit): [c]<-0
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -3059,7 +3059,7 @@ IF: Fetched instruction 0xa53820 from PC 0x20
 CYCLE 68
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
 R[5]: 0
@@ -3089,7 +3089,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-L1 Cache (read hit): 0<-[0]
+L1 Cache (read hit): 539623434<-[0]
 REG_DEST: 1
 JUMP: 0
 BRANCH: 0
@@ -3105,7 +3105,7 @@ IF: Fetched instruction 0x10e70001 from PC 0x24
 CYCLE 69
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
 R[5]: 0
@@ -3135,7 +3135,7 @@ R[28]: 0
 R[29]: 0
 R[30]: 0
 R[31]: 0
-WB: Writing 0 to R[5]
+WB: Writing 539623434 to R[5]
 REG_DEST: 0
 JUMP: 0
 BRANCH: 1
@@ -3151,10 +3151,10 @@ IF: Fetched instruction 0x0 from PC 0x28
 CYCLE 70
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: 0
 R[7]: 0
 R[8]: 0
@@ -3189,10 +3189,10 @@ IF: Fetched instruction 0x0 from PC 0x2c
 CYCLE 71
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: -2
 R[7]: 0
 R[8]: 0
@@ -3235,10 +3235,10 @@ IF: Fetched instruction 0x0 from PC 0x30
 CYCLE 72
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: -2
 R[7]: 0
 R[8]: 0
@@ -3280,10 +3280,10 @@ IF: Fetched instruction 0x0 from PC 0x34
 CYCLE 73
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: -2
 R[7]: 0
 R[8]: 0
@@ -3325,10 +3325,10 @@ IF: Fetched instruction 0x0 from PC 0x38
 CYCLE 74
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: -2
 R[7]: 0
 R[8]: 0
@@ -3371,10 +3371,10 @@ IF: Fetched instruction 0x0 from PC 0x3c
 CYCLE 75
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: -2
 R[7]: 0
 R[8]: 0
@@ -3425,10 +3425,10 @@ IF: Memory stall during fetch at PC 0x40
 CYCLE 76
 R[0]: 0
 R[1]: 0
-R[2]: 10
+R[2]: 15
 R[3]: 12
 R[4]: 5
-R[5]: 0
+R[5]: 539623434
 R[6]: -2
 R[7]: 0
 R[8]: 0

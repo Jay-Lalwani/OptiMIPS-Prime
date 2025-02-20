@@ -14,7 +14,7 @@ class Processor {
         Memory *memory;
         Registers regfile;
         
-        // A separate pointer for fetching instructions.
+        // Separate pointer for instruction fetching.
         uint32_t fetch_pc;
         
         // Pipeline register structures
@@ -46,7 +46,7 @@ class Processor {
             bool halfword;
             bool byte;
             // Data fields
-            uint32_t pc_plus_4;  // For sequential commit
+            uint32_t pc_plus_4;  // For sequential commit.
             uint32_t read_data_1;
             uint32_t read_data_2;
             uint32_t imm;
@@ -59,9 +59,9 @@ class Processor {
             bool valid;
         };
         
-        // EX/MEM: Holds results from ALU and related signals.
+        // EX/MEM: Holds results from the ALU and related signals.
         struct EX_MEM {
-            // Control signals for MEM and WB
+            // Control signals for MEM and WB.
             bool reg_write;
             bool mem_read;
             bool mem_write;
@@ -73,7 +73,7 @@ class Processor {
             uint32_t alu_result;
             uint32_t write_data;  // For store instructions.
             int write_reg;        // Destination register.
-            uint32_t pc_branch;   // The PC to be committed (either sequential or branch target).
+            uint32_t pc_branch;   // PC to be committed (sequential or branch target).
             bool zero;            // ALU zero flag.
             bool valid;
         };
@@ -105,13 +105,13 @@ class Processor {
         bool pipeline_MEM(); // Returns false to stall.
         void pipeline_WB();
         
-        // Flush IF/ID and ID/EX (used on branch/jump mispredictions).
+        // Flush IF/ID and ID/EX registers (used on branch/jump mispredictions).
         void flush_IF_ID_ID_EX();
         
-        // Single-cycle processor.
+        // Single-cycle processor advancement.
         void single_cycle_processor_advance();
         
-        // Pipelined processor advance.
+        // Pipelined processor advancement.
         void pipelined_processor_advance();
  
     public:

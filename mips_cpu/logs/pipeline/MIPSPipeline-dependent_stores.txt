@@ -3482,7 +3482,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 77
 R[0]: 0
@@ -3527,7 +3527,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 78
 R[0]: 0
@@ -3572,7 +3572,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 79
 R[0]: 0
@@ -3617,7 +3617,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 80
 R[0]: 0
@@ -3662,7 +3662,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 81
 R[0]: 0
@@ -3707,7 +3707,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 82
 R[0]: 0
@@ -3752,7 +3752,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 83
 R[0]: 0
@@ -3797,7 +3797,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 84
 R[0]: 0
@@ -3842,7 +3842,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 85
 R[0]: 0
@@ -3887,7 +3887,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 86
 R[0]: 0
@@ -3932,7 +3932,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 87
 R[0]: 0
@@ -4023,7 +4023,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 89
 R[0]: 0
@@ -4068,7 +4068,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 90
 R[0]: 0
@@ -4113,7 +4113,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 91
 R[0]: 0
@@ -4158,7 +4158,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 92
 R[0]: 0
@@ -4203,7 +4203,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 93
 R[0]: 0
@@ -4248,7 +4248,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 94
 R[0]: 0
@@ -4293,7 +4293,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 95
 R[0]: 0
@@ -4338,7 +4338,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 96
 R[0]: 0
@@ -4383,7 +4383,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 97
 R[0]: 0
@@ -4428,7 +4428,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 98
 R[0]: 0
@@ -4473,7 +4473,7 @@ MEM[4]: ac0a0004
 MEM[5]: 8c020004
 MEM[6]: 210820
 MEM[7]: ac020008
-Memory stall encountered. Pipeline is stalled.
+Memory stall encountered. Stalling pipeline.
 
 CYCLE 99
 R[0]: 0

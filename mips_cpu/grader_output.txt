@@ -26,11 +26,7 @@ Cycle count mismatch: expected 138, got 132
 
 Running test: MIPSPipeline-dependent_stores.txt
 Register state differences found:
-  R[2]: pipeline = 0, single_cycle = 2
-  R[3]: pipeline = 0, single_cycle = 1
-  R[4]: pipeline = 2, single_cycle = 4
   R[5]: pipeline = 0, single_cycle = 8
-  R[10]: pipeline = 0, single_cycle = 1
 Cycle count mismatch: expected 142, got 137
 
 Running test: MIPSPipeline-false_dependency.txt
@@ -42,9 +38,7 @@ Register states match exactly between pipeline and single-cycle.
 Cycle count mismatch: expected 78, got 74
 
 Running test: MIPSPipeline-forward_to_rt.txt
-Register state differences found:
-  R[5]: pipeline = 0, single_cycle = 15
-  R[7]: pipeline = 0, single_cycle = 30
+Register states match exactly between pipeline and single-cycle.
 Cycle count mismatch: expected 79, got 74
 
 Running test: MIPSPipeline-hidden.txt
@@ -53,12 +47,10 @@ Cycle count mismatch: expected 264, got 242
 
 Running test: MIPSPipeline-load_use.txt
 Register state differences found:
-  R[2]: pipeline = 0, single_cycle = 1
-  R[3]: pipeline = 0, single_cycle = 2
-  R[4]: pipeline = 0, single_cycle = 2
-  R[5]: pipeline = 1, single_cycle = 3
-  R[6]: pipeline = 2, single_cycle = 4
-  R[7]: pipeline = 0, single_cycle = 4
+  R[4]: pipeline = 1, single_cycle = 2
+  R[5]: pipeline = 2, single_cycle = 3
+  R[6]: pipeline = 3, single_cycle = 4
+  R[7]: pipeline = 1, single_cycle = 4
   R[8]: pipeline = 0, single_cycle = 4
 Cycle count mismatch: expected 150, got 141
 
@@ -117,12 +109,11 @@ Cycle count mismatch: expected 4070, got 3317
 Summary:
 
 Register State Comparison:
-Passed: 17
-Failed: 3
+Passed: 18
+Failed: 2
 
 Failed register state tests:
   MIPSPipeline-dependent_stores.txt
-  MIPSPipeline-forward_to_rt.txt
   MIPSPipeline-load_use.txt
 
 Cycle Count Comparison:

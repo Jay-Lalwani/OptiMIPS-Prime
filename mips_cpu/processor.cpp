@@ -155,7 +155,7 @@ Processor::EX_MEM Processor::compute_EX(const ID_EX &id_reg) {
     // Compute ALU operands with forwarding.
     uint32_t op1 = id_reg.shift ? id_reg.shamt : id_reg.read_data_1;
     uint32_t op2 = id_reg.ALU_src ? id_reg.imm : id_reg.read_data_2;
-    // Forwarding: check current ex_mem and mem_wb.
+    // Forwarding for op1.
     if (!id_reg.shift) {
         int rs = id_reg.rs;
         if (rs != 0) {
@@ -165,6 +165,7 @@ Processor::EX_MEM Processor::compute_EX(const ID_EX &id_reg) {
                 op1 = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
         }
     }
+    // Forwarding for op2 (ALU operand when not using immediate).
     if (!id_reg.ALU_src) {
         int rt = id_reg.rt;
         if (rt != 0) {
@@ -186,7 +187,21 @@ Processor::EX_MEM Processor::compute_EX(const ID_EX &id_reg) {
     next.halfword = id_reg.halfword;
     next.byte = id_reg.byte;
     next.alu_result = alu_result;
-    next.write_data = id_reg.read_data_2;
+    
+    // *** Added forwarding for store data ***
+    // For store instructions, the data to be written (from rt) must be forwarded if needed.
+    uint32_t store_data = id_reg.read_data_2;
+    if (id_reg.mem_write) {
+        int store_reg = id_reg.rt;
+        if (store_reg != 0) {
+            if (ex_mem.valid && ex_mem.reg_write && (ex_mem.write_reg == store_reg))
+                store_data = ex_mem.alu_result;
+            else if (mem_wb.valid && mem_wb.reg_write && (mem_wb.write_reg == store_reg))
+                store_data = mem_wb.mem_to_reg ? mem_wb.mem_read_data : mem_wb.alu_result;
+        }
+    }
+    next.write_data = store_data;
+    
     next.write_reg = id_reg.link ? 31 : (id_reg.reg_dest ? id_reg.rd : id_reg.rt);
     next.pc_branch = id_reg.pc_plus_4;  // default sequential.
     next.zero = (alu_zero == 1);
@@ -303,8 +318,8 @@ void Processor::single_cycle_processor_advance() {
     
     uint32_t mem_rd = 0, wd = 0;
     memory->access(alu_result, mem_rd, 0, control.mem_read | control.mem_write, 0);
-    wd = control.halfword ? (mem_rd & 0xFFFF0000) | (rd2 & 0xFFFF) :
-         control.byte ? (mem_rd & 0xFFFFFF00) | (rd2 & 0xFF) : rd2;
+    wd = control.halfword ? (mem_rd & 0xffff0000) | (rd2 & 0xffff) :
+         control.byte ? (mem_rd & 0xffffff00) | (rd2 & 0xff) : rd2;
     memory->access(alu_result, mem_rd, wd, control.mem_read, control.mem_write);
     mem_rd &= control.halfword ? 0xFFFF : control.byte ? 0xFF : 0xFFFFFFFF;
     
